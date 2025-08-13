@@ -1,138 +1,183 @@
-<script setup>
-import { ref } from "vue";
-
-const text = ref(null);
-const msg = ref(null);
-
-function greet() {
-  msg.value = "Hello " + text.value;
-}
-</script>
-
 <template>
-  <div class="bg-[#F2EFE9] min-h-screen p-10 h-auto w-screen">
-    <div class="text-7xl font-bold">NOKTAH</div>
-    <Divider
-      class="bg-black border-4 border-black before:border-black rounded-full"
-      style="height: 0px"
-    />
-    <div>
-      <div>
-        <div class="text-9xl font-bold">
-          <p>Noktah</p>
-          <p>Inovasi</p>
-          <p>Teknologi</p>
-        </div>
-      </div>
-      <div class="text-2xl">
-        Combining technology and creativity to create something extraordinary
-      </div>
-    </div>
-    <Divider
-      class="bg-black border-4 border-black before:border-black rounded-full"
-      style="height: 0px"
-    />
-    <div class="flex flex-col">
-      <div class="flex flex-row">
-        <div class="basis-1/3">About</div>
-        <div class="basis-2/3">
-          Noktah Inovasi Teknologi, known as Noktah, is a startup company that
-          focuses on providing innovative solutions and services to the
-          Indonesian market. Our main priority is to help and solve problems
-          using technology and creativity, two things that are usually decoupled
-          from each other, but not at Noktah. We believe that by combining
-          technology and creativity, we can create something more simple and
-          intuitive yet effective in solving real-world problems.
-        </div>
-      </div>
-      <div class="flex flex-row">
-        <div class="basis-1/3">History</div>
-        <div class="basis-2/3">
-          Noktah emerged from a simple question, "Why does every tech services
-          and products has limited creativity on solving real-world problems?".
-          Turns out, most companies focused mainly on their technologies,
-          sidelining the creativity aspect. We realized that it was time to
-          change the game. And so, Noktah was born. Noktah is founded by a group
-          of young entrepreneurs who are passionate on integrating technology
-          and creativity. Started from Digital Creative Solutions for
-          businesses, and expanding to tech-related services and products.
-        </div>
-      </div>
-      <div class="flex flex-row">
-        <div class="basis-1/3">Value</div>
-        <div class="flex flex-row basis-2/3">
-          <div
-            class="flex flex-col w-full p-8 border-black border-2 rounded-[64px]"
-          >
-            <div class="flex flex-row justify-between items-center">
-              <div class="p-6 bg-black text-white rounded-full">A</div>
-              <div class="text-5xl">Quality</div>
-            </div>
-            <br />
-            <br />
-            <div class="text-2xl">
-              Noktah prioritizes quality in everything we do, from our products
-              and services to our team members. We believe that quality is the
-              key to success, and we work tirelessly to ensure that our products
-              and services meet the highest standards of excellence. No matter
-              what challenge we face, we are committed to delivering the best
-              possible solution.
+  <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <h1 class="text-2xl font-bold text-gray-800">TestSite</h1>
             </div>
           </div>
-          <div
-            class="flex flex-col w-full p-8 border-black border-2 rounded-[64px]"
-          >
-            <div class="flex flex-row justify-between items-center">
-              <div class="p-6 bg-black text-white rounded-full">A</div>
-              <div class="text-5xl">Quality</div>
-            </div>
-            <br />
-            <br />
-            <div class="text-2xl">
-              Noktah prioritizes quality in everything we do, from our products
-              and services to our team members. We believe that quality is the
-              key to success, and we work tirelessly to ensure that our products
-              and services meet the highest standards of excellence. No matter
-              what challenge we face, we are committed to delivering the best
-              possible solution.
-            </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
           </div>
-          <div
-            class="flex flex-col w-full p-8 border-black border-2 rounded-[64px]"
-          >
-            <div class="flex flex-row justify-between items-center">
-              <div class="p-6 bg-black text-white rounded-full">A</div>
-              <div class="text-5xl">Quality</div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+          <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+            <div class="sm:text-center lg:text-left">
+              <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                <span class="block xl:inline">Testing</span>
+                <span class="block text-indigo-600 xl:inline">Tailwind CSS</span>
+              </h1>
+              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                This is a basic landing page to test if Tailwind CSS classes are working properly. 
+                We're testing responsive design, colors, typography, and layout utilities.
+              </p>
+              <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <div class="rounded-md shadow">
+                  <button class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 transition duration-300">
+                    Get Started
+                  </button>
+                </div>
+                <div class="mt-3 sm:mt-0 sm:ml-3">
+                  <button class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10 transition duration-300">
+                    Learn More
+                  </button>
+                </div>
+              </div>
             </div>
-            <br />
-            <br />
-            <div class="text-2xl">
-              Noktah prioritizes quality in everything we do, from our products
-              and services to our team members. We believe that quality is the
-              key to success, and we work tirelessly to ensure that our products
-              and services meet the highest standards of excellence. No matter
-              what challenge we face, we are committed to delivering the best
-              possible solution.
-            </div>
-          </div>
+          </main>
         </div>
       </div>
     </div>
-    <Divider
-      class="bg-black border-4 border-black before:border-black rounded-full"
-      style="height: 0px"
-    />
-    <!-- <div class="flex items-center justify-center min-h-screen p-10">
-            <section class="bg-white dark:bg-surface-900 p-10 rounded-xl flex flex-col gap-8 max-w-3xl">
-                <h1 class="text-4xl text-black dark:text-white font-bold text-center">Tailwind CSS + PrimeVue</h1>
-                <div class="flex gap-4">
-                    <InputText v-model="text" maxlength="20" fluid />
-                    <Button label="Submit" @click="greet" class="min-w-20" :disabled="!text" />
+
+    <!-- Features Section -->
+    <div class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Features</h2>
+          <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            Testing Tailwind Classes
+          </p>
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            Various Tailwind utilities being tested including responsive design, flexbox, grid, colors, and animations.
+          </p>
+        </div>
+
+        <div class="mt-10">
+          <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <div class="relative">
+              <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                <span class="text-xl font-bold">1</span>
+              </div>
+              <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Responsive Design</p>
+              <p class="mt-2 ml-16 text-base text-gray-500">
+                Testing responsive utilities like sm:, md:, lg:, and xl: breakpoints.
+              </p>
+            </div>
+
+            <div class="relative">
+              <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
+                <span class="text-xl font-bold">2</span>
+              </div>
+              <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Color System</p>
+              <p class="mt-2 ml-16 text-base text-gray-500">
+                Testing various color utilities including gradients and hover states.
+              </p>
+            </div>
+
+            <div class="relative">
+              <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-yellow-500 text-white">
+                <span class="text-xl font-bold">3</span>
+              </div>
+              <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Layout Utilities</p>
+              <p class="mt-2 ml-16 text-base text-gray-500">
+                Testing flexbox, grid, spacing, and positioning utilities.
+              </p>
+            </div>
+
+            <div class="relative">
+              <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white">
+                <span class="text-xl font-bold">4</span>
+              </div>
+              <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Typography</p>
+              <p class="mt-2 ml-16 text-base text-gray-500">
+                Testing font sizes, weights, and text utilities across different screen sizes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Section -->
+    <div class="py-12 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-extrabold text-gray-900">Test Cards</h2>
+          <p class="mt-4 text-lg text-gray-600">Testing card layouts and hover effects</p>
+        </div>
+        <div class="mt-10 grid gap-8 md:grid-cols-3">
+          <div class="bg-white overflow-hidden shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="px-4 py-5 sm:p-6">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <div class="h-8 w-8 bg-red-500 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold">A</span>
+                  </div>
                 </div>
-                <div class="h-8 text-center text-primary text-xl">
-                    {{ msg }}
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-900">Card One</h3>
+                  <p class="text-sm text-gray-500">Testing basic card layout</p>
                 </div>
-            </section>
-        </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white overflow-hidden shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="px-4 py-5 sm:p-6">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <div class="h-8 w-8 bg-blue-500 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold">B</span>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-900">Card Two</h3>
+                  <p class="text-sm text-gray-500">Testing hover effects</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white overflow-hidden shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="px-4 py-5 sm:p-6">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <div class="h-8 w-8 bg-green-500 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold">C</span>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-900">Card Three</h3>
+                  <p class="text-sm text-gray-500">Testing grid layout</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-gray-400">
+            &copy; 2024 Tailwind Test Site. Testing all the classes work properly.
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
