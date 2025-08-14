@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky top-0 z-50 bg-transparent">
+  <div class="sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo/Brand -->
@@ -17,7 +17,7 @@
         </div>
 
         <!-- Navigation Menu -->
-        <div class="hidden md:flex bg-white/90 dark:bg-gray-800/90 rounded-full px-2 py-2 border border-gray-200/50 dark:border-gray-700/50">
+        <div class="hidden md:flex bg-white/25 dark:bg-gray-800/90 backdrop-blur-sm rounded-full px-2 py-2 border border-gray-200/50 dark:border-gray-700/50 space-x-2">
           <NuxtLink
             to="/"
             class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200"
@@ -77,7 +77,7 @@
 
       <!-- Mobile Navigation Menu -->
       <div v-if="mobileMenuOpen" class="md:hidden">
-        <div class="px-2 pt-2 pb-3 space-y-1 border-t border-gray-200 dark:border-gray-800">
+        <div class="px-2 pt-2 pb-3 space-y-3 border-t border-gray-200 dark:border-gray-800">
           <NuxtLink
             to="/"
             class="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 text-base font-medium transition-colors"
@@ -109,7 +109,7 @@
         </div>
       </div>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script setup>

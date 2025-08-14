@@ -1,36 +1,26 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-primary-50/50 via-white to-primary-100/50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-      <!-- Simple Cell Division Animation -->
+    <section class="h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-transparent via-white to-primary-100/50 dark:from-neutral-900 dark:via-gray-800 dark:to-gray-900">
+      <!-- Breathing Circle Animation -->
       <div class="absolute inset-0 overflow-hidden flex items-center justify-center">
-        <div 
-          v-if="animationState === 'single' || animationState === 'merging'"
-          class="cell-single"
-          :class="{ 'merging': animationState === 'merging' }"
-        ></div>
-        <div 
-          v-if="animationState === 'dividing' || animationState === 'divided'"
-          class="cell-container"
-        >
-          <div class="cell-left" :class="{ 'dividing': animationState === 'dividing' }"></div>
-          <div class="cell-right" :class="{ 'dividing': animationState === 'dividing' }"></div>
-        </div>
+        <div class="breathing-circle"></div>
       </div>
 
       <div class="text-center z-10 max-w-5xl px-4">
         <div class="mb-8">
-          <!-- Animated Lightning Icon -->
-          <div class="relative inline-block mb-6">
-            <UIcon name="i-heroicons-lightning-bolt" class="text-6xl text-primary-500 mx-auto animate-pulse" />
-            <div class="absolute inset-0 animate-ping">
-              <UIcon name="i-heroicons-lightning-bolt" class="text-6xl text-primary-300/50 mx-auto" />
-            </div>
+          <!-- Noktah Logo -->
+          <div class="">
+            <img 
+              src="/images/noktah-logo.png" 
+              alt="Noktah Logo" 
+              class="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 mx-auto object-contain"
+            />
           </div>
           
           <!-- Animated Title -->
           <h1 class="text-6xl md:text-8xl font-black text-gray-900 dark:text-white mb-6 leading-none">
-            <span class="bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient bg-300%">
+            <span class="font-bold italic" style="font-family: 'Montserrat', sans-serif;">
               NOKTAH
             </span>
           </h1>
@@ -45,7 +35,7 @@
           <!-- Animated Description -->
           <div class="overflow-hidden mb-12">
             <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
-              An innovation-driven holding company building cross-field solutions that redefine what's possible in technology, business, and beyond.
+              An innovation-driven company building cross-field solutions that redefine what's possible in technology, creativity, business, and beyond.
             </p>
           </div>
         </div>
@@ -80,10 +70,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Innovation is Our <span class="text-primary-500">DNA</span>
+            Built to <span class="text-primary-500">Innovate</span>
           </h2>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            We don't just adapt to change—we create it. Our mission is to pioneer solutions that cross industry boundaries and challenge conventional thinking.
+            We believe the best solutions emerge when you combine different industries, perspectives, and technologies. That's why we work across fields to create meaningful impact.
           </p>
         </div>
         
@@ -95,7 +85,7 @@
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Bold</h3>
-            <p class="text-gray-600 dark:text-gray-400">We take calculated risks others won't, pushing boundaries to discover new possibilities.</p>
+            <p class="text-gray-600 dark:text-gray-400">We embrace calculated risks and aren't afraid to pursue ambitious ideas that create real value.</p>
           </UCard>
 
           <UCard class="text-center p-6 hover:shadow-lg transition-shadow">
@@ -105,7 +95,7 @@
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Creative</h3>
-            <p class="text-gray-600 dark:text-gray-400">Every challenge is an opportunity for innovative thinking and creative problem-solving.</p>
+            <p class="text-gray-600 dark:text-gray-400">Fresh perspectives and unconventional approaches help us solve problems in ways others haven't considered.</p>
           </UCard>
 
           <UCard class="text-center p-6 hover:shadow-lg transition-shadow">
@@ -115,7 +105,7 @@
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Adaptable</h3>
-            <p class="text-gray-600 dark:text-gray-400">We embrace emerging technologies and pivot quickly to stay ahead of market demands.</p>
+            <p class="text-gray-600 dark:text-gray-400">We stay agile and responsive, quickly adapting to new technologies and market shifts as they emerge.</p>
           </UCard>
 
           <UCard class="text-center p-6 hover:shadow-lg transition-shadow">
@@ -125,7 +115,7 @@
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Innovative</h3>
-            <p class="text-gray-600 dark:text-gray-400">Innovation isn't just what we do—it's how we think, operate, and approach every project.</p>
+            <p class="text-gray-600 dark:text-gray-400">Innovation drives everything we do, from how we approach problems to how we build lasting solutions.</p>
           </UCard>
         </div>
       </div>
@@ -456,38 +446,5 @@
 </template>
 
 <script setup>
-// Simple animation states: single -> dividing -> divided (linger) -> merging -> single
-const animationState = ref('single')
-
-function startAnimationCycle() {
-  // Start the cycle
-  setTimeout(() => {
-    animationState.value = 'dividing'
-    
-    // After 1s of dividing animation, go to divided (linger) state
-    setTimeout(() => {
-      animationState.value = 'divided'
-      
-      // After 2s of lingering, start merging
-      setTimeout(() => {
-        animationState.value = 'merging'
-        
-        // After 1s of merging animation, back to single and restart cycle
-        setTimeout(() => {
-          animationState.value = 'single'
-          startAnimationCycle() // Restart the cycle
-        }, 1000)
-      }, 2000)
-    }, 1000)
-  }, 2000) // Initial delay of 2s in single state
-}
-
-// Start animation on mount
-onMounted(() => {
-  startAnimationCycle()
-  
-  onBeforeUnmount(() => {
-    // Clear any pending timeouts (cleanup handled by Vue's reactivity)
-  })
-})
+// No JavaScript needed - pure CSS breathing animation
 </script>
