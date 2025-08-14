@@ -4,7 +4,7 @@
       <div class="flex justify-between items-center h-16">
         <!-- Logo/Brand -->
         <div class="flex-shrink-0 flex items-center space-x-3">
-          <div class="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center border border-gray-200/50 dark:border-gray-700/50 p-1">
+          <div class="w-12 h-12 bg-white/60 dark:bg-white/15 backdrop-blur-xl rounded-full flex items-center justify-center border border-white/70 dark:border-white/30 shadow-lg shadow-black/10 dark:shadow-black/40 p-1">
             <img 
               src="/images/noktah-logo.png" 
               alt="Noktah Logo" 
@@ -17,7 +17,7 @@
         </div>
 
         <!-- Navigation Menu -->
-        <div class="hidden md:flex bg-white/25 dark:bg-gray-800/90 backdrop-blur-sm rounded-full px-2 py-2 border border-gray-200/50 dark:border-gray-700/50 space-x-2">
+        <div class="hidden md:flex bg-white/50 dark:bg-white/12 backdrop-blur-2xl rounded-full px-2 py-2 border border-white/60 dark:border-white/25 shadow-xl shadow-black/10 dark:shadow-black/50 space-x-2">
           <NuxtLink
             to="/"
             class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200"
