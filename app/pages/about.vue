@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-slate-50/50 via-blue-50/30 via-50% to-emerald-50/20 dark:from-slate-900 dark:via-slate-800 dark:via-50% to-gray-900">
+    <section class="h-screen flex items-center justify-center relative overflow-hidden bg-gray-50 dark:bg-[#0D1117]">
       <!-- Animated background elements -->
       <div class="absolute inset-0 overflow-hidden">
         <div class="breathing-circle"></div>
@@ -43,7 +43,7 @@
     </section>
 
     <!-- Company Overview -->
-    <section class="py-20 relative bg-gradient-to-b from-emerald-50/20 via-white via-50% to-blue-50/30 dark:from-gray-900 dark:via-slate-900 dark:via-50% dark:to-slate-800">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <div>
@@ -96,7 +96,7 @@
     </section>
 
     <!-- Our Vision & Mission -->
-    <section class="py-20 relative bg-gradient-to-b from-blue-50/30 via-violet-50/20 via-50% to-emerald-50/30 dark:from-slate-800 dark:via-slate-900 dark:via-50% dark:to-gray-900">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <!-- Neural network inspired background -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-30 dark:opacity-20">
         <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1200 800">
@@ -158,7 +158,7 @@
     </section>
 
     <!-- Core Values -->
-    <section class="py-20 relative bg-gradient-to-b from-emerald-50/30 via-teal-50/20 via-50% to-violet-50/30 dark:from-gray-900 dark:via-slate-800 dark:via-50% dark:to-slate-900">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
@@ -214,7 +214,7 @@
     </section>
 
     <!-- Company Structure & Legal -->
-    <section class="py-20 relative bg-gradient-to-b from-violet-50/30 via-slate-50/20 via-50% to-blue-50/30 dark:from-slate-900 dark:via-gray-900 dark:via-50% dark:to-slate-800">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
@@ -283,7 +283,7 @@
     </section>
 
     <!-- Our Approach -->
-    <section class="py-20 relative bg-gradient-to-b from-blue-50/30 via-emerald-50/20 via-50% to-orange-50/30 dark:from-slate-800 dark:via-gray-900 dark:via-50% dark:to-slate-900">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <!-- Floating innovation elements -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-20 left-10 w-4 h-4 bg-primary-500/40 dark:bg-primary-400/30 rounded-full animate-bounce animation-delay-500"></div>
@@ -313,7 +313,7 @@
               <p class="text-gray-600 dark:text-gray-400">We look for opportunities where different industries, technologies, or approaches can converge to create new possibilities.</p>
               
               <!-- Connection line -->
-              <div class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary-400/60 to-emerald-400/60 transform translate-x-12"></div>
+              <div class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-primary-400/60 transform translate-x-12"></div>
             </div>
 
             <!-- Step 2 -->
@@ -325,7 +325,7 @@
               <p class="text-gray-600 dark:text-gray-400">We prototype rapidly, test assumptions, and aren't afraid to fail fast and learn from every iteration.</p>
               
               <!-- Connection line -->
-              <div class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-gradient-to-r from-emerald-400/60 to-orange-400/60 transform translate-x-12"></div>
+              <div class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-emerald-400/60 transform translate-x-12"></div>
             </div>
 
             <!-- Step 3 -->
@@ -356,7 +356,7 @@
     </section>
 
     <!-- Contact & Location -->
-    <section class="py-20 relative bg-gradient-to-b from-orange-50/30 via-slate-50/20 via-50% to-gray-100 dark:from-slate-900 dark:via-gray-900 dark:via-50% dark:to-black">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
@@ -495,7 +495,7 @@ useSeoMeta({
   transform: translate(-50%, -50%);
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, rgba(99, 102, 241, 0.05) 40%, transparent 70%);
+  background: rgba(99, 102, 241, 0.1);
   border-radius: 50%;
   animation: breathe 4s ease-in-out infinite;
 }

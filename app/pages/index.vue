@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-blue-50/30 via-white via-85% to-gray-50 dark:from-slate-900 dark:via-gray-900 dark:via-85% dark:to-gray-900">
+    <section class="h-screen flex items-center justify-center relative overflow-hidden bg-gray-50 dark:bg-[#0D1117]">
       <!-- Breathing Circle Animation -->
       <div class="absolute inset-0 overflow-hidden flex items-center justify-center">
         <div class="breathing-circle"></div>
@@ -66,7 +66,7 @@
 
 
     <!-- About/Vision Section -->
-    <section class="py-20 relative bg-gradient-to-b from-gray-50 via-blue-50/30 via-50% to-emerald-50/20 dark:from-gray-900 dark:via-slate-900 dark:via-50% dark:to-gray-800">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <!-- Floating geometric shapes for visual interest -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-20 left-10 w-32 h-32 bg-primary-300/30 dark:bg-primary-700/40 rounded-full blur-xl animate-pulse"></div>
@@ -128,10 +128,10 @@
     </section>
 
     <!-- Brand Portfolio Section -->
-    <section class="py-20 relative bg-gradient-to-b from-emerald-50/20 via-teal-50/30 via-50% to-violet-50/20 dark:from-gray-800 dark:via-slate-800 dark:via-50% dark:to-slate-900">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <!-- Dynamic grid pattern background -->
       <div class="absolute inset-0 opacity-20 dark:opacity-10">
-        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, rgba(6, 182, 212, 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);"></div>
+        <div class="absolute inset-0 opacity-20 dark:opacity-10"></div>
       </div>
       <!-- Floating brand elements -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
@@ -189,7 +189,7 @@
                   <div class="absolute top-4 right-4">
                     <UIcon name="i-heroicons-arrow-top-right-on-square" class="text-2xl text-white/80 hover:text-white transition-colors duration-300" />
                   </div>
-                  <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 dark:from-purple-600 dark:to-pink-700 rounded-t-3xl flex items-center justify-center">
+                  <div class="h-48 bg-purple-500 dark:bg-purple-600 rounded-t-3xl flex items-center justify-center">
                     <UIcon name="i-heroicons-sparkles" class="text-6xl text-white" />
                   </div>
                 </div>
@@ -209,7 +209,7 @@
                   <div class="absolute top-4 right-4">
                     <UIcon name="i-heroicons-arrow-top-right-on-square" class="text-2xl text-white/80 hover:text-white transition-colors duration-300" />
                   </div>
-                  <div class="h-48 bg-gradient-to-br from-emerald-500 to-cyan-600 dark:from-emerald-600 dark:to-cyan-700 rounded-t-3xl flex items-center justify-center">
+                  <div class="h-48 bg-emerald-500 dark:bg-emerald-600 rounded-t-3xl flex items-center justify-center">
                     <UIcon name="i-heroicons-camera" class="text-6xl text-white" />
                   </div>
                 </div>
@@ -229,7 +229,7 @@
                   <div class="absolute top-4 right-4">
                     <UIcon name="i-heroicons-arrow-top-right-on-square" class="text-2xl text-white/80 hover:text-white transition-colors duration-300" />
                   </div>
-                  <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 dark:from-orange-600 dark:to-red-700 rounded-t-3xl flex items-center justify-center">
+                  <div class="h-48 bg-orange-500 dark:bg-orange-600 rounded-t-3xl flex items-center justify-center">
                     <UIcon name="i-heroicons-trophy" class="text-6xl text-white" />
                   </div>
                 </div>
@@ -249,7 +249,7 @@
                   <div class="absolute top-4 right-4">
                     <UIcon name="i-heroicons-arrow-top-right-on-square" class="text-2xl text-white/80 hover:text-white transition-colors duration-300" />
                   </div>
-                  <div class="h-48 bg-gradient-to-br from-slate-600 to-gray-800 dark:from-slate-700 dark:to-gray-900 rounded-t-3xl flex items-center justify-center">
+                  <div class="h-48 bg-slate-600 dark:bg-slate-700 rounded-t-3xl flex items-center justify-center">
                     <UIcon name="i-heroicons-cpu-chip" class="text-6xl text-white" />
                   </div>
                 </div>
@@ -265,7 +265,7 @@
     </section>
 
     <!-- Innovation Focus Areas -->
-    <section class="py-20 relative bg-gradient-to-b from-violet-50/20 via-white via-50% to-amber-50/30 dark:from-slate-900 dark:via-gray-900 dark:via-50% dark:to-amber-950/20">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <!-- Neural network inspired background -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-30 dark:opacity-20">
         <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1200 800">
@@ -273,16 +273,13 @@
             <pattern id="dots" patternUnits="userSpaceOnUse" width="60" height="60">
               <circle cx="30" cy="30" r="1.5" class="fill-primary-600 dark:fill-primary-400" opacity="0.5"/>
             </pattern>
-            <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" class="light:stop-color-violet-500 dark:stop-color-violet-400" style="stop-opacity:0.4" />
-              <stop offset="100%" class="light:stop-color-violet-500 dark:stop-color-violet-400" style="stop-opacity:0" />
-            </radialGradient>
+            <!-- Radial gradient removed for solid colors -->
           </defs>
           <rect width="100%" height="100%" fill="url(#dots)" />
-          <circle cx="200" cy="150" r="40" fill="url(#nodeGlow)" class="animate-pulse" />
-          <circle cx="800" cy="200" r="35" fill="url(#nodeGlow)" class="animate-pulse animation-delay-1000" />
-          <circle cx="400" cy="400" r="45" fill="url(#nodeGlow)" class="animate-pulse animation-delay-2000" />
-          <circle cx="1000" cy="500" r="30" fill="url(#nodeGlow)" class="animate-pulse animation-delay-1500" />
+          <circle cx="200" cy="150" r="40" fill="rgba(139, 92, 246, 0.4)" class="animate-pulse" />
+          <circle cx="800" cy="200" r="35" fill="rgba(139, 92, 246, 0.4)" class="animate-pulse animation-delay-1000" />
+          <circle cx="400" cy="400" r="45" fill="rgba(139, 92, 246, 0.4)" class="animate-pulse animation-delay-2000" />
+          <circle cx="1000" cy="500" r="30" fill="rgba(139, 92, 246, 0.4)" class="animate-pulse animation-delay-1500" />
         </svg>
       </div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -298,28 +295,28 @@
         <div class="relative">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-3xl p-8">
             <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-6 transition-all duration-500 cursor-pointer hover:scale-105">
-              <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-primary-400/30 to-primary-600/30 dark:from-primary-400/20 dark:to-primary-600/20 backdrop-blur-xl border border-primary-300/40 dark:border-primary-500/30 shadow-xl shadow-primary-500/30 dark:shadow-primary-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-primary-500/50 dark:group-hover:shadow-primary-400/60 transition-all duration-500">
+              <div class="w-24 h-24 mx-auto mb-4 bg-primary-400/30 dark:bg-primary-400/20 backdrop-blur-xl border border-primary-300/40 dark:border-primary-500/30 shadow-xl shadow-primary-500/30 dark:shadow-primary-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-primary-500/50 dark:group-hover:shadow-primary-400/60 transition-all duration-500">
                 <UIcon name="i-heroicons-cpu-chip" class="text-4xl text-primary-600 dark:text-primary-400 group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 class="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">Artificial Intelligence</h3>
               <p class="text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Smart algorithms that learn and adapt</p>
             </div>
             <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-6 transition-all duration-500 cursor-pointer hover:scale-105">
-              <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-emerald-400/30 to-emerald-600/30 dark:from-emerald-400/20 dark:to-emerald-600/20 backdrop-blur-xl border border-emerald-300/40 dark:border-emerald-500/30 shadow-xl shadow-emerald-500/30 dark:shadow-emerald-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-emerald-500/50 dark:group-hover:shadow-emerald-400/60 transition-all duration-500">
+              <div class="w-24 h-24 mx-auto mb-4 bg-emerald-400/30 dark:bg-emerald-400/20 backdrop-blur-xl border border-emerald-300/40 dark:border-emerald-500/30 shadow-xl shadow-emerald-500/30 dark:shadow-emerald-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-emerald-500/50 dark:group-hover:shadow-emerald-400/60 transition-all duration-500">
                 <UIcon name="i-heroicons-trophy" class="text-4xl text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 class="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">Sports Technology</h3>
               <p class="text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Connecting athletes and venues digitally</p>
             </div>
             <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-6 transition-all duration-500 cursor-pointer hover:scale-105">
-              <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-amber-400/30 to-amber-600/30 dark:from-amber-400/20 dark:to-amber-600/20 backdrop-blur-xl border border-amber-300/40 dark:border-amber-500/30 shadow-xl shadow-amber-500/30 dark:shadow-amber-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-amber-500/50 dark:group-hover:shadow-amber-400/60 transition-all duration-500">
+              <div class="w-24 h-24 mx-auto mb-4 bg-amber-400/30 dark:bg-amber-400/20 backdrop-blur-xl border border-amber-300/40 dark:border-amber-500/30 shadow-xl shadow-amber-500/30 dark:shadow-amber-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-amber-500/50 dark:group-hover:shadow-amber-400/60 transition-all duration-500">
                 <UIcon name="i-heroicons-camera" class="text-4xl text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 class="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors duration-300">Creative Services</h3>
               <p class="text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Professional content creation at scale</p>
             </div>
             <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-6 transition-all duration-500 cursor-pointer hover:scale-105">
-              <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-violet-400/30 to-violet-600/30 dark:from-violet-400/20 dark:to-violet-600/20 backdrop-blur-xl border border-violet-300/40 dark:border-violet-500/30 shadow-xl shadow-violet-500/30 dark:shadow-violet-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-violet-500/50 dark:group-hover:shadow-violet-400/60 transition-all duration-500">
+              <div class="w-24 h-24 mx-auto mb-4 bg-violet-400/30 dark:bg-violet-400/20 backdrop-blur-xl border border-violet-300/40 dark:border-violet-500/30 shadow-xl shadow-violet-500/30 dark:shadow-violet-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-violet-500/50 dark:group-hover:shadow-violet-400/60 transition-all duration-500">
                 <UIcon name="i-heroicons-wrench-screwdriver" class="text-4xl text-violet-600 dark:text-violet-400 group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 class="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors duration-300">Hardware Engineering</h3>
@@ -331,13 +328,7 @@
           <div class="hidden lg:block absolute inset-0 pointer-events-none overflow-hidden">
             <svg class="w-full h-full" viewBox="0 0 1000 300">
               <defs>
-                <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:rgb(99, 102, 241);stop-opacity:0.6" />
-                  <stop offset="25%" style="stop-color:rgb(16, 185, 129);stop-opacity:0.6" />
-                  <stop offset="50%" style="stop-color:rgb(245, 158, 11);stop-opacity:0.6" />
-                  <stop offset="75%" style="stop-color:rgb(139, 92, 246);stop-opacity:0.6" />
-                  <stop offset="100%" style="stop-color:rgb(99, 102, 241);stop-opacity:0.6" />
-                </linearGradient>
+                <!-- Connection gradient removed for solid colors -->
                 <filter id="glow">
                   <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
                   <feMerge> 
@@ -349,14 +340,14 @@
               
               <!-- Main connection web -->
               <path d="M125,150 Q300,80 500,150 Q700,80 875,150" 
-                    stroke="url(#connectionGradient)" 
+                    stroke="rgb(99, 102, 241)" 
                     stroke-width="2" 
                     fill="none" 
                     filter="url(#glow)"
                     class="animate-pulse"/>
               
               <path d="M125,150 Q300,220 500,150 Q700,220 875,150" 
-                    stroke="url(#connectionGradient)" 
+                    stroke="rgb(99, 102, 241)" 
                     stroke-width="2" 
                     fill="none" 
                     filter="url(#glow)"
@@ -365,7 +356,7 @@
               
               <!-- Cross connections -->
               <path d="M250,150 Q500,100 750,150" 
-                    stroke="url(#connectionGradient)" 
+                    stroke="rgb(99, 102, 241)" 
                     stroke-width="1.5" 
                     fill="none" 
                     opacity="0.4"
@@ -397,13 +388,13 @@
     </section>
 
     <!-- For Different Audiences -->
-    <section class="py-20 relative bg-gradient-to-b from-amber-50/30 via-orange-50/20 via-50% to-emerald-50/30 dark:from-amber-950/20 dark:via-gray-900 dark:via-50% dark:to-emerald-950/20">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <!-- Warm community-inspired background -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <!-- Overlapping circles representing different audiences -->
-        <div class="absolute top-20 left-1/4 w-64 h-64 bg-gradient-to-br from-amber-200/20 to-orange-200/20 dark:from-amber-800/10 dark:to-orange-800/10 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-20 right-1/4 w-72 h-72 bg-gradient-to-br from-rose-200/20 to-pink-200/20 dark:from-rose-800/10 dark:to-pink-800/10 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-56 bg-gradient-to-br from-violet-200/20 to-purple-200/20 dark:from-violet-800/10 dark:to-purple-800/10 rounded-full blur-2xl"></div>
+        <div class="absolute top-20 left-1/4 w-64 h-64 bg-amber-200/20 dark:bg-amber-800/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-1/4 w-72 h-72 bg-rose-200/20 dark:bg-rose-800/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-56 bg-violet-200/20 dark:bg-violet-800/10 rounded-full blur-2xl"></div>
       </div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
@@ -474,13 +465,13 @@
     </section>
 
     <!-- Culture/Values -->
-    <section class="py-20 relative bg-gradient-to-b from-emerald-50/30 via-green-50/20 via-50% to-slate-50/40 dark:from-emerald-950/20 dark:via-slate-900 dark:via-50% dark:to-slate-950">
+    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
       <!-- Organic growth patterns -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-40 dark:opacity-20">
         <!-- Leaf-like organic shapes -->
-        <div class="absolute top-16 left-16 w-32 h-48 bg-gradient-to-br from-emerald-400/40 to-green-500/40 dark:from-emerald-600/30 dark:to-green-600/30 rounded-full transform rotate-45 blur-xl"></div>
-        <div class="absolute bottom-24 right-20 w-40 h-56 bg-gradient-to-tl from-teal-400/40 to-emerald-500/40 dark:from-teal-600/30 dark:to-emerald-600/30 rounded-full transform -rotate-12 blur-xl"></div>
-        <div class="absolute top-1/3 right-1/4 w-24 h-36 bg-gradient-to-br from-green-400/40 to-teal-500/40 dark:from-green-600/30 dark:to-teal-600/30 rounded-full transform rotate-75 blur-lg"></div>
+        <div class="absolute top-16 left-16 w-32 h-48 bg-emerald-400/40 dark:bg-emerald-600/30 rounded-full transform rotate-45 blur-xl"></div>
+        <div class="absolute bottom-24 right-20 w-40 h-56 bg-teal-400/40 dark:bg-teal-600/30 rounded-full transform -rotate-12 blur-xl"></div>
+        <div class="absolute top-1/3 right-1/4 w-24 h-36 bg-green-400/40 dark:bg-green-600/30 rounded-full transform rotate-75 blur-lg"></div>
         <!-- Growth rings -->
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div class="w-96 h-96 border border-emerald-300/30 dark:border-emerald-600/25 rounded-full animate-pulse"></div>
@@ -538,7 +529,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="relative bg-gradient-to-b from-slate-50/40 via-slate-100 via-30% to-slate-200 dark:from-slate-950 dark:via-slate-900 dark:via-30% dark:to-black">
+    <footer class="relative bg-slate-100 dark:bg-[#0D1117]">
       <!-- Background decoration -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute inset-0 opacity-30">
@@ -760,27 +751,15 @@ section {
   background-blend-mode: normal;
 }
 
-/* Seamless gradient blending */
+/* Solid color styling */
 body {
-  background: linear-gradient(to bottom, 
-    rgb(248, 250, 252) 0%, 
-    rgb(241, 245, 249) 20%, 
-    rgb(236, 254, 255) 40%, 
-    rgb(248, 250, 252) 60%, 
-    rgb(254, 252, 232) 80%, 
-    rgb(15, 23, 42) 100%);
+  background: rgb(249, 250, 251) !important;
   background-attachment: fixed;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: linear-gradient(to bottom, 
-      rgb(15, 23, 42) 0%, 
-      rgb(30, 41, 59) 20%, 
-      rgb(51, 65, 85) 40%, 
-      rgb(30, 41, 59) 60%, 
-      rgb(20, 20, 20) 80%, 
-      rgb(0, 0, 0) 100%);
+    background: #0D1117 !important;
     background-attachment: fixed;
   }
 }

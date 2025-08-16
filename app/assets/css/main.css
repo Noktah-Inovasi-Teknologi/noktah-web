@@ -1,3 +1,11 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 @import "./animations.css";
+
+:root {
+    --ui-bg: #FFFFFF;
+}
+
+.dark {
+    --ui-bg: #0D1117;
+}
