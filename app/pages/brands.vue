@@ -427,23 +427,6 @@ useSeoMeta({
 .animation-delay-2000 { animation-delay: 2s; }
 .animation-delay-2500 { animation-delay: 2.5s; }
 
-/* Brand-specific card styling */
-.eskala-card {
-  /* Eskala blue/orange theme applied via classes */
-}
-
-.memomancy-card {
-  /* Memomancy cream/dark/neon theme with 2px border */
-}
-
-.heavy-station-card {
-  /* Heavy Station dark/red theme with 1px border */
-}
-
-.fieldpass-card {
-  /* Default theme */
-}
-
 /* Smooth section transitions */
 section {
   background-attachment: local;
