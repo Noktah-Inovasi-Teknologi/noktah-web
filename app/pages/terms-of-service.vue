@@ -1,25 +1,63 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="py-20 relative overflow-hidden bg-gray-50 dark:bg-[#0D1117]">
-      <!-- Background decoration -->
+    <section class="h-screen flex items-center justify-center relative overflow-hidden bg-gray-50 dark:bg-[#0D1117]">
+      <!-- Breathing Circle Animation -->
+      <div class="absolute inset-0 overflow-hidden flex items-center justify-center">
+        <div class="breathing-circle"></div>
+      </div>
+      
+      <!-- Floating geometric shapes for visual interest -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-20 left-10 w-32 h-32 bg-primary-300/30 dark:bg-primary-700/40 rounded-full blur-xl animate-pulse"></div>
         <div class="absolute bottom-20 right-10 w-24 h-24 bg-violet-300/30 dark:bg-violet-700/40 rounded-full blur-lg animate-pulse animation-delay-1000"></div>
         <div class="absolute top-1/2 right-1/4 w-16 h-16 bg-blue-300/30 dark:bg-blue-700/40 rounded-full blur-md animate-pulse animation-delay-2000"></div>
       </div>
 
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Terms of <span class="text-primary-500">Service</span>
+      <div class="text-center z-10 max-w-5xl px-4">
+        <div class="mb-8">
+          <!-- Noktah Logo -->
+          <div class="mb-6">
+            <img 
+              src="/images/noktah-logo.png" 
+              alt="Noktah Logo" 
+              class="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 mx-auto object-contain"
+            />
+          </div>
+          
+          <!-- Title -->
+          <h1 class="text-6xl md:text-8xl font-black text-gray-900 dark:text-white mb-6 leading-none">
+            <span class="font-bold italic" style="font-family: 'Montserrat', sans-serif;">
+              NOKTAH
+            </span>
           </h1>
-          <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Please read these terms carefully before using our services. These terms govern your use of all Noktah brands and services.
-          </p>
-          <p class="text-sm text-gray-500 dark:text-gray-500 mt-4">
-            Last Updated: {{ lastUpdated }}
-          </p>
+          
+          <!-- Subtitle -->
+          <div class="overflow-hidden mb-4">
+            <p class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-200 animate-fade-in-up animation-delay-500">
+              Terms of Service
+            </p>
+          </div>
+          
+          <!-- Description -->
+          <div class="overflow-hidden mb-12">
+            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
+              Please read these terms carefully before using our services. These terms govern your use of all Noktah brands and services.
+            </p>
+            <p class="text-sm text-gray-500 dark:text-gray-500 mt-4">
+              Last Updated: {{ lastUpdated }}
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Enhanced Scroll Indicator -->
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div class="flex flex-col items-center animate-bounce">
+          <div class="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center mb-2">
+            <div class="w-1 h-3 bg-gray-400 rounded-full animate-ping mt-2"></div>
+          </div>
+          <UIcon name="i-heroicons-chevron-down" class="text-xl text-gray-400" />
         </div>
       </div>
     </section>
@@ -889,9 +927,36 @@ const lastUpdated = ref('18 Agustus 2025')
 </script>
 
 <style scoped>
+/* Breathing circle animation */
+.breathing-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: 50%;
+  animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.4;
+  }
+}
+
 /* Animation delays */
+.animation-delay-500 { animation-delay: 0.5s; }
 .animation-delay-1000 { animation-delay: 1s; }
+.animation-delay-1500 { animation-delay: 1.5s; }
 .animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-2500 { animation-delay: 2.5s; }
 
 /* Smooth section transitions */
 section {
