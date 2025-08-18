@@ -391,13 +391,19 @@
 
 <script setup>
 // Page meta
+// SEO Meta
 useSeoMeta({
-  title: 'Contact Us - Noktah Inovasi Teknologi',
-  description: 'Get in touch with Noktah Inovasi Teknologi. Contact our team for innovative solutions, partnership opportunities, or career inquiries. Located in Gresik, East Java, Indonesia.',
+  title: 'Contact Us - Noktah Inovasi Teknologi | Get In Touch',
+  description: 'Get in touch with Noktah Inovasi Teknologi. Contact our team for innovative solutions, partnership opportunities, or career inquiries. Located in Gresik, East Java, Indonesia. Email: core@noktah.co | Phone: +62 851-7301-7749',
   ogTitle: 'Contact Us - Noktah Inovasi Teknologi',
-  ogDescription: 'Connect with our cross-field innovation team. We\'re ready to push beyond conventional limits together.',
+  ogDescription: 'Connect with our cross-field innovation team. Ready to push beyond conventional limits together? Let\'s build something amazing.',
   ogImage: '/images/noktah-logo.png',
-  twitterCard: 'summary_large_image'
+  ogUrl: 'https://noktah.co/contact',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Contact Noktah Inovasi Teknologi',
+  twitterDescription: 'Ready to collaborate? Contact our innovation team in Gresik, Indonesia for breakthrough solutions.',
+  twitterImage: '/images/noktah-logo.png',
+  keywords: 'contact noktah, get in touch, collaboration opportunities, innovation team, Gresik Indonesia contact, partnership inquiries, career opportunities'
 })
 
 // Form reactive state

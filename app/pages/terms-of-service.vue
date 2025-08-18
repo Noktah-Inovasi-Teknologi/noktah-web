@@ -913,13 +913,19 @@
 
 <script setup>
 // Page meta
+// SEO Meta
 useSeoMeta({
-  title: 'Terms of Service - Noktah Inovasi Teknologi',
-  description: 'Terms of Service for Noktah Inovasi Teknologi and all brands (Eskala, Memomancy, Fieldpass, Heavy Station). Indonesian law compliant legal framework.',
+  title: 'Terms of Service - Noktah Inovasi Teknologi | Legal Framework',
+  description: 'Terms of Service for Noktah Inovasi Teknologi and all brands (Eskala, Memomancy, Fieldpass, Heavy Station). Indonesian law compliant legal framework for services and partnerships.',
   ogTitle: 'Terms of Service - Noktah Inovasi Teknologi',
   ogDescription: 'Comprehensive terms of service covering all Noktah brands. Indonesian law compliant legal framework.',
   ogImage: '/images/noktah-logo.png',
-  twitterCard: 'summary_large_image'
+  ogUrl: 'https://noktah.co/terms-of-service',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Noktah Terms of Service',
+  twitterDescription: 'Legal framework for all Noktah brands. Indonesian law compliant terms and conditions.',
+  twitterImage: '/images/noktah-logo.png',
+  keywords: 'terms of service, legal framework, Indonesian law, noktah terms, service agreement, user agreement, legal compliance'
 })
 
 // Last updated date

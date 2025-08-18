@@ -384,14 +384,19 @@
 </template>
 
 <script setup>
-// Page meta
+// SEO Meta
 useSeoMeta({
-  title: 'Our Brands - Noktah Inovasi Teknologi',
-  description: 'Discover Noktah\'s innovative brand portfolio: Eskala (All-in-One Creative Partner), Memomancy (professional photography), Fieldpass (sports technology), and Heavy Station (premium PC hardware).',
+  title: 'Our Brands - Noktah Inovasi Teknologi | Portfolio of Innovation',
+  description: 'Discover Noktah\'s innovative brand portfolio: Eskala (All-in-One Creative Partner), Memomancy (professional photography), Fieldpass (sports technology), and Heavy Station (premium PC hardware). Each brand represents cross-field innovation excellence.',
   ogTitle: 'Our Brands - Noktah Inovasi Teknologi',
-  ogDescription: 'Explore our portfolio of brands transforming industries through cross-field innovation and cutting-edge technology solutions.',
+  ogDescription: 'Explore our portfolio of brands transforming industries through cross-field innovation: Eskala, Memomancy, Fieldpass, and Heavy Station.',
   ogImage: '/images/noktah-logo.png',
-  twitterCard: 'summary_large_image'
+  ogUrl: 'https://noktah.co/brands',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Noktah Brand Portfolio',
+  twitterDescription: 'From AI-powered creative solutions to sports tech platforms - discover our innovative brand universe.',
+  twitterImage: '/images/noktah-logo.png',
+  keywords: 'noktah brands, eskala creative partner, memomancy photography, fieldpass sports app, heavy station PC hardware, brand portfolio, cross-field innovation'
 })
 </script>
 

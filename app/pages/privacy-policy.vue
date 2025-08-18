@@ -676,14 +676,19 @@
 </template>
 
 <script setup>
-// Page meta
+// SEO Meta
 useSeoMeta({
-  title: 'Privacy Policy - Noktah Inovasi Teknologi',
-  description: 'Learn how Noktah Inovasi Teknologi and our brands (Eskala, Memomancy, Fieldpass, Heavy Station) collect, use, and protect your personal data. UU PDP 2022 compliant.',
+  title: 'Privacy Policy - Noktah Inovasi Teknologi | Data Protection',
+  description: 'Learn how Noktah Inovasi Teknologi and our brands (Eskala, Memomancy, Fieldpass, Heavy Station) collect, use, and protect your personal data. UU PDP 2022 compliant privacy practices.',
   ogTitle: 'Privacy Policy - Noktah Inovasi Teknologi',
   ogDescription: 'Comprehensive privacy policy covering all Noktah brands. UU PDP 2022 compliant data protection practices.',
   ogImage: '/images/noktah-logo.png',
-  twitterCard: 'summary_large_image'
+  ogUrl: 'https://noktah.co/privacy-policy',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Noktah Privacy Policy',
+  twitterDescription: 'Transparent data protection practices across all Noktah brands. UU PDP 2022 compliant.',
+  twitterImage: '/images/noktah-logo.png',
+  keywords: 'privacy policy, data protection, UU PDP 2022, personal data, noktah privacy, eskala privacy, memomancy privacy'
 })
 
 // Last updated date

@@ -495,14 +495,19 @@
 </template>
 
 <script setup>
-// Page meta
+// SEO Meta
 useSeoMeta({
-  title: 'About - Noktah Inovasi Teknologi',
-  description: 'Learn about Noktah Inovasi Teknologi, the main holding brand of CV. Amerta Meta Data. Discover our vision, mission, values, and cross-field innovation approach.',
-  ogTitle: 'About - Noktah Inovasi Teknologi',
-  ogDescription: 'Cross-field innovation company building solutions that redefine what\'s possible in technology, creativity, business, and beyond.',
+  title: 'About - Noktah Inovasi Teknologi | Cross-Field Innovation Journey',
+  description: 'Learn about Noktah Inovasi Teknologi, the main holding brand of CV. Amerta Meta Data. Discover our vision, mission, values, and cross-field innovation approach combining AI, creative services, sports technology, and hardware engineering.',
+  ogTitle: 'About - Noktah Inovasi Teknologi | Innovation Journey',
+  ogDescription: 'Forward-thinking technology company dedicated to breaking conventional boundaries through innovative cross-field solutions. Based in Gresik, East Java, Indonesia.',
   ogImage: '/images/noktah-logo.png',
-  twitterCard: 'summary_large_image'
+  ogUrl: 'https://noktah.co/about',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'About Noktah Inovasi Teknologi',
+  twitterDescription: 'Discover our innovation journey: Bold, Creative, Adaptable, Innovative. Building the future through cross-field collaboration.',
+  twitterImage: '/images/noktah-logo.png',
+  keywords: 'about noktah, innovation company, cross-field technology, CV Amerta Meta Data, Gresik Indonesia, technology company profile, innovation values'
 })
 </script>
 

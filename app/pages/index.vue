@@ -530,6 +530,21 @@
 </template>
 
 <script setup>
+// SEO Meta
+useSeoMeta({
+  title: 'Noktah Inovasi Teknologi - Pushing Beyond Conventional Limits',
+  description: 'An innovation-driven company building cross-field solutions that redefine what\'s possible in technology, creativity, business, and beyond. Discover our portfolio of brands transforming industries through innovation.',
+  ogTitle: 'Noktah Inovasi Teknologi - Cross-Field Innovation',
+  ogDescription: 'Building breakthrough solutions through AI, creative services, sports technology, and hardware engineering. Where Industries Meet.',
+  ogImage: '/images/noktah-logo.png',
+  ogUrl: 'https://noktah.co',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Noktah Inovasi Teknologi - Innovation Hub',
+  twitterDescription: 'Cross-field innovation company with brands like Eskala, Memomancy, Fieldpass, and Heavy Station.',
+  twitterImage: '/images/noktah-logo.png',
+  keywords: 'innovation, technology, AI, creative services, sports technology, hardware engineering, cross-field solutions, Indonesia, Gresik'
+})
+
 // Brand filtering state
 const selectedFilter = ref('all')
 
