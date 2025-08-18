@@ -291,7 +291,7 @@
         </div>
 
         <div class="relative">
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl p-4 sm:p-6 lg:p-8">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl p-4 sm:p-6 lg:p-8 relative z-10">
             <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-3 sm:p-4 lg:p-6 transition-all duration-500 cursor-pointer hover:scale-105">
               <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-3 sm:mb-4 bg-primary-400/30 dark:bg-primary-400/20 backdrop-blur-xl border border-primary-300/40 dark:border-primary-500/30 shadow-xl shadow-primary-500/30 dark:shadow-primary-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-primary-500/50 dark:group-hover:shadow-primary-400/60 transition-all duration-500">
                 <UIcon name="i-heroicons-cpu-chip" class="text-2xl sm:text-3xl lg:text-4xl text-primary-600 dark:text-primary-400 group-hover:scale-110 transition-transform duration-300" />
@@ -323,7 +323,7 @@
           </div>
 
           <!-- Interactive Connection Network -->
-          <div class="hidden lg:block absolute inset-0 pointer-events-none overflow-hidden">
+          <div class="hidden lg:block absolute inset-0 pointer-events-none overflow-hidden z-0">
             <svg class="w-full h-full" viewBox="0 0 1000 300">
               <defs>
                 <!-- Connection gradient removed for solid colors -->
@@ -370,7 +370,7 @@
           </div>
         </div>
 
-        <div class="text-center bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl p-8 max-w-4xl mx-auto">
+        <div class="text-center bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl p-8 max-w-4xl mx-auto relative z-10">
           <div class="flex items-center justify-center mb-4">
             <UIcon name="i-heroicons-light-bulb" class="text-3xl text-yellow-500 mr-3 animate-pulse" />
             <h4 class="text-xl font-bold text-gray-900 dark:text-white">The Noktah Approach</h4>
