@@ -19,7 +19,7 @@
           </div>
           
           <!-- Animated Title -->
-          <h1 class="text-6xl md:text-8xl font-black text-gray-900 dark:text-white mb-6 leading-none">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-gray-900 dark:text-white mb-6 leading-none">
             <span class="font-bold italic" style="font-family: 'Montserrat', sans-serif;">
               NOKTAH
             </span>
@@ -27,39 +27,37 @@
           
           <!-- Animated Tagline -->
           <div class="overflow-hidden mb-4">
-            <p class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-200 animate-fade-in-up animation-delay-500">
+            <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 animate-fade-in-up animation-delay-500">
               Pushing Beyond Conventional Limits
             </p>
           </div>
           
           <!-- Animated Description -->
           <div class="overflow-hidden mb-12">
-            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
+            <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
               An innovation-driven company building cross-field solutions that redefine what's possible in technology, creativity, business, and beyond.
             </p>
           </div>
         </div>
         
+        <!-- Enhanced Scroll Indicator -->
+        <div class="flex flex-col items-center animate-fade-in-up animation-delay-1200 mb-8">
+          <div class="w-5 h-8 sm:w-6 sm:h-10 border-2 border-gray-400 rounded-full flex justify-center mb-1 sm:mb-2 animate-bounce">
+            <div class="w-1 h-2 sm:h-3 bg-gray-400 rounded-full animate-ping mt-1 sm:mt-2"></div>
+          </div>
+          <UIcon name="i-heroicons-chevron-down" class="text-lg sm:text-xl text-gray-400" />
+        </div>
+        
         <!-- Animated Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-1500">
-          <UButton size="xl" class="px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-300 hover:shadow-2xl rounded-full">
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in-up animation-delay-1500 px-4">
+          <UButton size="lg" class="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transform hover:scale-105 transition-all duration-300 hover:shadow-2xl rounded-full">
             <UIcon name="i-heroicons-rocket-launch" class="mr-2 animate-bounce" />
             Explore Our Brands
           </UButton>
-          <UButton variant="outline" size="xl" class="px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-300 hover:shadow-lg rounded-full">
+          <UButton variant="outline" size="lg" class="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transform hover:scale-105 transition-all duration-300 hover:shadow-lg rounded-full">
             <UIcon name="i-heroicons-users" class="mr-2" />
             Join Our Mission
           </UButton>
-        </div>
-      </div>
-      
-      <!-- Enhanced Scroll Indicator -->
-      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div class="flex flex-col items-center animate-bounce">
-          <div class="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center mb-2">
-            <div class="w-1 h-3 bg-gray-400 rounded-full animate-ping mt-2"></div>
-          </div>
-          <UIcon name="i-heroicons-chevron-down" class="text-xl text-gray-400" />
         </div>
       </div>
     </section>
@@ -83,8 +81,8 @@
           </p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <UCard class="text-center p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <UCard class="text-center p-4 sm:p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-4">
                 <UIcon name="i-heroicons-bolt" class="text-4xl text-orange-500 dark:text-orange-400" />
@@ -94,7 +92,7 @@
             <p class="text-gray-600 dark:text-gray-400">We embrace calculated risks and aren't afraid to pursue ambitious ideas that create real value.</p>
           </UCard>
 
-          <UCard class="text-center p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
+          <UCard class="text-center p-4 sm:p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-4">
                 <UIcon name="i-heroicons-paint-brush" class="text-4xl text-rose-500 dark:text-rose-400" />
@@ -104,7 +102,7 @@
             <p class="text-gray-600 dark:text-gray-400">Fresh perspectives and unconventional approaches help us solve problems in ways others haven't considered.</p>
           </UCard>
 
-          <UCard class="text-center p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
+          <UCard class="text-center p-4 sm:p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-4">
                 <UIcon name="i-heroicons-arrows-right-left" class="text-4xl text-emerald-500 dark:text-emerald-400" />
@@ -114,7 +112,7 @@
             <p class="text-gray-600 dark:text-gray-400">We stay agile and responsive, quickly adapting to new technologies and market shifts as they emerge.</p>
           </UCard>
 
-          <UCard class="text-center p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
+          <UCard class="text-center p-4 sm:p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-4">
                 <UIcon name="i-heroicons-light-bulb" class="text-4xl text-violet-500 dark:text-violet-400" />
@@ -148,11 +146,11 @@
             From AI-powered creative solutions to sports tech platforms, discover our portfolio of brands transforming industries through innovation.
           </p>
           
-          <div class="flex justify-center space-x-4 mb-12 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full p-3 max-w-fit mx-auto">
+          <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-12 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full p-2 sm:p-3 max-w-fit mx-auto">
             <UButton 
               :variant="selectedFilter === 'all' ? 'soft' : 'ghost'" 
               size="sm" 
-              class="rounded-full px-4" 
+              class="rounded-full px-3 sm:px-4 text-sm sm:text-base" 
               @click="setFilter('all')"
             >
               All Brands
@@ -160,7 +158,7 @@
             <UButton 
               :variant="selectedFilter === 'live' ? 'soft' : 'ghost'" 
               size="sm" 
-              class="rounded-full px-4" 
+              class="rounded-full px-3 sm:px-4 text-sm sm:text-base" 
               @click="setFilter('live')"
             >
               Live Brands
@@ -168,7 +166,7 @@
             <UButton 
               :variant="selectedFilter === 'development' ? 'soft' : 'ghost'" 
               size="sm" 
-              class="rounded-full px-4" 
+              class="rounded-full px-3 sm:px-4 text-sm sm:text-base" 
               @click="setFilter('development')"
             >
               Brands in Development
@@ -179,7 +177,7 @@
         <TransitionGroup 
           name="brand-filter" 
           tag="div" 
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
         >
           <!-- Eskala - Live Brand -->
           <a v-if="isVisible('live')" key="eskala" href="https://eskala.id" target="_blank" class="block">
@@ -293,34 +291,34 @@
         </div>
 
         <div class="relative">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl p-8">
-            <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-6 transition-all duration-500 cursor-pointer hover:scale-105">
-              <div class="w-24 h-24 mx-auto mb-4 bg-primary-400/30 dark:bg-primary-400/20 backdrop-blur-xl border border-primary-300/40 dark:border-primary-500/30 shadow-xl shadow-primary-500/30 dark:shadow-primary-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-primary-500/50 dark:group-hover:shadow-primary-400/60 transition-all duration-500">
-                <UIcon name="i-heroicons-cpu-chip" class="text-4xl text-primary-600 dark:text-primary-400 group-hover:scale-110 transition-transform duration-300" />
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl p-4 sm:p-6 lg:p-8">
+            <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-3 sm:p-4 lg:p-6 transition-all duration-500 cursor-pointer hover:scale-105">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-3 sm:mb-4 bg-primary-400/30 dark:bg-primary-400/20 backdrop-blur-xl border border-primary-300/40 dark:border-primary-500/30 shadow-xl shadow-primary-500/30 dark:shadow-primary-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-primary-500/50 dark:group-hover:shadow-primary-400/60 transition-all duration-500">
+                <UIcon name="i-heroicons-cpu-chip" class="text-2xl sm:text-3xl lg:text-4xl text-primary-600 dark:text-primary-400 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 class="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">Artificial Intelligence</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Smart algorithms that learn and adapt</p>
+              <h3 class="text-sm sm:text-base lg:text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">Artificial Intelligence</h3>
+              <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Smart algorithms that learn and adapt</p>
             </div>
-            <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-6 transition-all duration-500 cursor-pointer hover:scale-105">
-              <div class="w-24 h-24 mx-auto mb-4 bg-emerald-400/30 dark:bg-emerald-400/20 backdrop-blur-xl border border-emerald-300/40 dark:border-emerald-500/30 shadow-xl shadow-emerald-500/30 dark:shadow-emerald-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-emerald-500/50 dark:group-hover:shadow-emerald-400/60 transition-all duration-500">
-                <UIcon name="i-heroicons-trophy" class="text-4xl text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform duration-300" />
+            <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-3 sm:p-4 lg:p-6 transition-all duration-500 cursor-pointer hover:scale-105">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-3 sm:mb-4 bg-emerald-400/30 dark:bg-emerald-400/20 backdrop-blur-xl border border-emerald-300/40 dark:border-emerald-500/30 shadow-xl shadow-emerald-500/30 dark:shadow-emerald-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-emerald-500/50 dark:group-hover:shadow-emerald-400/60 transition-all duration-500">
+                <UIcon name="i-heroicons-trophy" class="text-2xl sm:text-3xl lg:text-4xl text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 class="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">Sports Technology</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Connecting athletes and venues digitally</p>
+              <h3 class="text-sm sm:text-base lg:text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">Sports Technology</h3>
+              <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Connecting athletes and venues digitally</p>
             </div>
-            <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-6 transition-all duration-500 cursor-pointer hover:scale-105">
-              <div class="w-24 h-24 mx-auto mb-4 bg-amber-400/30 dark:bg-amber-400/20 backdrop-blur-xl border border-amber-300/40 dark:border-amber-500/30 shadow-xl shadow-amber-500/30 dark:shadow-amber-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-amber-500/50 dark:group-hover:shadow-amber-400/60 transition-all duration-500">
-                <UIcon name="i-heroicons-camera" class="text-4xl text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform duration-300" />
+            <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-3 sm:p-4 lg:p-6 transition-all duration-500 cursor-pointer hover:scale-105">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-3 sm:mb-4 bg-amber-400/30 dark:bg-amber-400/20 backdrop-blur-xl border border-amber-300/40 dark:border-amber-500/30 shadow-xl shadow-amber-500/30 dark:shadow-amber-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-amber-500/50 dark:group-hover:shadow-amber-400/60 transition-all duration-500">
+                <UIcon name="i-heroicons-camera" class="text-2xl sm:text-3xl lg:text-4xl text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 class="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors duration-300">Creative Services</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Professional content creation at scale</p>
+              <h3 class="text-sm sm:text-base lg:text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors duration-300">Creative Services</h3>
+              <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Professional content creation at scale</p>
             </div>
-            <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-6 transition-all duration-500 cursor-pointer hover:scale-105">
-              <div class="w-24 h-24 mx-auto mb-4 bg-violet-400/30 dark:bg-violet-400/20 backdrop-blur-xl border border-violet-300/40 dark:border-violet-500/30 shadow-xl shadow-violet-500/30 dark:shadow-violet-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-violet-500/50 dark:group-hover:shadow-violet-400/60 transition-all duration-500">
-                <UIcon name="i-heroicons-wrench-screwdriver" class="text-4xl text-violet-600 dark:text-violet-400 group-hover:scale-110 transition-transform duration-300" />
+            <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-3 sm:p-4 lg:p-6 transition-all duration-500 cursor-pointer hover:scale-105">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-3 sm:mb-4 bg-violet-400/30 dark:bg-violet-400/20 backdrop-blur-xl border border-violet-300/40 dark:border-violet-500/30 shadow-xl shadow-violet-500/30 dark:shadow-violet-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-violet-500/50 dark:group-hover:shadow-violet-400/60 transition-all duration-500">
+                <UIcon name="i-heroicons-wrench-screwdriver" class="text-2xl sm:text-3xl lg:text-4xl text-violet-600 dark:text-violet-400 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 class="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors duration-300">Hardware Engineering</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Custom PC components built for performance</p>
+              <h3 class="text-sm sm:text-base lg:text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors duration-300">Hardware Engineering</h3>
+              <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Custom PC components built for performance</p>
             </div>
           </div>
 
@@ -406,8 +404,8 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="mb-6">
                 <UIcon name="i-heroicons-shopping-bag" class="text-5xl text-primary-600 dark:text-primary-400 mx-auto mb-4" />
@@ -425,7 +423,7 @@
             </NuxtLink>
           </UCard>
 
-          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
+          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="mb-6">
                 <UIcon name="i-heroicons-user-group" class="text-5xl text-emerald-600 dark:text-emerald-400 mx-auto mb-4" />
@@ -443,7 +441,7 @@
             </NuxtLink>
           </UCard>
 
-          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
+          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="mb-6">
                 <UIcon name="i-heroicons-users" class="text-5xl text-violet-600 dark:text-violet-400 mx-auto mb-4" />
@@ -480,7 +478,7 @@
         </div>
       </div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Our <span class="text-primary-500">Culture</span> of Innovation
@@ -489,7 +487,7 @@
               We believe that the best innovations come from diverse teams working in an environment that encourages experimentation, celebrates failure as learning, and rewards bold thinking.
             </p>
             
-            <div class="space-y-6 bg-white/40 dark:bg-white/10 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-2xl p-6">
+            <div class="space-y-4 sm:space-y-6 bg-white/40 dark:bg-white/10 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-2xl p-4 sm:p-6">
               <div class="flex items-start space-x-4">
                 <UIcon name="i-heroicons-beaker" class="text-2xl text-primary-600 dark:text-primary-400 mt-1" />
                 <div>

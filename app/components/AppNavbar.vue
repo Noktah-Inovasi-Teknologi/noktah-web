@@ -3,15 +3,15 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo/Brand -->
-        <div class="flex-shrink-0 flex items-center space-x-3">
-          <div class="w-12 h-12 bg-white/[0.07] backdrop-blur-sm rounded-full flex items-center justify-center border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-1">
+        <div class="flex-shrink-0 flex items-center space-x-2 sm:space-x-3">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/[0.07] backdrop-blur-sm rounded-full flex items-center justify-center border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-1">
             <img 
               src="/images/noktah-logo.png" 
               alt="Noktah Logo" 
               class="w-full h-full object-contain"
             />
           </div>
-          <h1 class="text-xl font-bold italic text-gray-900 dark:text-white" style="font-family: 'Montserrat', sans-serif;">
+          <h1 class="text-lg sm:text-xl font-bold italic text-gray-900 dark:text-white" style="font-family: 'Montserrat', sans-serif;">
             NOKTAH
           </h1>
         </div>
@@ -49,17 +49,17 @@
         </div>
 
         <!-- Color Mode Toggle -->
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2 sm:space-x-4">
           <ClientOnly>
-            <div class="flex items-center space-x-2">
-              <UIcon name="i-heroicons-sun" class="text-lg text-yellow-500" />
+            <div class="flex items-center space-x-1 sm:space-x-2">
+              <UIcon name="i-heroicons-sun" class="text-base sm:text-lg text-yellow-500" />
               <USwitch
                 :model-value="$colorMode.value === 'dark'"
                 @update:model-value="$colorMode.preference = $event ? 'dark' : 'light'"
                 color="primary"
                 size="sm"
               />
-              <UIcon name="i-heroicons-moon" class="text-lg text-gray-600 dark:text-gray-300" />
+              <UIcon name="i-heroicons-moon" class="text-base sm:text-lg text-gray-600 dark:text-gray-300" />
             </div>
           </ClientOnly>
 
@@ -69,6 +69,7 @@
               icon="i-heroicons-bars-3"
               variant="ghost"
               color="gray"
+              size="sm"
               @click="mobileMenuOpen = !mobileMenuOpen"
             />
           </div>
@@ -77,7 +78,7 @@
 
       <!-- Mobile Navigation Menu -->
       <div v-if="mobileMenuOpen" class="md:hidden">
-        <div class="px-2 pt-2 pb-3 space-y-3 border-t border-gray-200 dark:border-gray-800">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:space-y-3 border-t border-gray-200 dark:border-gray-800">
           <NuxtLink
             to="/"
             class="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 text-base font-medium transition-colors"

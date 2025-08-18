@@ -19,7 +19,7 @@
           </div>
           
           <!-- Title -->
-          <h1 class="text-6xl md:text-8xl font-black text-gray-900 dark:text-white mb-6 leading-none">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-gray-900 dark:text-white mb-6 leading-none">
             <span class="font-bold italic" style="font-family: 'Montserrat', sans-serif;">
               NOKTAH
             </span>
@@ -27,27 +27,25 @@
           
           <!-- Subtitle -->
           <div class="overflow-hidden mb-4">
-            <p class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-200 animate-fade-in-up animation-delay-500">
+            <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 animate-fade-in-up animation-delay-500">
               About Our Innovation Journey
             </p>
           </div>
           
           <!-- Description -->
           <div class="overflow-hidden mb-12">
-            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
+            <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
               Discover how we're building cross-field solutions that push beyond conventional limits in technology, creativity, and business.
             </p>
-          </div>
+            </div>
         </div>
-      </div>
-      
-      <!-- Enhanced Scroll Indicator -->
-      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div class="flex flex-col items-center animate-bounce">
-          <div class="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center mb-2">
-            <div class="w-1 h-3 bg-gray-400 rounded-full animate-ping mt-2"></div>
+        
+        <!-- Enhanced Scroll Indicator -->
+        <div class="flex flex-col items-center animate-fade-in-up animation-delay-1200">
+          <div class="w-5 h-8 sm:w-6 sm:h-10 border-2 border-gray-400 rounded-full flex justify-center mb-1 sm:mb-2 animate-bounce">
+            <div class="w-1 h-2 sm:h-3 bg-gray-400 rounded-full animate-ping mt-1 sm:mt-2"></div>
           </div>
-          <UIcon name="i-heroicons-chevron-down" class="text-xl text-gray-400" />
+          <UIcon name="i-heroicons-chevron-down" class="text-lg sm:text-xl text-gray-400" />
         </div>
       </div>
     </section>
@@ -70,9 +68,9 @@
           </p>
         </div>
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div>
-            <div class="space-y-6 text-lg text-gray-700 dark:text-gray-300">
+            <div class="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-700 dark:text-gray-300">
               <p>
                 <strong class="text-primary-600 dark:text-primary-400">Noktah Inovasi Teknologi</strong> serves as the main holding brand of <strong>CV. Amerta Meta Data</strong>, operating from Gresik, East Java, Indonesia. Our foundation rests on a core principle: the most impactful solutions emerge when diverse fields converge.
               </p>
@@ -138,9 +136,9 @@
           </h2>
         </div>
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
           <!-- Vision -->
-          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-eye" class="text-4xl text-primary-600 dark:text-primary-400 mr-4" />
@@ -153,7 +151,7 @@
           </UCard>
 
           <!-- Mission -->
-          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-flag" class="text-4xl text-emerald-600 dark:text-emerald-400 mr-4" />
@@ -191,8 +189,8 @@
           </p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-6">
                 <UIcon name="i-heroicons-bolt" class="text-5xl text-orange-500 dark:text-orange-400" />
@@ -202,7 +200,7 @@
             <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We pursue ambitious initiatives that others might consider too complex or unconventional. Our willingness to tackle challenging projects with calculated risk-taking drives breakthrough innovation.</p>
           </UCard>
 
-          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
+          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-6">
                 <UIcon name="i-heroicons-paint-brush" class="text-5xl text-rose-500 dark:text-rose-400" />
@@ -212,7 +210,7 @@
             <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Our approach to problem-solving transcends traditional boundaries, drawing inspiration and methodologies from diverse disciplines to create novel solutions that conventional thinking might overlook.</p>
           </UCard>
 
-          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
+          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-6">
                 <UIcon name="i-heroicons-arrows-right-left" class="text-5xl text-emerald-500 dark:text-emerald-400" />
@@ -222,7 +220,7 @@
             <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We maintain organizational agility that enables rapid response to technological advances and market evolution. This flexibility allows us to capitalize on emerging opportunities while adjusting strategies as conditions change.</p>
           </UCard>
 
-          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
+          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-6">
                 <UIcon name="i-heroicons-light-bulb" class="text-5xl text-violet-500 dark:text-violet-400" />
@@ -244,9 +242,9 @@
           </h2>
         </div>
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
           <!-- Legal Entity -->
-          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-building-office-2" class="text-4xl text-primary-600 dark:text-primary-400 mr-4" />
@@ -270,7 +268,7 @@
           </UCard>
 
           <!-- Business Focus -->
-          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-chart-bar" class="text-4xl text-emerald-600 dark:text-emerald-400 mr-4" />
@@ -325,7 +323,7 @@
 
         <div class="space-y-16">
           <!-- Approach Steps -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             <!-- Step 1 -->
             <div class="text-center relative">
               <div class="w-24 h-24 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full flex items-center justify-center mx-auto mb-6">
@@ -389,9 +387,9 @@
           </p>
         </div>
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
           <!-- Contact Information -->
-          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-map-pin" class="text-4xl text-primary-600 dark:text-primary-400 mr-4" />
@@ -438,7 +436,7 @@
           </UCard>
 
           <!-- Social & Links -->
-          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-link" class="text-4xl text-emerald-600 dark:text-emerald-400 mr-4" />
