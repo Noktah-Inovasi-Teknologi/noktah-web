@@ -438,7 +438,7 @@ const faqItems = [
   },
   {
     label: 'Do you offer services for individual clients or only businesses?',
-    content: 'Our brands serve both individual and business clients. Eskala and Memomancy work with businesses and individuals, while Fieldpass and Heavy Station cater to both consumer and enterprise markets.'
+    content: 'Our brands serve both individual and business clients. Eskala provides all-in-one creative partnership services and Memomancy offers professional photography for businesses and individuals, while Fieldpass and Heavy Station cater to both consumer and enterprise markets.'
   },
   {
     label: 'What industries do you work with?',

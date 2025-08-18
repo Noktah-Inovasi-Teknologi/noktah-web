@@ -102,18 +102,18 @@
                     </div>
                     
                     <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                      Professional-grade creative partner leveraging AI agents and automation to deliver impactful, revenue-increasing content. Eskala bridges the gap between creative vision and business results through intelligent workflows and data-driven design strategies.
+                      All-in-One Creative Partner delivering high-quality brand-focused creative services designed to increase revenue and brand impact. Eskala provides comprehensive creative solutions from social media content to complete brand campaigns, ensuring every deliverable drives measurable business results.
                     </p>
                     
                     <!-- Features -->
                     <div class="space-y-3 mb-6">
                       <div class="flex items-center">
                         <div class="w-2 h-2 bg-[#FF6B35] rounded-full mr-3"></div>
-                        <span class="text-sm text-gray-700 dark:text-gray-300">AI-Powered Creative Workflows</span>
+                        <span class="text-sm text-gray-700 dark:text-gray-300">All-in-One Creative Solutions</span>
                       </div>
                       <div class="flex items-center">
                         <div class="w-2 h-2 bg-[#FF6B35] rounded-full mr-3"></div>
-                        <span class="text-sm text-gray-700 dark:text-gray-300">Professional Content Creation</span>
+                        <span class="text-sm text-gray-700 dark:text-gray-300">Brand-Focused Creative Services</span>
                       </div>
                       <div class="flex items-center">
                         <div class="w-2 h-2 bg-[#FF6B35] rounded-full mr-3"></div>
@@ -387,7 +387,7 @@
 // Page meta
 useSeoMeta({
   title: 'Our Brands - Noktah Inovasi Teknologi',
-  description: 'Discover Noktah\'s innovative brand portfolio: Eskala (AI-powered creative solutions), Memomancy (professional photography), Fieldpass (sports technology), and Heavy Station (premium PC hardware).',
+  description: 'Discover Noktah\'s innovative brand portfolio: Eskala (All-in-One Creative Partner), Memomancy (professional photography), Fieldpass (sports technology), and Heavy Station (premium PC hardware).',
   ogTitle: 'Our Brands - Noktah Inovasi Teknologi',
   ogDescription: 'Explore our portfolio of brands transforming industries through cross-field innovation and cutting-edge technology solutions.',
   ogImage: '/images/noktah-logo.png',

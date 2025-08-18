@@ -109,7 +109,7 @@
                       <span class="text-gray-900 dark:text-white font-medium">Eskala</span>
                       <UIcon name="i-heroicons-arrow-top-right-on-square" class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
-                    <p class="text-xs mt-1">Professional creative partner</p>
+                    <p class="text-xs mt-1">All-in-One Creative Partner</p>
                   </a>
                 </li>
                 <li>

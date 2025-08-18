@@ -370,7 +370,7 @@
               "The most interesting projects happen when you combine things that don't usually go together. AI + creative work, sports + tech, hardware + software. That's where we find the best opportunities."
             </blockquote>
             <p class="text-gray-600 dark:text-gray-400">
-              This approach shapes all our brands - from Eskala's professional creative services with AI tools to Fieldpass's sports booking platform.
+              This approach shapes all our brands - from Eskala's all-in-one creative partnership delivering revenue-focused brand solutions to Fieldpass's sports booking platform.
             </p>
           </div>
         </div>

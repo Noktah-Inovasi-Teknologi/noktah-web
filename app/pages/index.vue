@@ -196,7 +196,7 @@
               </template>
               <div class="p-6">
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Eskala</h3>
-                <p class="text-gray-600 dark:text-gray-400">Professional-grade creative partner leveraging AI agents and automation to deliver impactful, revenue-increasing content.</p>
+                <p class="text-gray-600 dark:text-gray-400">All-in-One Creative Partner delivering high-quality brand-focused creative services designed to increase revenue and brand impact.</p>
               </div>
             </UCard>
           </a>
