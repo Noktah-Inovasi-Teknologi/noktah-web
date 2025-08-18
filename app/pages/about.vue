@@ -2,28 +2,42 @@
   <div class="min-h-screen">
     <!-- Hero Section -->
     <section class="h-screen flex items-center justify-center relative overflow-hidden bg-gray-50 dark:bg-[#0D1117]">
-      <!-- Animated background elements -->
-      <div class="absolute inset-0 overflow-hidden">
+      <!-- Breathing Circle Animation -->
+      <div class="absolute inset-0 overflow-hidden flex items-center justify-center">
         <div class="breathing-circle"></div>
-        <div class="absolute top-20 left-10 w-32 h-32 bg-primary-300/30 dark:bg-primary-700/40 rounded-full blur-xl animate-pulse"></div>
-        <div class="absolute bottom-20 right-10 w-24 h-24 bg-violet-300/30 dark:bg-violet-700/40 rounded-full blur-lg animate-pulse animation-delay-1000"></div>
       </div>
 
-      <div class="text-center z-10 max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center z-10 max-w-5xl px-4">
         <div class="mb-8">
-          <img 
-            src="/images/noktah-logo.png" 
-            alt="Noktah Logo" 
-            class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto object-contain mb-6 sm:mb-8"
-          />
+          <!-- Noktah Logo -->
+          <div class="mb-6">
+            <img 
+              src="/images/noktah-logo.png" 
+              alt="Noktah Logo" 
+              class="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 mx-auto object-contain"
+            />
+          </div>
           
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 dark:text-white mb-4 sm:mb-6 leading-none">
-            About <span class="text-primary-500">Noktah</span>
+          <!-- Title -->
+          <h1 class="text-6xl md:text-8xl font-black text-gray-900 dark:text-white mb-6 leading-none">
+            <span class="font-bold italic" style="font-family: 'Montserrat', sans-serif;">
+              NOKTAH
+            </span>
           </h1>
           
-          <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto px-2 sm:px-0">
-            Building cross-field solutions that redefine what's possible in technology, creativity, business, and beyond. We are the main holding brand of CV. Amerta Meta Data.
-          </p>
+          <!-- Subtitle -->
+          <div class="overflow-hidden mb-4">
+            <p class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-200 animate-fade-in-up animation-delay-500">
+              About Our Innovation Journey
+            </p>
+          </div>
+          
+          <!-- Description -->
+          <div class="overflow-hidden mb-12">
+            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
+              Discover how we're building cross-field solutions that push beyond conventional limits in technology, creativity, and business.
+            </p>
+          </div>
         </div>
       </div>
       
@@ -40,21 +54,33 @@
 
     <!-- Company Overview -->
     <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
+      <!-- Floating geometric shapes for visual interest -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-20 left-10 w-32 h-32 bg-primary-300/30 dark:bg-primary-700/40 rounded-full blur-xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-24 h-24 bg-violet-300/30 dark:bg-violet-700/40 rounded-full blur-lg animate-pulse animation-delay-1000"></div>
+        <div class="absolute top-1/2 right-1/4 w-16 h-16 bg-blue-300/30 dark:bg-blue-700/40 rounded-full blur-md animate-pulse animation-delay-2000"></div>
+      </div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            Who We <span class="text-primary-500">Are</span>
+          </h2>
+          <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            A forward-thinking technology company dedicated to breaking conventional boundaries through innovative cross-field solutions.
+          </p>
+        </div>
+        
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <div>
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8">
-              Who We <span class="text-primary-500">Are</span>
-            </h2>
-            <div class="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-700 dark:text-gray-300">
+            <div class="space-y-6 text-lg text-gray-700 dark:text-gray-300">
               <p>
-                <strong class="text-primary-600 dark:text-primary-400">Noktah Inovasi Teknologi</strong> is the main holding brand of <strong>CV. Amerta Meta Data</strong>. We started with a simple idea: the best solutions happen when you mix different fields together.
+                <strong class="text-primary-600 dark:text-primary-400">Noktah Inovasi Teknologi</strong> serves as the main holding brand of <strong>CV. Amerta Meta Data</strong>, operating from Gresik, East Java, Indonesia. Our foundation rests on a core principle: the most impactful solutions emerge when diverse fields converge.
               </p>
               <p>
-                Instead of staying in one lane, we work across AI, creative services, sports tech, and hardware. Each project teaches us something new that we can apply to the next one. It's this cross-pollination that makes our work interesting.
+                Rather than confining ourselves to traditional industry silos, we deliberately operate across artificial intelligence, creative services, sports technology, and hardware engineering. This interdisciplinary approach enables us to apply insights from one domain to solve challenges in another, creating unique value propositions.
               </p>
               <p>
-                We're based in Gresik, East Java, Indonesia, and we're building a portfolio of brands that each tackle different challenges in their own way.
+                Through our portfolio of four specialized brands, we demonstrate how cross-field innovation can address real market needs while building sustainable, scalable businesses.
               </p>
             </div>
           </div>
@@ -62,26 +88,26 @@
           <div class="relative">
             <div class="aspect-square bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl flex items-center justify-center p-8">
               <div class="text-center space-y-8">
-                <div class="grid grid-cols-2 gap-4 sm:gap-6">
+                <div class="grid grid-cols-2 gap-6">
                   <div class="text-center">
-                    <UIcon name="i-heroicons-building-office" class="text-2xl sm:text-3xl md:text-4xl text-primary-600 dark:text-primary-400 mx-auto mb-2 sm:mb-3" />
-                    <h4 class="text-sm sm:text-base font-bold text-gray-900 dark:text-white">Established</h4>
-                    <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Innovation Hub</p>
+                    <UIcon name="i-heroicons-building-office" class="text-4xl text-primary-600 dark:text-primary-400 mx-auto mb-3" />
+                    <h4 class="text-base font-bold text-gray-900 dark:text-white">Established</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Innovation Hub</p>
                   </div>
                   <div class="text-center">
-                    <UIcon name="i-heroicons-globe-asia-australia" class="text-2xl sm:text-3xl md:text-4xl text-emerald-600 dark:text-emerald-400 mx-auto mb-2 sm:mb-3" />
-                    <h4 class="text-sm sm:text-base font-bold text-gray-900 dark:text-white">Indonesia</h4>
-                    <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Based in Gresik</p>
+                    <UIcon name="i-heroicons-globe-asia-australia" class="text-4xl text-emerald-600 dark:text-emerald-400 mx-auto mb-3" />
+                    <h4 class="text-base font-bold text-gray-900 dark:text-white">Indonesia</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Based in Gresik</p>
                   </div>
                   <div class="text-center">
-                    <UIcon name="i-heroicons-rocket-launch" class="text-2xl sm:text-3xl md:text-4xl text-violet-600 dark:text-violet-400 mx-auto mb-2 sm:mb-3" />
-                    <h4 class="text-sm sm:text-base font-bold text-gray-900 dark:text-white">4 Brands</h4>
-                    <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Active Portfolio</p>
+                    <UIcon name="i-heroicons-rocket-launch" class="text-4xl text-violet-600 dark:text-violet-400 mx-auto mb-3" />
+                    <h4 class="text-base font-bold text-gray-900 dark:text-white">4 Brands</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Active Portfolio</p>
                   </div>
                   <div class="text-center">
-                    <UIcon name="i-heroicons-puzzle-piece" class="text-2xl sm:text-3xl md:text-4xl text-orange-600 dark:text-orange-400 mx-auto mb-2 sm:mb-3" />
-                    <h4 class="text-sm sm:text-base font-bold text-gray-900 dark:text-white">Cross-Field</h4>
-                    <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Innovation</p>
+                    <UIcon name="i-heroicons-puzzle-piece" class="text-4xl text-orange-600 dark:text-orange-400 mx-auto mb-3" />
+                    <h4 class="text-base font-bold text-gray-900 dark:text-white">Cross-Field</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Innovation</p>
                   </div>
                 </div>
               </div>
@@ -121,8 +147,8 @@
                 <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Our Vision</h3>
               </div>
             </template>
-            <p class="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              To build a Southeast Asian innovation hub where AI, creative services, sports tech, and hardware expertise come together to solve real problems.
+            <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              To establish Southeast Asia's premier innovation ecosystem where artificial intelligence, creative services, sports technology, and hardware engineering converge to address complex, real-world challenges through collaborative cross-field solutions.
             </p>
           </UCard>
 
@@ -134,18 +160,18 @@
                 <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Our Mission</h3>
               </div>
             </template>
-            <div class="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-700 dark:text-gray-300">
+            <div class="space-y-4 text-base text-gray-700 dark:text-gray-300">
               <p class="flex items-start">
                 <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
-                Build innovative solutions by combining different fields and technologies
+                Develop breakthrough solutions through strategic integration of diverse technological domains and industry expertise
               </p>
               <p class="flex items-start">
                 <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
-                Create meaningful impact through bold, creative, and adaptable approaches
+                Generate measurable impact by applying bold, creative methodologies with adaptive implementation strategies
               </p>
               <p class="flex items-start">
                 <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
-                Foster a culture of experimentation and continuous learning
+                Cultivate an organizational culture that prioritizes experimental innovation and systematic knowledge advancement
               </p>
             </div>
           </UCard>
@@ -173,7 +199,7 @@
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Bold</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We take on challenging projects and aren't afraid to try new approaches. Sometimes the best ideas come from taking calculated risks.</p>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We pursue ambitious initiatives that others might consider too complex or unconventional. Our willingness to tackle challenging projects with calculated risk-taking drives breakthrough innovation.</p>
           </UCard>
 
           <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
@@ -183,7 +209,7 @@
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Creative</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We look at problems from different angles and often find solutions by borrowing ideas from completely unrelated fields.</p>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Our approach to problem-solving transcends traditional boundaries, drawing inspiration and methodologies from diverse disciplines to create novel solutions that conventional thinking might overlook.</p>
           </UCard>
 
           <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
@@ -193,7 +219,7 @@
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Adaptable</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">When new technologies or market changes happen, we adjust quickly. Being flexible lets us pivot when needed and grab new opportunities.</p>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We maintain organizational agility that enables rapid response to technological advances and market evolution. This flexibility allows us to capitalize on emerging opportunities while adjusting strategies as conditions change.</p>
           </UCard>
 
           <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
@@ -203,7 +229,7 @@
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Innovative</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We're always looking for better ways to do things. Whether it's improving an existing process or building something completely new.</p>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Innovation permeates every aspect of our operations, from optimizing established processes to pioneering entirely new solutions. We systematically seek opportunities to enhance efficiency and create value.</p>
           </UCard>
         </div>
       </div>
