@@ -84,7 +84,7 @@
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <UCard class="text-center p-6 bg-white/40 dark:bg-white/10 backdrop-blur-xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/15 hover:border-white/70 dark:hover:border-white/30 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-4">
                 <UIcon name="i-heroicons-bolt" class="text-4xl text-orange-500 dark:text-orange-400" />
@@ -94,7 +94,7 @@
             <p class="text-gray-600 dark:text-gray-400">We embrace calculated risks and aren't afraid to pursue ambitious ideas that create real value.</p>
           </UCard>
 
-          <UCard class="text-center p-6 bg-white/40 dark:bg-white/10 backdrop-blur-xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/15 hover:border-white/70 dark:hover:border-white/30 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-4">
                 <UIcon name="i-heroicons-paint-brush" class="text-4xl text-rose-500 dark:text-rose-400" />
@@ -104,7 +104,7 @@
             <p class="text-gray-600 dark:text-gray-400">Fresh perspectives and unconventional approaches help us solve problems in ways others haven't considered.</p>
           </UCard>
 
-          <UCard class="text-center p-6 bg-white/40 dark:bg-white/10 backdrop-blur-xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/15 hover:border-white/70 dark:hover:border-white/30 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-4">
                 <UIcon name="i-heroicons-arrows-right-left" class="text-4xl text-emerald-500 dark:text-emerald-400" />
@@ -114,7 +114,7 @@
             <p class="text-gray-600 dark:text-gray-400">We stay agile and responsive, quickly adapting to new technologies and market shifts as they emerge.</p>
           </UCard>
 
-          <UCard class="text-center p-6 bg-white/40 dark:bg-white/10 backdrop-blur-xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/15 hover:border-white/70 dark:hover:border-white/30 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-6 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-4">
                 <UIcon name="i-heroicons-light-bulb" class="text-4xl text-violet-500 dark:text-violet-400" />
@@ -148,7 +148,7 @@
             From AI-powered creative solutions to sports tech platforms, discover our portfolio of brands transforming industries through innovation.
           </p>
           
-          <div class="flex justify-center space-x-4 mb-12 bg-white/50 dark:bg-white/15 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-full p-3 max-w-fit mx-auto">
+          <div class="flex justify-center space-x-4 mb-12 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full p-3 max-w-fit mx-auto">
             <UButton 
               :variant="selectedFilter === 'all' ? 'soft' : 'ghost'" 
               size="sm" 
@@ -183,7 +183,7 @@
         >
           <!-- Eskala - Live Brand -->
           <a v-if="isVisible('live')" key="eskala" href="https://eskala.id" target="_blank" class="block">
-            <UCard class="bg-white/40 dark:bg-white/12 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/18 hover:border-white/70 dark:hover:border-white/30 hover:-translate-y-3 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-3xl cursor-pointer">
+            <UCard class="bg-white/40 dark:bg-white/12 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/18 hover:border-white/70 dark:hover:border-white/30 hover:-translate-y-3 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-2xl cursor-pointer">
               <template #header>
                 <div class="relative">
                   <div class="absolute top-4 right-4">
@@ -203,7 +203,7 @@
 
           <!-- Memomancy - Live Brand -->
           <a v-if="isVisible('live')" key="memomancy" href="https://memomancy.com" target="_blank" class="block">
-            <UCard class="bg-white/40 dark:bg-white/12 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/18 hover:border-white/70 dark:hover:border-white/30 hover:-translate-y-3 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-3xl cursor-pointer">
+            <UCard class="bg-white/40 dark:bg-white/12 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/18 hover:border-white/70 dark:hover:border-white/30 hover:-translate-y-3 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-2xl cursor-pointer">
               <template #header>
                 <div class="relative">
                   <div class="absolute top-4 right-4">
@@ -223,7 +223,7 @@
 
           <!-- Fieldpass - In Development -->
           <a v-if="isVisible('development')" key="fieldpass" href="https://fieldpass.co" target="_blank" class="block">
-            <UCard class="bg-white/40 dark:bg-white/12 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/18 hover:border-white/70 dark:hover:border-white/30 hover:-translate-y-3 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-3xl cursor-pointer">
+            <UCard class="bg-white/40 dark:bg-white/12 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/18 hover:border-white/70 dark:hover:border-white/30 hover:-translate-y-3 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-2xl cursor-pointer">
               <template #header>
                 <div class="relative">
                   <div class="absolute top-4 right-4">
@@ -243,7 +243,7 @@
 
           <!-- Heavy Station - In Development -->
           <a v-if="isVisible('development')" key="heavystation" href="https://heavystation.id" target="_blank" class="block">
-            <UCard class="bg-white/40 dark:bg-white/12 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/18 hover:border-white/70 dark:hover:border-white/30 hover:-translate-y-3 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-3xl cursor-pointer">
+            <UCard class="bg-white/40 dark:bg-white/12 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/18 hover:border-white/70 dark:hover:border-white/30 hover:-translate-y-3 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 transition-all duration-500 rounded-2xl cursor-pointer">
               <template #header>
                 <div class="relative">
                   <div class="absolute top-4 right-4">
@@ -293,7 +293,7 @@
         </div>
 
         <div class="relative">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-3xl p-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl p-8">
             <div class="text-center group hover:bg-white/40 dark:hover:bg-white/12 hover:backdrop-blur-xl rounded-2xl p-6 transition-all duration-500 cursor-pointer hover:scale-105">
               <div class="w-24 h-24 mx-auto mb-4 bg-primary-400/30 dark:bg-primary-400/20 backdrop-blur-xl border border-primary-300/40 dark:border-primary-500/30 shadow-xl shadow-primary-500/30 dark:shadow-primary-400/40 rounded-full flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-primary-500/50 dark:group-hover:shadow-primary-400/60 transition-all duration-500">
                 <UIcon name="i-heroicons-cpu-chip" class="text-4xl text-primary-600 dark:text-primary-400 group-hover:scale-110 transition-transform duration-300" />
@@ -372,7 +372,7 @@
           </div>
         </div>
 
-        <div class="text-center bg-white/30 dark:bg-white/10 backdrop-blur-md border border-white/40 dark:border-white/20 rounded-3xl p-8 max-w-4xl mx-auto">
+        <div class="text-center bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl p-8 max-w-4xl mx-auto">
           <div class="flex items-center justify-center mb-4">
             <UIcon name="i-heroicons-light-bulb" class="text-3xl text-yellow-500 mr-3 animate-pulse" />
             <h4 class="text-xl font-bold text-gray-900 dark:text-white">The Noktah Approach</h4>
@@ -407,7 +407,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <UCard class="text-center p-8 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/65 dark:hover:bg-white/18 hover:border-white/80 dark:hover:border-white/35 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 hover:scale-105 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="mb-6">
                 <UIcon name="i-heroicons-shopping-bag" class="text-5xl text-primary-600 dark:text-primary-400 mx-auto mb-4" />
@@ -425,7 +425,7 @@
             </NuxtLink>
           </UCard>
 
-          <UCard class="text-center p-8 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/65 dark:hover:bg-white/18 hover:border-white/80 dark:hover:border-white/35 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 hover:scale-105 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="mb-6">
                 <UIcon name="i-heroicons-user-group" class="text-5xl text-emerald-600 dark:text-emerald-400 mx-auto mb-4" />
@@ -443,7 +443,7 @@
             </NuxtLink>
           </UCard>
 
-          <UCard class="text-center p-8 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/65 dark:hover:bg-white/18 hover:border-white/80 dark:hover:border-white/35 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 hover:scale-105 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="mb-6">
                 <UIcon name="i-heroicons-users" class="text-5xl text-violet-600 dark:text-violet-400 mx-auto mb-4" />
@@ -489,7 +489,7 @@
               We believe that the best innovations come from diverse teams working in an environment that encourages experimentation, celebrates failure as learning, and rewards bold thinking.
             </p>
             
-            <div class="space-y-6 bg-white/40 dark:bg-white/10 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-3xl p-6">
+            <div class="space-y-6 bg-white/40 dark:bg-white/10 backdrop-blur-2xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-2xl p-6">
               <div class="flex items-start space-x-4">
                 <UIcon name="i-heroicons-beaker" class="text-2xl text-primary-600 dark:text-primary-400 mt-1" />
                 <div>
@@ -517,7 +517,7 @@
           </div>
           
           <div class="relative">
-            <div class="aspect-square bg-white/50 dark:bg-white/15 backdrop-blur-2xl border border-white/60 dark:border-white/30 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-full flex items-center justify-center">
+            <div class="aspect-square bg-white/[0.07] backdrop-blur-sm border border-white/60 dark:border-white/30 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-full flex items-center justify-center">
               <div class="text-center">
                 <UIcon name="i-heroicons-sparkles" class="text-8xl text-primary-600 dark:text-primary-400 mb-4" />
                 <p class="text-lg font-semibold text-gray-700 dark:text-gray-300">Innovation in Action</p>
@@ -548,7 +548,7 @@
               <!-- Company Information -->
               <div class="lg:col-span-2">
                 <div class="flex items-center mb-6">
-                  <div class="w-12 h-12 bg-white/60 dark:bg-white/15 backdrop-blur-xl rounded-full flex items-center justify-center border border-white/70 dark:border-white/30 shadow-lg shadow-black/10 dark:shadow-black/40 p-1 mr-4">
+                  <div class="w-12 h-12 bg-white/[0.07] backdrop-blur-sm rounded-full flex items-center justify-center border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-1 mr-4">
                     <img 
                       src="/images/noktah-logo.png" 
                       alt="Noktah Logo" 
@@ -605,11 +605,11 @@
                 <div>
                   <h4 class="text-gray-900 dark:text-white font-semibold mb-3">Connect With Us</h4>
                   <div class="flex space-x-4">
-                    <a href="https://instagram.com/noktah.it" target="_blank" class="relative group flex items-center justify-center w-10 h-10 bg-white/20 dark:bg-white/10 backdrop-blur-xl border border-white/30 dark:border-white/20 rounded-full hover:bg-white/30 dark:hover:bg-white/15 transition-all duration-300 hover:scale-110">
+                    <a href="https://instagram.com/noktah.it" target="_blank" class="relative group flex items-center justify-center w-10 h-10 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full hover:bg-white/[0.10] transition-all duration-300 hover:scale-110">
                       <UIcon name="i-simple-icons-instagram" class="text-lg text-pink-400" />
                       <UIcon name="i-heroicons-arrow-top-right-on-square" class="absolute -top-1 -right-1 text-xs text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </a>
-                    <a href="https://id.linkedin.com/company/noktah-inovasi-teknologi" target="_blank" class="relative group flex items-center justify-center w-10 h-10 bg-white/20 dark:bg-white/10 backdrop-blur-xl border border-white/30 dark:border-white/20 rounded-full hover:bg-white/30 dark:hover:bg-white/15 transition-all duration-300 hover:scale-110">
+                    <a href="https://id.linkedin.com/company/noktah-inovasi-teknologi" target="_blank" class="relative group flex items-center justify-center w-10 h-10 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full hover:bg-white/[0.10] transition-all duration-300 hover:scale-110">
                       <UIcon name="i-simple-icons-linkedin" class="text-lg text-blue-400" />
                       <UIcon name="i-heroicons-arrow-top-right-on-square" class="absolute -top-1 -right-1 text-xs text-gray-600 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </a>

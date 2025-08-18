@@ -21,10 +21,6 @@
             About <span class="text-primary-500">Noktah</span>
           </h1>
           
-          <p class="text-lg sm:text-xl md:text-2xl font-medium text-gray-800 dark:text-gray-200 mb-3 sm:mb-4">
-            Inovasi Teknologi
-          </p>
-          
           <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto px-2 sm:px-0">
             Building cross-field solutions that redefine what's possible in technology, creativity, business, and beyond. We are the main holding brand of CV. Amerta Meta Data.
           </p>
@@ -52,19 +48,19 @@
             </h2>
             <div class="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-700 dark:text-gray-300">
               <p>
-                <strong class="text-primary-600 dark:text-primary-400">Noktah Inovasi Teknologi</strong> is the main holding brand of <strong>CV. Amerta Meta Data</strong>, founded on the principle that true innovation emerges when different industries, perspectives, and technologies converge.
+                <strong class="text-primary-600 dark:text-primary-400">Noktah Inovasi Teknologi</strong> is the main holding brand of <strong>CV. Amerta Meta Data</strong>. We started with a simple idea: the best solutions happen when you mix different fields together.
               </p>
               <p>
-                We are not just a technology company—we are cross-field innovators who believe that the most impactful solutions come from connecting dots that others don't see. Our approach combines artificial intelligence with creative design, sports technology with user experience, and hardware engineering with innovation.
+                Instead of staying in one lane, we work across AI, creative services, sports tech, and hardware. Each project teaches us something new that we can apply to the next one. It's this cross-pollination that makes our work interesting.
               </p>
               <p>
-                Based in Gresik, East Java, Indonesia, we push beyond conventional limits to create meaningful solutions that transform how people work, play, and connect.
+                We're based in Gresik, East Java, Indonesia, and we're building a portfolio of brands that each tackle different challenges in their own way.
               </p>
             </div>
           </div>
           
           <div class="relative">
-            <div class="aspect-square bg-white/50 dark:bg-white/15 backdrop-blur-2xl border border-white/60 dark:border-white/30 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-3xl flex items-center justify-center p-8">
+            <div class="aspect-square bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl flex items-center justify-center p-8">
               <div class="text-center space-y-8">
                 <div class="grid grid-cols-2 gap-4 sm:gap-6">
                   <div class="text-center">
@@ -118,7 +114,7 @@
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           <!-- Vision -->
-          <UCard class="p-8 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-3xl">
+          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-eye" class="text-4xl text-primary-600 dark:text-primary-400 mr-4" />
@@ -126,12 +122,12 @@
               </div>
             </template>
             <p class="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              To become the leading cross-field innovation hub in Southeast Asia, where different industries converge to create solutions that transform how people live, work, and interact with technology.
+              To build a Southeast Asian innovation hub where AI, creative services, sports tech, and hardware expertise come together to solve real problems.
             </p>
           </UCard>
 
           <!-- Mission -->
-          <UCard class="p-8 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-3xl">
+          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-flag" class="text-4xl text-emerald-600 dark:text-emerald-400 mr-4" />
@@ -170,44 +166,44 @@
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <UCard class="text-center p-8 bg-white/40 dark:bg-white/10 backdrop-blur-xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/15 hover:border-white/70 dark:hover:border-white/30 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 hover:scale-105 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-6">
                 <UIcon name="i-heroicons-bolt" class="text-5xl text-orange-500 dark:text-orange-400" />
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Bold</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We embrace calculated risks and aren't afraid to pursue ambitious ideas that create real value. Boldness drives breakthrough innovation.</p>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We take on challenging projects and aren't afraid to try new approaches. Sometimes the best ideas come from taking calculated risks.</p>
           </UCard>
 
-          <UCard class="text-center p-8 bg-white/40 dark:bg-white/10 backdrop-blur-xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/15 hover:border-white/70 dark:hover:border-white/30 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 hover:scale-105 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-6">
                 <UIcon name="i-heroicons-paint-brush" class="text-5xl text-rose-500 dark:text-rose-400" />
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Creative</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Fresh perspectives and unconventional approaches help us solve problems in ways others haven't considered. Creativity is our competitive edge.</p>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We look at problems from different angles and often find solutions by borrowing ideas from completely unrelated fields.</p>
           </UCard>
 
-          <UCard class="text-center p-8 bg-white/40 dark:bg-white/10 backdrop-blur-xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/15 hover:border-white/70 dark:hover:border-white/30 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 hover:scale-105 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-6">
                 <UIcon name="i-heroicons-arrows-right-left" class="text-5xl text-emerald-500 dark:text-emerald-400" />
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Adaptable</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We stay agile and responsive, quickly adapting to new technologies and market shifts as they emerge. Flexibility enables rapid growth.</p>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">When new technologies or market changes happen, we adjust quickly. Being flexible lets us pivot when needed and grab new opportunities.</p>
           </UCard>
 
-          <UCard class="text-center p-8 bg-white/40 dark:bg-white/10 backdrop-blur-xl border border-white/50 dark:border-white/20 shadow-2xl shadow-black/10 dark:shadow-black/50 hover:bg-white/60 dark:hover:bg-white/15 hover:border-white/70 dark:hover:border-white/30 hover:shadow-3xl hover:shadow-black/20 dark:hover:shadow-black/70 hover:scale-105 transition-all duration-500 rounded-3xl">
+          <UCard class="text-center p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
             <template #header>
               <div class="flex justify-center mb-6">
                 <UIcon name="i-heroicons-light-bulb" class="text-5xl text-violet-500 dark:text-violet-400" />
               </div>
             </template>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Innovative</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Innovation drives everything we do, from how we approach problems to how we build lasting solutions. We constantly push boundaries.</p>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We're always looking for better ways to do things. Whether it's improving an existing process or building something completely new.</p>
           </UCard>
         </div>
       </div>
@@ -224,7 +220,7 @@
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           <!-- Legal Entity -->
-          <UCard class="p-8 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-3xl">
+          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-building-office-2" class="text-4xl text-primary-600 dark:text-primary-400 mr-4" />
@@ -248,7 +244,7 @@
           </UCard>
 
           <!-- Business Focus -->
-          <UCard class="p-8 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-3xl">
+          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-chart-bar" class="text-4xl text-emerald-600 dark:text-emerald-400 mr-4" />
@@ -306,7 +302,7 @@
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Step 1 -->
             <div class="text-center relative">
-              <div class="w-24 h-24 bg-white/50 dark:bg-white/15 backdrop-blur-2xl border border-white/60 dark:border-white/30 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div class="w-24 h-24 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full flex items-center justify-center mx-auto mb-6">
                 <span class="text-2xl font-bold text-primary-600 dark:text-primary-400">01</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Identify Intersections</h3>
@@ -318,7 +314,7 @@
 
             <!-- Step 2 -->
             <div class="text-center relative">
-              <div class="w-24 h-24 bg-white/50 dark:bg-white/15 backdrop-blur-2xl border border-white/60 dark:border-white/30 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div class="w-24 h-24 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full flex items-center justify-center mx-auto mb-6">
                 <span class="text-2xl font-bold text-emerald-600 dark:text-emerald-400">02</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Experiment Boldly</h3>
@@ -330,7 +326,7 @@
 
             <!-- Step 3 -->
             <div class="text-center">
-              <div class="w-24 h-24 bg-white/50 dark:bg-white/15 backdrop-blur-2xl border border-white/60 dark:border-white/30 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div class="w-24 h-24 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full flex items-center justify-center mx-auto mb-6">
                 <span class="text-2xl font-bold text-orange-600 dark:text-orange-400">03</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Scale Impact</h3>
@@ -339,16 +335,16 @@
           </div>
 
           <!-- Innovation Philosophy -->
-          <div class="text-center bg-white/30 dark:bg-white/10 backdrop-blur-md border border-white/40 dark:border-white/20 rounded-3xl p-12 max-w-5xl mx-auto">
+          <div class="text-center bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl p-12 max-w-5xl mx-auto">
             <div class="flex items-center justify-center mb-6">
               <UIcon name="i-heroicons-sparkles" class="text-4xl text-yellow-500 mr-4 animate-pulse" />
               <h4 class="text-2xl font-bold text-gray-900 dark:text-white">Innovation Philosophy</h4>
             </div>
             <blockquote class="text-xl text-gray-700 dark:text-gray-300 font-medium mb-6 italic">
-              "Real innovation happens at the intersections. When you mix AI with creative design, combine sports with technology, or merge hardware with software thinking—that's where magic happens."
+              "The most interesting projects happen when you combine things that don't usually go together. AI + creative work, sports + tech, hardware + software. That's where we find the best opportunities."
             </blockquote>
             <p class="text-gray-600 dark:text-gray-400">
-              This philosophy drives every brand in our portfolio, from Eskala's AI-powered creative solutions to Fieldpass's sports technology platform.
+              This approach shapes all our brands - from Eskala's professional creative services with AI tools to Fieldpass's sports booking platform.
             </p>
           </div>
         </div>
@@ -369,7 +365,7 @@
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           <!-- Contact Information -->
-          <UCard class="p-8 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-3xl">
+          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-map-pin" class="text-4xl text-primary-600 dark:text-primary-400 mr-4" />
@@ -416,7 +412,7 @@
           </UCard>
 
           <!-- Social & Links -->
-          <UCard class="p-8 bg-white/45 dark:bg-white/12 backdrop-blur-2xl border border-white/60 dark:border-white/25 shadow-2xl shadow-black/10 dark:shadow-black/50 rounded-3xl">
+          <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-link" class="text-4xl text-emerald-600 dark:text-emerald-400 mr-4" />
@@ -428,7 +424,7 @@
               <div>
                 <h4 class="font-semibold text-gray-900 dark:text-white mb-4">Social Media</h4>
                 <div class="space-y-3">
-                  <a href="https://instagram.com/noktah.it" target="_blank" class="flex items-center p-3 bg-white/30 dark:bg-white/10 backdrop-blur-lg border border-white/40 dark:border-white/20 rounded-2xl hover:bg-white/50 dark:hover:bg-white/20 transition-all duration-300">
+                  <a href="https://instagram.com/noktah.it" target="_blank" class="flex items-center p-3 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl hover:bg-white/[0.10] transition-all duration-300">
                     <UIcon name="i-simple-icons-instagram" class="text-2xl text-pink-500 mr-4" />
                     <div>
                       <p class="font-medium text-gray-900 dark:text-white">Instagram</p>
@@ -437,7 +433,7 @@
                     <UIcon name="i-heroicons-arrow-top-right-on-square" class="text-lg text-gray-500 ml-auto" />
                   </a>
                   
-                  <a href="https://id.linkedin.com/company/noktah-inovasi-teknologi" target="_blank" class="flex items-center p-3 bg-white/30 dark:bg-white/10 backdrop-blur-lg border border-white/40 dark:border-white/20 rounded-2xl hover:bg-white/50 dark:hover:bg-white/20 transition-all duration-300">
+                  <a href="https://id.linkedin.com/company/noktah-inovasi-teknologi" target="_blank" class="flex items-center p-3 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl hover:bg-white/[0.10] transition-all duration-300">
                     <UIcon name="i-simple-icons-linkedin" class="text-2xl text-blue-500 mr-4" />
                     <div>
                       <p class="font-medium text-gray-900 dark:text-white">LinkedIn</p>
@@ -453,13 +449,13 @@
                 <h4 class="font-semibold text-gray-900 dark:text-white mb-4">Quick Actions</h4>
                 <div class="space-y-3">
                   <NuxtLink to="/brands" class="block">
-                    <UButton class="w-full justify-between" variant="soft">
+                    <UButton class="w-full justify-between rounded-full" variant="soft">
                       Explore Our Brands
                       <UIcon name="i-heroicons-arrow-right" />
                     </UButton>
                   </NuxtLink>
                   <NuxtLink to="/contact" class="block">
-                    <UButton class="w-full justify-between" variant="outline">
+                    <UButton class="w-full justify-between rounded-full" variant="outline">
                       Contact Us
                       <UIcon name="i-heroicons-arrow-right" />
                     </UButton>
