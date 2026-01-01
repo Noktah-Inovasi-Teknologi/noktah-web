@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   css: ["~/assets/css/main.css"],
   devtools: { enabled: true },
-  modules: ["@nuxthub/core", "@nuxt/ui"],
+  modules: ["@nuxt/ui"],
   
   // Global SEO & App Configuration
   app: {
