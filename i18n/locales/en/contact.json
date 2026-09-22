@@ -1,0 +1,94 @@
+{
+  "contact": {
+    "seo": {
+      "title": "Contact Us - Noktah Inovasi Teknologi | Let's Collaborate",
+      "description": "Get in touch with Noktah Inovasi Teknologi for partnership opportunities, project collaboration, or careers. Based in Sleman, Yogyakarta, and open to cross-field collaboration.",
+      "ogTitle": "Contact Noktah Inovasi Teknologi",
+      "ogDescription": "Ready to push beyond conventional limits together? Connect with our team to explore collaboration opportunities and innovative solutions.",
+      "twitterTitle": "Contact Noktah",
+      "twitterDescription": "Let's talk partnerships, project collaboration, or career opportunities at Noktah Inovasi Teknologi.",
+      "keywords": "contact noktah, noktah contact, partnership, collaboration, careers, Yogyakarta, Sleman"
+    },
+    "hero": {
+      "subtitle": "Let's Build Something Amazing",
+      "description": "Ready to push beyond conventional limits? Connect with our team to explore collaboration opportunities and innovative solutions."
+    },
+    "intro": {
+      "headingPre": "Get in",
+      "headingAccent": "Touch",
+      "description": "Whether you're looking for innovative solutions, partnership opportunities, or want to join our team, we'd love to hear from you."
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": "Full Name *",
+      "namePlaceholder": "Your full name",
+      "email": "Email Address *",
+      "emailPlaceholder": "your.email{'@'}example.com",
+      "company": "Company/Organization",
+      "companyPlaceholder": "Your company name (optional)",
+      "subject": "Subject *",
+      "subjectPlaceholder": "Select a subject",
+      "message": "Message *",
+      "messagePlaceholder": "Tell us about your project, partnership opportunity, or how we can help...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "successAlert": "Thank you for your message! We'll get back to you soon.",
+      "errorAlert": "There was an error sending your message. Please try again."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "subjectRequired": "Please select a subject",
+      "messageRequired": "Message is required",
+      "messageTooShort": "Message must be at least 10 characters long"
+    },
+    "subjects": {
+      "partnership": "Partnership Opportunities",
+      "project": "Project Collaboration",
+      "career": "Career Opportunities",
+      "eskala": "Brand Inquiries (Eskala)",
+      "venyu": "Brand Inquiries (Venyu)",
+      "general": "General Inquiry",
+      "support": "Technical Support",
+      "media": "Media & Press"
+    },
+    "office": {
+      "title": "Our Office",
+      "addressLabel": "Address",
+      "hoursLabel": "Business Hours",
+      "weekdays": "Monday - Friday",
+      "weekdayHours": "9:00 AM - 6:00 PM",
+      "saturday": "Saturday",
+      "saturdayHours": "9:00 AM - 2:00 PM",
+      "sunday": "Sunday",
+      "closed": "Closed"
+    },
+    "quick": {
+      "title": "Quick Contact",
+      "email": "Email Us",
+      "call": "Call Us",
+      "whatsapp": "WhatsApp",
+      "whatsappSub": "Quick messaging",
+      "followTitle": "Follow Us",
+      "companyPage": "Company Page"
+    },
+    "faq": {
+      "headingPre": "Frequently Asked",
+      "headingAccent": "Questions",
+      "description": "Common questions about working with Noktah and our brands.",
+      "q1": "What makes Noktah different from other technology companies?",
+      "a1": "Noktah specializes in cross-field innovation, combining insights from healthcare marketing, creative production, sports technology, and software engineering. This interdisciplinary approach allows us to create unique solutions that traditional single-industry companies might miss.",
+      "q2": "How can I partner with Noktah or one of your brands?",
+      "a2": "We're always open to meaningful partnerships. Contact us through this form selecting \"Partnership Opportunities\" as your subject, or reach out directly via email. We'll discuss how our expertise can complement your goals.",
+      "q3": "Do you offer services for individual clients or only businesses?",
+      "a3": "Both our brands serve individual and organisational clients. Eskala works with clinics, hospitals, and health brands, while Venyu is used by sports venue operators, from a single court to several locations at once.",
+      "q4": "What industries do you work with?",
+      "a4": "We work across multiple industries including healthcare, marketing and creative production, sports and recreation, and any sector where cross-field innovation can create value. Our diverse portfolio allows us to bring unique perspectives to various challenges.",
+      "q5": "How do I join the Noktah team?",
+      "a5": "We're always looking for talented individuals who share our passion for innovation. Select \"Career Opportunities\" in the contact form above, or email us directly with your resume and a note about how you'd like to contribute to our cross-field innovation mission.",
+      "q6": "What is your typical project timeline?",
+      "a6": "Project timelines vary significantly based on scope and complexity. We typically provide detailed timelines during our initial consultation phase. Our cross-field approach sometimes allows us to accelerate development by applying proven solutions from other industries."
+    }
+  }
+}

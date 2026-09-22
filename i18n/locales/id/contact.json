@@ -1,0 +1,94 @@
+{
+  "contact": {
+    "seo": {
+      "title": "Hubungi Kami — Noktah Inovasi Teknologi | Mari Berkolaborasi",
+      "description": "Hubungi Noktah Inovasi Teknologi untuk peluang kemitraan, kolaborasi proyek, atau karier. Kami berbasis di Sleman, Yogyakarta, dan terbuka untuk kolaborasi lintas bidang.",
+      "ogTitle": "Hubungi Noktah Inovasi Teknologi",
+      "ogDescription": "Siap menembus batas konvensional bersama? Hubungi tim kami untuk menjajaki peluang kolaborasi dan solusi inovatif.",
+      "twitterTitle": "Hubungi Noktah",
+      "twitterDescription": "Mari bicarakan kemitraan, kolaborasi proyek, atau peluang karier di Noktah Inovasi Teknologi.",
+      "keywords": "hubungi noktah, kontak noktah, kemitraan, kolaborasi, karier, Yogyakarta, Sleman"
+    },
+    "hero": {
+      "subtitle": "Mari Bangun Sesuatu yang Luar Biasa",
+      "description": "Siap menembus batas konvensional? Hubungi tim kami untuk menjajaki peluang kolaborasi dan solusi inovatif."
+    },
+    "intro": {
+      "headingPre": "Mari",
+      "headingAccent": "Terhubung",
+      "description": "Baik Anda mencari solusi inovatif, peluang kemitraan, atau ingin bergabung dengan tim kami, kami senang mendengar kabar dari Anda."
+    },
+    "form": {
+      "title": "Kirim Pesan kepada Kami",
+      "name": "Nama Lengkap *",
+      "namePlaceholder": "Nama lengkap Anda",
+      "email": "Alamat Email *",
+      "emailPlaceholder": "nama.anda{'@'}contoh.com",
+      "company": "Perusahaan/Organisasi",
+      "companyPlaceholder": "Nama perusahaan Anda (opsional)",
+      "subject": "Subjek *",
+      "subjectPlaceholder": "Pilih subjek",
+      "message": "Pesan *",
+      "messagePlaceholder": "Ceritakan proyek, peluang kemitraan, atau bagaimana kami bisa membantu...",
+      "submit": "Kirim Pesan",
+      "submitting": "Mengirim...",
+      "successAlert": "Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda kembali.",
+      "errorAlert": "Terjadi kesalahan saat mengirim pesan Anda. Silakan coba lagi."
+    },
+    "validation": {
+      "nameRequired": "Nama wajib diisi",
+      "emailRequired": "Email wajib diisi",
+      "emailInvalid": "Masukkan alamat email yang valid",
+      "subjectRequired": "Silakan pilih subjek terlebih dahulu",
+      "messageRequired": "Pesan wajib diisi",
+      "messageTooShort": "Pesan minimal terdiri dari 10 karakter"
+    },
+    "subjects": {
+      "partnership": "Peluang Kemitraan",
+      "project": "Kolaborasi Proyek",
+      "career": "Peluang Karier",
+      "eskala": "Pertanyaan Merek (Eskala)",
+      "venyu": "Pertanyaan Merek (Venyu)",
+      "general": "Pertanyaan Umum",
+      "support": "Dukungan Teknis",
+      "media": "Media & Pers"
+    },
+    "office": {
+      "title": "Kantor Kami",
+      "addressLabel": "Alamat",
+      "hoursLabel": "Jam Operasional",
+      "weekdays": "Senin – Jumat",
+      "weekdayHours": "09.00 – 18.00",
+      "saturday": "Sabtu",
+      "saturdayHours": "09.00 – 14.00",
+      "sunday": "Minggu",
+      "closed": "Tutup"
+    },
+    "quick": {
+      "title": "Kontak Cepat",
+      "email": "Email Kami",
+      "call": "Telepon Kami",
+      "whatsapp": "WhatsApp",
+      "whatsappSub": "Pesan cepat",
+      "followTitle": "Ikuti Kami",
+      "companyPage": "Halaman Perusahaan"
+    },
+    "faq": {
+      "headingPre": "Pertanyaan yang",
+      "headingAccent": "Sering Diajukan",
+      "description": "Pertanyaan umum seputar bekerja sama dengan Noktah dan merek-merek kami.",
+      "q1": "Apa yang membedakan Noktah dari perusahaan teknologi lain?",
+      "a1": "Noktah berfokus pada inovasi lintas bidang, memadukan wawasan dari pemasaran kesehatan, produksi kreatif, teknologi olahraga, dan rekayasa perangkat lunak. Pendekatan lintas disiplin ini memungkinkan kami menciptakan solusi khas yang mungkin luput dari perusahaan yang hanya bergerak di satu industri.",
+      "q2": "Bagaimana cara bermitra dengan Noktah atau salah satu mereknya?",
+      "a2": "Kami selalu terbuka untuk kemitraan yang bermakna. Hubungi kami lewat formulir ini dengan memilih subjek \"Peluang Kemitraan\", atau kirim email langsung. Kami akan mendiskusikan bagaimana keahlian kami dapat melengkapi tujuan Anda.",
+      "q3": "Apakah layanan Anda tersedia untuk perorangan atau hanya untuk perusahaan?",
+      "a3": "Kedua merek kami melayani klien perorangan maupun organisasi. Eskala bekerja dengan klinik, rumah sakit, dan merek kesehatan, sementara Venyu digunakan oleh pengelola venue olahraga, dari satu lapangan hingga beberapa lokasi sekaligus.",
+      "q4": "Industri apa saja yang Anda tangani?",
+      "a4": "Kami bekerja di berbagai industri, mulai dari layanan kesehatan, pemasaran dan produksi kreatif, olahraga dan rekreasi, hingga sektor mana pun yang dapat memperoleh nilai dari inovasi lintas bidang. Portofolio kami yang beragam memungkinkan kami membawa sudut pandang baru ke berbagai tantangan.",
+      "q5": "Bagaimana cara bergabung dengan tim Noktah?",
+      "a5": "Kami selalu mencari individu berbakat yang punya semangat serupa pada inovasi. Pilih \"Peluang Karier\" pada formulir kontak di atas, atau kirim email langsung beserta CV Anda dan penjelasan singkat tentang kontribusi yang ingin Anda berikan pada misi inovasi lintas bidang kami.",
+      "q6": "Berapa lama waktu pengerjaan proyek pada umumnya?",
+      "a6": "Lama pengerjaan sangat bergantung pada cakupan dan kompleksitas proyek. Kami biasanya menyampaikan lini masa terperinci pada tahap konsultasi awal. Pendekatan lintas bidang kami kadang memungkinkan percepatan pengembangan dengan menerapkan solusi yang sudah terbukti di industri lain."
+    }
+  }
+}

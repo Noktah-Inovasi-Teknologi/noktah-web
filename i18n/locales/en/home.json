@@ -1,0 +1,109 @@
+{
+  "home": {
+    "seo": {
+      "title": "Noktah Inovasi Teknologi - Pushing Beyond Conventional Limits",
+      "description": "An innovation-driven company building cross-field solutions that redefine what's possible in technology, creativity, business, and beyond. Meet our brands: Eskala and Venyu.",
+      "ogTitle": "Noktah Inovasi Teknologi - Cross-Field Innovation",
+      "ogDescription": "Building breakthrough solutions across healthcare marketing, creative production, sports technology, and software engineering. Where Industries Meet.",
+      "twitterTitle": "Noktah Inovasi Teknologi - Innovation Hub",
+      "twitterDescription": "Cross-field innovation company behind Eskala and Venyu.",
+      "keywords": "innovation, technology, healthcare digital marketing, creative production, sports technology, software engineering, cross-field solutions, Indonesia, Yogyakarta"
+    },
+    "hero": {
+      "tagline": "Pushing Beyond Conventional Limits",
+      "description": "An innovation-driven company building cross-field solutions that redefine what's possible in technology, creativity, business, and beyond.",
+      "ctaBrands": "Explore Our Brands",
+      "ctaJoin": "Join Our Mission"
+    },
+    "vision": {
+      "heading": "Built to {accent}",
+      "headingAccent": "Innovate",
+      "description": "We believe the best solutions emerge when you combine different industries, perspectives, and technologies. That's why we work across fields to create meaningful impact.",
+      "bold": {
+        "title": "Bold",
+        "body": "We embrace calculated risks and aren't afraid to pursue ambitious ideas that create real value."
+      },
+      "creative": {
+        "title": "Creative",
+        "body": "Fresh perspectives and unconventional approaches help us solve problems in ways others haven't considered."
+      },
+      "adaptable": {
+        "title": "Adaptable",
+        "body": "We stay agile and responsive, quickly adapting to new technologies and market shifts as they emerge."
+      },
+      "innovative": {
+        "title": "Innovative",
+        "body": "Innovation drives everything we do, from how we approach problems to how we build lasting solutions."
+      }
+    },
+    "brands": {
+      "heading": "Our Brand {accent}",
+      "headingAccent": "Universe",
+      "description": "Two brands, two very different industries, one way of working: understand the customer's daily job first, then build the solution around it.",
+      "eskala": "Digital marketing for healthcare facilities — social media management and paid advertising grounded in Indonesian health regulations and international medical standards.",
+      "venyu": "Scheduling and booking management for sports venues — court schedules, bookings, subscriptions, members, and payments all in one place."
+    },
+    "crossField": {
+      "heading": "Where Industries {accent}",
+      "headingAccent": "Meet",
+      "description": "The interesting things happen when different fields are brought together. We combine medical compliance with creative work, and sport with software engineering, to build solutions that cut across industry boundaries.",
+      "healthcare": {
+        "title": "Healthcare Marketing",
+        "body": "Content that stays compliant and still reaches patients"
+      },
+      "sports": {
+        "title": "Sports Technology",
+        "body": "Venue operations that run smoothly every day"
+      },
+      "creative": {
+        "title": "Creative Production",
+        "body": "Professional content at a pace you can sustain"
+      },
+      "software": {
+        "title": "Software Engineering",
+        "body": "Platforms built for the work as it actually happens"
+      },
+      "approachTitle": "The Noktah Approach",
+      "approachQuote": "\"When medical compliance meets creative work, or sport meets software engineering, interesting things start to happen. That's where we play.\"",
+      "approachNote": "Real innovation comes from connecting dots that others don't see."
+    },
+    "audiences": {
+      "heading": "Built for {accent}",
+      "headingAccent": "Everyone",
+      "description": "Whether you're seeking cutting-edge solutions, partnership opportunities, or a place to build your career, we have something for you.",
+      "customers": {
+        "title": "For Customers",
+        "body": "Discover cutting-edge solutions that solve real problems and enhance your business or personal life.",
+        "cta": "Explore Solutions"
+      },
+      "collaborators": {
+        "title": "For Collaborators",
+        "body": "Partner with innovators who share your vision for pushing the boundaries of what's possible.",
+        "cta": "Partner With Us"
+      },
+      "talent": {
+        "title": "For Talent",
+        "body": "Build the future with us. Join a team that values creativity, innovation, and pushing conventional limits.",
+        "cta": "Join Our Team"
+      }
+    },
+    "culture": {
+      "heading": "Our {accent} of Innovation",
+      "headingAccent": "Culture",
+      "description": "We believe that the best innovations come from diverse teams working in an environment that encourages experimentation, celebrates failure as learning, and rewards bold thinking.",
+      "experiment": {
+        "title": "Experiment Fearlessly",
+        "body": "We encourage taking calculated risks and learning from every outcome."
+      },
+      "crossFunctional": {
+        "title": "Think Cross-Functionally",
+        "body": "Best solutions emerge when different perspectives collaborate."
+      },
+      "moveFast": {
+        "title": "Move Fast, Learn Faster",
+        "body": "Speed and agility are key to staying ahead in today's world."
+      },
+      "imageCaption": "Innovation in Action"
+    }
+  }
+}

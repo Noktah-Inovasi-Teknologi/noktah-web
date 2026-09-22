@@ -1,0 +1,58 @@
+{
+  "brands": {
+    "seo": {
+      "title": "Merek Kami — Noktah Inovasi Teknologi | Eskala & Venyu",
+      "description": "Kenali merek Noktah: Eskala, pemasaran digital untuk fasilitas kesehatan, dan Venyu, sistem manajemen jadwal dan pemesanan untuk venue olahraga.",
+      "ogTitle": "Merek Kami — Noktah Inovasi Teknologi",
+      "ogDescription": "Dua merek, dua industri: Eskala untuk pemasaran digital fasilitas kesehatan, Venyu untuk manajemen venue olahraga.",
+      "twitterTitle": "Portofolio Merek Noktah",
+      "twitterDescription": "Eskala dan Venyu — dua merek yang lahir dari cara kerja yang sama.",
+      "keywords": "merek noktah, eskala pemasaran kesehatan, venyu manajemen venue, teknologi olahraga, portofolio merek, inovasi lintas bidang"
+    },
+    "hero": {
+      "subtitle": "Jagat Merek Kami",
+      "description": "Dua merek yang bekerja di industri yang sangat berbeda, dengan satu keyakinan yang sama: pahami dulu pekerjaan sehari-hari pelanggan, baru bangun solusinya."
+    },
+    "portfolio": {
+      "headingPre": "Merek",
+      "headingAccent": "Kami",
+      "description": "Masing-masing merek menggarap satu industri secara mendalam, lalu membawa pelajarannya kembali ke seluruh portofolio."
+    },
+    "status": {
+      "live": "Aktif"
+    },
+    "eskala": {
+      "body": "Tim kreatif asal Yogyakarta yang membantu klinik, rumah sakit, dan merek kesehatan membangun kehadiran digital yang tepercaya. Eskala mengelola media sosial dan menjalankan iklan berbayar dengan berpijak pada regulasi kesehatan Indonesia serta standar medis internasional — sehingga setiap konten aman secara kepatuhan sekaligus efektif menjangkau pasien.",
+      "f1": "Pengelolaan media sosial, dari produksi konten hingga laporan bulanan",
+      "f2": "Iklan berbayar oleh tim bersertifikasi Meta & Google",
+      "f3": "Tinjauan medis sebelum konten tayang",
+      "f4": "Kontrak fleksibel, tanpa ikatan tahunan",
+      "cta": "Jelajahi Eskala"
+    },
+    "venyu": {
+      "body": "Sistem manajemen berbasis web dan mobile yang menggantikan buku catatan di meja resepsionis venue olahraga. Venyu menyatukan jadwal lapangan, pemesanan berulang, paket sesi dan keanggotaan, presensi staf, hingga pencatatan pembayaran dalam satu tempat — dirancang untuk pekerjaan yang benar-benar terjadi di venue, bukan kalender serbaguna yang dipaksakan.",
+      "f1": "Jadwal harian dan mingguan untuk seluruh lapangan",
+      "f2": "Pemesanan berulang mingguan yang berjalan otomatis",
+      "f3": "Paket sesi dan keanggotaan bulanan dengan pemotongan otomatis",
+      "f4": "Tetap berjalan saat offline, tersinkron otomatis setelah tersambung",
+      "cta": "Jelajahi Venyu"
+    },
+    "difference": {
+      "headingPre": "Bedanya",
+      "headingAccent": "Noktah",
+      "description": "Kedua merek memperoleh manfaat dari pendekatan lintas bidang kami, dengan membawa wawasan dari satu industri untuk menjawab tantangan di industri lain.",
+      "shared": {
+        "title": "Inovasi yang Dibagi",
+        "body": "Disiplin kepatuhan yang kami pelajari di ranah kesehatan membuat cara kami menangani data operasional venue jauh lebih rapi — dan sebaliknya."
+      },
+      "learning": {
+        "title": "Belajar Tanpa Henti",
+        "body": "Tantangan di setiap merek menjadi kesempatan belajar yang memperkuat seluruh portofolio dan mendorong inovasi terus maju."
+      },
+      "ecosystem": {
+        "title": "Ekosistem yang Terpadu",
+        "body": "Merek-merek kami berbagi cara kerja, perangkat, dan standar yang sama, sehingga pelajaran di satu tempat langsung terasa manfaatnya di tempat lain."
+      }
+    }
+  }
+}

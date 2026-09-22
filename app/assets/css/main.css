@@ -1,11 +1,32 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+@import "./glass.css";
+@import "./blueprint.css";
 @import "./animations.css";
 
+/* --ui-bg must stay opaque: Nuxt UI resolves `bg-default` from it for
+   popovers, select menus and modals, which have to be readable against
+   whatever sits behind them. */
 :root {
-    --ui-bg: #F9FAFB;
+    --ui-bg: #F7F9FC;
 }
 
 .dark {
     --ui-bg: #0D1117;
+}
+
+/* The base colour lives on <html> so it paints the canvas, while <body>
+   stays transparent. That ordering lets the fixed .ambient-field
+   (z-index: -1) show through every section — a body background would
+   paint over it. */
+html {
+    background-color: #F7F9FC;
+}
+
+html.dark {
+    background-color: #0D1117;
+}
+
+body {
+    background-color: transparent;
 }

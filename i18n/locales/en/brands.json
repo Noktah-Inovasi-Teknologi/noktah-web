@@ -1,0 +1,58 @@
+{
+  "brands": {
+    "seo": {
+      "title": "Our Brands - Noktah Inovasi Teknologi | Eskala & Venyu",
+      "description": "Meet Noktah's brands: Eskala, digital marketing for healthcare facilities, and Venyu, scheduling and booking management for sports venues.",
+      "ogTitle": "Our Brands - Noktah Inovasi Teknologi",
+      "ogDescription": "Two brands, two industries: Eskala for healthcare digital marketing, Venyu for sports venue management.",
+      "twitterTitle": "Noktah Brand Portfolio",
+      "twitterDescription": "Eskala and Venyu — two brands built from the same way of working.",
+      "keywords": "noktah brands, eskala healthcare marketing, venyu venue management, sports technology, brand portfolio, cross-field innovation"
+    },
+    "hero": {
+      "subtitle": "Our Brand Universe",
+      "description": "Two brands working in very different industries, built on the same conviction: understand the customer's daily job first, then build the solution around it."
+    },
+    "portfolio": {
+      "headingPre": "Our",
+      "headingAccent": "Brands",
+      "description": "Each brand goes deep into one industry, then brings what it learns back to the rest of the portfolio."
+    },
+    "status": {
+      "live": "Live"
+    },
+    "eskala": {
+      "body": "A Yogyakarta-based creative team helping clinics, hospitals, and health brands build a digital presence patients trust. Eskala manages social media and runs paid campaigns grounded in Indonesian health regulations and international medical standards — so every piece of content is both compliant and effective at reaching patients.",
+      "f1": "Social media management, from content production to monthly reporting",
+      "f2": "Paid advertising run by Meta & Google certified teams",
+      "f3": "Medical review before anything goes live",
+      "f4": "Flexible contracts, with no annual lock-in",
+      "cta": "Explore Eskala"
+    },
+    "venyu": {
+      "body": "A web and mobile management system that replaces the notebook on the sports venue front desk. Venyu brings court schedules, recurring bookings, session packages and memberships, staff attendance, and payment tracking into one place — built for the work that actually happens at a venue, not a general-purpose calendar bent to fit.",
+      "f1": "Daily and weekly schedules across every court",
+      "f2": "Weekly recurring bookings that run themselves",
+      "f3": "Session packages and monthly memberships with automatic deduction",
+      "f4": "Keeps working offline, syncs automatically once reconnected",
+      "cta": "Explore Venyu"
+    },
+    "difference": {
+      "headingPre": "The Noktah",
+      "headingAccent": "Difference",
+      "description": "Both brands benefit from our cross-field approach, carrying insight from one industry over to solve problems in another.",
+      "shared": {
+        "title": "Shared Innovation",
+        "body": "The compliance discipline we learned in healthcare makes our handling of venue operations data far more rigorous — and the lessons travel the other way too."
+      },
+      "learning": {
+        "title": "Continuous Learning",
+        "body": "Each brand's challenges become learning opportunities that strengthen the whole portfolio and drive innovation forward."
+      },
+      "ecosystem": {
+        "title": "Integrated Ecosystem",
+        "body": "Our brands share the same working methods, tooling, and standards, so a lesson learned in one place pays off immediately in the other."
+      }
+    }
+  }
+}

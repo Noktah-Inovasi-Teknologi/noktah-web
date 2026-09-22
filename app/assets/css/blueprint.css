@@ -1,0 +1,176 @@
+/* =============================================================
+   Noktah — Blueprint backdrop
+   -------------------------------------------------------------
+   Replaces the previous field of coloured blobs. The read we want
+   is a CAD viewport / drafting sheet: precise, monochrome, quiet.
+
+   Four stacked layers, back to front:
+     1. .ambient-wash   — a barely-there NEUTRAL luminance gradient.
+                          Not decoration: backdrop-filter needs light
+                          variation to refract or the glass goes flat.
+                          Fine linework is smeared to grey by a 20px
+                          blur, so this wash is what the panels see.
+     2. .blueprint-grid — minor 64px / major 256px rule lines.
+     3. .blueprint-marks— registration crosshairs on the major grid.
+     4. .blueprint-frames — square scaffolding that traces itself in,
+                          holds, then fades out.
+
+   Everything here is deliberately low-contrast. The marks are meant
+   to be noticed on the second look, never to compete with content.
+   ============================================================= */
+
+:root {
+  /* Ink is near-neutral slate with only a whisper of blue — enough to
+     evoke a blueprint without reading as "a colour". */
+  --grid-minor: rgba(15, 23, 42, 0.045);
+  --grid-major: rgba(15, 23, 42, 0.075);
+  --mark-ink: rgba(15, 23, 42, 0.2);
+  --frame-ink: rgba(15, 23, 42, 0.16);
+
+  /* Neutral luminance wash — the part the glass actually refracts. */
+  --wash-light: rgba(255, 255, 255, 0.85);
+  --wash-shade: rgba(100, 116, 139, 0.14);
+  --wash-cool: rgba(56, 130, 189, 0.07);
+}
+
+.dark {
+  --grid-minor: rgba(255, 255, 255, 0.04);
+  --grid-major: rgba(255, 255, 255, 0.07);
+  --mark-ink: rgba(255, 255, 255, 0.24);
+  --frame-ink: rgba(255, 255, 255, 0.16);
+
+  --wash-light: rgba(148, 163, 184, 0.16);
+  --wash-shade: rgba(15, 23, 42, 0.5);
+  --wash-cool: rgba(56, 130, 189, 0.1);
+}
+
+/* --- 1. luminance wash ------------------------------------- */
+.ambient-wash {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  will-change: transform;
+}
+
+/* --- 2. grid ------------------------------------------------ */
+.blueprint-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, var(--grid-minor) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-minor) 1px, transparent 1px),
+    linear-gradient(to right, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-major) 1px, transparent 1px);
+  background-size:
+    64px 64px,
+    64px 64px,
+    256px 256px,
+    256px 256px;
+  /* Fade toward the edges so the grid never boxes the page in with a
+     hard rectangle at the viewport border. */
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, #000 30%, transparent 100%);
+}
+
+/* --- 3. registration marks + 4. scaffolding ----------------- */
+.blueprint-marks,
+.blueprint-frames {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.blueprint-marks {
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, #000 20%, transparent 95%);
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, #000 20%, transparent 95%);
+}
+
+/* Each frame draws its perimeter, holds, then dissolves. --len is the
+   rect's perimeter, set per-element so the dash maths is exact. */
+.blueprint-frame {
+  fill: none;
+  stroke: var(--frame-ink);
+  stroke-width: 1;
+  stroke-dasharray: var(--len);
+  stroke-dashoffset: var(--len);
+  opacity: 0;
+  animation: frame-trace 20s ease-in-out infinite;
+}
+
+@keyframes frame-trace {
+  0% {
+    stroke-dashoffset: var(--len);
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  32% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  62% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  78%,
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+/* Corner ticks fade in just after their frame completes. */
+.blueprint-tick {
+  stroke: var(--mark-ink);
+  stroke-width: 1;
+  opacity: 0;
+  animation: tick-blink 20s ease-in-out infinite;
+}
+
+@keyframes tick-blink {
+  0%,
+  30% {
+    opacity: 0;
+  }
+  38%,
+  62% {
+    opacity: 1;
+  }
+  78%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blueprint-frame {
+    animation: none;
+    stroke-dashoffset: 0;
+    opacity: 0.55;
+  }
+
+  .blueprint-tick {
+    animation: none;
+    opacity: 0.55;
+  }
+}
+
+/* With transparency reduced, drop the whole decorative stack — the
+   layout must read on flat ground. */
+@media (prefers-reduced-transparency: reduce) {
+  .ambient-wash,
+  .blueprint-grid,
+  .blueprint-marks,
+  .blueprint-frames {
+    display: none;
+  }
+}

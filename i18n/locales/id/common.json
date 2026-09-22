@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "brands": "Merek Kami",
+    "contact": "Hubungi Kami",
+    "toggleMenu": "Buka menu navigasi",
+    "toggleTheme": "Ganti mode gelap",
+    "language": "Bahasa"
+  },
+  "footer": {
+    "tagline": "Induk merek dari CV. Amerta Meta Data yang menembus batas konvensional lewat inovasi lintas bidang.",
+    "officeHeading": "Kantor Kami",
+    "contactHeading": "Hubungi Kami",
+    "socialHeading": "Terhubung dengan Kami",
+    "quickLinks": "Tautan Cepat",
+    "brandsHeading": "Merek Kami",
+    "copyright": "© {year} Noktah Inovasi Teknologi. Seluruh hak cipta dilindungi.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat & Ketentuan"
+  },
+  "brandTaglines": {
+    "eskala": "Pemasaran Digital Fasilitas Kesehatan",
+    "venyu": "Manajemen Venue Olahraga"
+  },
+  "common": {
+    "logoAlt": "Logo Noktah",
+    "opensInNewTab": "Terbuka di tab baru",
+    "lastUpdated": "Terakhir diperbarui",
+    "backToTop": "Kembali ke atas"
+  }
+}

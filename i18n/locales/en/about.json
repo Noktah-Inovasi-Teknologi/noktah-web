@@ -1,0 +1,112 @@
+{
+  "about": {
+    "seo": {
+      "title": "About - Noktah Inovasi Teknologi | Cross-Field Innovation Journey",
+      "description": "Learn about Noktah Inovasi Teknologi, the main holding brand of CV. Amerta Meta Data. Discover our vision, mission, values, and cross-field innovation approach combining healthcare marketing, creative production, sports technology, and software engineering.",
+      "ogTitle": "About - Noktah Inovasi Teknologi | Innovation Journey",
+      "ogDescription": "Forward-thinking technology company dedicated to breaking conventional boundaries through innovative cross-field solutions. Based in Sleman, Yogyakarta, Indonesia.",
+      "twitterTitle": "About Noktah Inovasi Teknologi",
+      "twitterDescription": "Discover our innovation journey: Bold, Creative, Adaptable, Innovative. Building the future through cross-field collaboration.",
+      "keywords": "about noktah, innovation company, cross-field technology, CV Amerta Meta Data, Yogyakarta Indonesia, technology company profile, innovation values"
+    },
+    "hero": {
+      "subtitle": "About Our Innovation Journey",
+      "description": "Discover how we're building cross-field solutions that push beyond conventional limits in technology, creativity, and business."
+    },
+    "overview": {
+      "heading": "Who We {accent}",
+      "headingAccent": "Are",
+      "lead": "A forward-thinking technology company dedicated to breaking conventional boundaries through innovative cross-field solutions.",
+      "p1": "{company} serves as the main holding brand of {parent}, operating from Sleman, Yogyakarta, Indonesia. Our foundation rests on a core principle: the most impactful solutions emerge when diverse fields converge.",
+      "p2": "Rather than confining ourselves to traditional industry silos, we deliberately operate across healthcare marketing, creative production, sports technology, and software engineering. This interdisciplinary approach enables us to apply insights from one domain to solve challenges in another, creating unique value propositions.",
+      "p3": "Through two brands that each go deep into their own industry, we demonstrate how cross-field innovation can address real market needs while building sustainable businesses.",
+      "statEstablished": "Established",
+      "statEstablishedSub": "Innovation Hub",
+      "statCountry": "Indonesia",
+      "statCountrySub": "Based in Yogyakarta",
+      "statBrands": "2 Brands",
+      "statBrandsSub": "Active Portfolio",
+      "statCrossField": "Cross-Field",
+      "statCrossFieldSub": "Innovation"
+    },
+    "visionMission": {
+      "heading": "Our Vision & {accent}",
+      "headingAccent": "Mission",
+      "visionTitle": "Our Vision",
+      "visionBody": "To establish Southeast Asia's premier innovation ecosystem where healthcare marketing, creative production, sports technology, and software engineering converge to address complex, real-world challenges through collaborative cross-field solutions.",
+      "missionTitle": "Our Mission",
+      "mission1": "Develop breakthrough solutions through strategic integration of diverse technological domains and industry expertise",
+      "mission2": "Generate measurable impact by applying bold, creative methodologies with adaptive implementation strategies",
+      "mission3": "Cultivate an organizational culture that prioritizes experimental innovation and systematic knowledge advancement"
+    },
+    "values": {
+      "heading": "Our Core {accent}",
+      "headingAccent": "Values",
+      "description": "These values guide everything we do, from how we approach problems to how we build lasting solutions.",
+      "bold": {
+        "title": "Bold",
+        "body": "We pursue ambitious initiatives that others might consider too complex or unconventional. Our willingness to tackle challenging projects with calculated risk-taking drives breakthrough innovation."
+      },
+      "creative": {
+        "title": "Creative",
+        "body": "Our approach to problem-solving transcends traditional boundaries, drawing inspiration and methodologies from diverse disciplines to create novel solutions that conventional thinking might overlook."
+      },
+      "adaptable": {
+        "title": "Adaptable",
+        "body": "We maintain organizational agility that enables rapid response to technological advances and market evolution. This flexibility allows us to capitalize on emerging opportunities while adjusting strategies as conditions change."
+      },
+      "innovative": {
+        "title": "Innovative",
+        "body": "Innovation permeates every aspect of our operations, from optimizing established processes to pioneering entirely new solutions. We systematically seek opportunities to enhance efficiency and create value."
+      }
+    },
+    "structure": {
+      "heading": "Company {accent}",
+      "headingAccent": "Structure",
+      "legalTitle": "Legal Entity",
+      "holdingLabel": "Holding Brand",
+      "parentLabel": "Parent Company",
+      "typeLabel": "Company Type",
+      "typeValue": "Commanditaire Vennootschap (CV)",
+      "focusTitle": "Business Focus",
+      "focus1": "Healthcare Digital Marketing",
+      "focus2": "Creative & Content Production",
+      "focus3": "Sports Technology Platforms",
+      "focus4": "Software Engineering",
+      "focus5": "Cross-Field Innovation"
+    },
+    "approach": {
+      "heading": "The Noktah {accent}",
+      "headingAccent": "Approach",
+      "description": "How we turn cross-field thinking into tangible innovation that creates real impact.",
+      "step1": {
+        "title": "Identify Intersections",
+        "body": "We look for opportunities where different industries, technologies, or approaches can converge to create new possibilities."
+      },
+      "step2": {
+        "title": "Experiment Boldly",
+        "body": "We prototype rapidly, test assumptions, and aren't afraid to fail fast and learn from every iteration."
+      },
+      "step3": {
+        "title": "Scale Impact",
+        "body": "We build solutions that create meaningful impact, then scale them through our brand portfolio to reach wider audiences."
+      },
+      "philosophyTitle": "Innovation Philosophy",
+      "philosophyQuote": "\"The most interesting projects happen when you combine things that don't usually go together. Medical compliance with creative work, sport with software engineering. That's where we find the best opportunities.\"",
+      "philosophyNote": "This approach shapes both our brands — from Eskala's regulation-grounded healthcare marketing to Venyu's venue management system."
+    },
+    "contact": {
+      "heading": "Get in {accent}",
+      "headingAccent": "Touch",
+      "description": "Ready to push beyond conventional limits together? Let's explore how we can collaborate.",
+      "officeTitle": "Our Office",
+      "addressLabel": "Address",
+      "contactLabel": "Contact Information",
+      "connectTitle": "Connect With Us",
+      "socialLabel": "Social Media",
+      "quickActionsLabel": "Quick Actions",
+      "ctaBrands": "Explore Our Brands",
+      "ctaContact": "Contact Us"
+    }
+  }
+}

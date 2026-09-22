@@ -1,0 +1,178 @@
+{
+  "privacy": {
+    "seo": {
+      "title": "Kebijakan Privasi — Noktah Inovasi Teknologi",
+      "description": "Kebijakan Privasi Noktah Inovasi Teknologi. Pelajari cara kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda sesuai Undang-Undang Pelindungan Data Pribadi (UU No. 27 Tahun 2022).",
+      "keywords": "kebijakan privasi, pelindungan data pribadi, UU PDP, UU 27 2022, data pribadi, noktah"
+    },
+    "lastUpdatedDate": "22 September 2026",
+    "hero": {
+      "headingPre": "Kebijakan",
+      "headingAccent": "Privasi",
+      "description": "Privasi Anda penting bagi kami. Pelajari bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda di seluruh merek Noktah.",
+      "lastUpdatedLabel": "Terakhir Diperbarui:"
+    },
+    "intro": {
+      "title": "Pendahuluan",
+      "appliesTo": "Kebijakan Privasi ini berlaku bagi {company} beserta kedua mereknya, {eskala} dan {venyu}. Kami beroperasi di bawah {parent}, badan usaha Indonesia yang berkedudukan di Sleman, Daerah Istimewa Yogyakarta.",
+      "compliance": "Kebijakan ini disusun sesuai Undang-Undang Pelindungan Data Pribadi (UU PDP No. 27 Tahun 2022) dan menjelaskan bagaimana kami mengumpulkan, menggunakan, memproses, serta melindungi data pribadi Anda saat menggunakan layanan kami.",
+      "ageRequirement": "Batas Usia: Layanan kami hanya tersedia bagi perorangan yang berusia 18 tahun ke atas."
+    },
+    "collect": {
+      "title": "Data yang Kami Kumpulkan",
+      "personalTitle": "Data Pribadi",
+      "personalLead": "Kami mengumpulkan data pribadi berikut saat Anda menggunakan layanan kami:",
+      "identityLabel": "Data Identitas:",
+      "identityBody": "Nama lengkap, tanggal lahir, nomor dokumen identitas",
+      "contactLabel": "Data Kontak:",
+      "contactBody": "Alamat email, nomor telepon, alamat domisili",
+      "digitalLabel": "Konten Digital:",
+      "digitalBody": "Foto, video, gambar profil, dan konten media lainnya",
+      "personalizedLabel": "Data Personalisasi:",
+      "personalizedBody": "Preferensi, pengaturan, pola penggunaan, dan data perilaku",
+      "technicalLabel": "Data Teknis:",
+      "technicalBody": "Alamat IP, informasi perangkat, jenis peramban, cookie",
+      "serviceTitle": "Pengumpulan Data pada Tiap Layanan",
+      "eskalaTitle": "Eskala (Pemasaran Digital Kesehatan)",
+      "eskalaBody": "Data fasilitas kesehatan, brief kampanye, aset merek, materi konten, serta data performa akun iklan dan kanal media sosial yang kami kelola atas nama klien",
+      "venyuTitle": "Venyu (Manajemen Venue Olahraga)",
+      "venyuBody": "Data venue dan lapangan, jadwal serta riwayat pemesanan, data member dan langganan, presensi staf, dan catatan pembayaran"
+    },
+    "legalBasis": {
+      "title": "Dasar Hukum Pemrosesan",
+      "lead": "Kami memproses data pribadi Anda berdasarkan dasar hukum berikut sebagaimana diatur dalam UU PDP 2022:",
+      "consentTitle": "Persetujuan",
+      "consentBody": "Persetujuan Anda yang tegas, sadar, dan diberikan untuk tujuan yang spesifik",
+      "contractTitle": "Pelaksanaan Perjanjian",
+      "contractBody": "Pemrosesan yang diperlukan untuk menjalankan layanan dan memenuhi kewajiban perjanjian",
+      "legalTitle": "Kewajiban Hukum",
+      "legalBody": "Pemenuhan ketentuan hukum dan peraturan yang berlaku di Indonesia",
+      "vitalTitle": "Kepentingan Vital",
+      "vitalBody": "Pelindungan jiwa, kesehatan, dan keselamatan subjek data pribadi",
+      "publicTitle": "Kepentingan Umum",
+      "publicBody": "Pelaksanaan tugas demi kepentingan umum atau kewenangan resmi",
+      "legitimateTitle": "Kepentingan yang Sah",
+      "legitimateBody": "Kepentingan bisnis kami yang sah dan tidak mengesampingkan hak Anda"
+    },
+    "use": {
+      "title": "Bagaimana Kami Menggunakan Data Anda",
+      "lead": "Kami menggunakan data pribadi Anda untuk tujuan berikut:",
+      "serviceTitle": "Penyediaan Layanan",
+      "service1": "Menyediakan dan memelihara layanan kami",
+      "service2": "Memproses transaksi dan pembayaran",
+      "service3": "Dukungan pelanggan dan komunikasi",
+      "service4": "Pengelolaan akun dan autentikasi",
+      "businessTitle": "Operasional Bisnis",
+      "business1": "Peningkatan dan pengembangan layanan",
+      "business2": "Analitik dan pemantauan performa",
+      "business3": "Komunikasi pemasaran dan promosi",
+      "business4": "Kepatuhan hukum dan pencegahan penipuan"
+    },
+    "content": {
+      "title": "Kepemilikan dan Lisensi Konten",
+      "professionalTitle": "Konten Kreatif Profesional",
+      "professionalLead": "{highlight} (layanan kreatif Eskala, mencakup konten media sosial, materi merek, dan aset pemasaran) menjadi kekayaan intelektual kami setelah pekerjaan selesai dan pembayaran dilunasi.",
+      "professionalHighlight": "Seluruh konten kreatif yang diproduksi oleh tim profesional kami",
+      "professionalDetail": "Hal ini mencakup, tetapi tidak terbatas pada: konten media sosial, materi identitas merek, kampanye pemasaran, fotografi, videografi, desain grafis, penulisan naskah, dan setiap karya kreatif yang dipesan.",
+      "ugcTitle": "Konten Buatan Pengguna",
+      "ugcLead": "{highlight} (foto profil, foto pengguna, konten pribadi) tetap menjadi milik Anda. Namun, dengan menggunakan layanan kami, Anda memberikan lisensi kepada kami untuk:",
+      "ugcHighlight": "Konten yang Anda unggah atau bagikan",
+      "ugc1": "Menampilkan dan menyimpan konten Anda sebagai bagian dari layanan kami",
+      "ugc2": "Memproses dan menganalisis konten untuk peningkatan layanan",
+      "ugc3": "Membuat cadangan dan menjaga keberlangsungan layanan",
+      "ugcWithdraw": "Anda dapat menarik lisensi ini dengan menghapus konten Anda atau menutup akun Anda."
+    },
+    "sharing": {
+      "title": "Pembagian dan Pengungkapan Data",
+      "lead": "Kami dapat membagikan data pribadi Anda dalam keadaan berikut:",
+      "internalTitle": "Antar Merek Noktah",
+      "internalBody": "Antara Eskala dan Venyu untuk penyediaan layanan yang terpadu",
+      "vendorsTitle": "Penyedia Layanan",
+      "vendorsBody": "Dengan pihak ketiga tepercaya yang membantu penyediaan layanan (pemroses pembayaran, penyimpanan awan, analitik)",
+      "legalTitle": "Ketentuan Hukum",
+      "legalBody": "Apabila diwajibkan oleh hukum Indonesia, putusan pengadilan, atau otoritas pemerintah",
+      "safetyTitle": "Keamanan dan Keselamatan",
+      "safetyBody": "Untuk melindungi hak, keselamatan, dan keamanan pengguna serta mencegah penipuan atau aktivitas melawan hukum"
+    },
+    "security": {
+      "title": "Keamanan Data",
+      "lead": "Kami menerapkan langkah pengamanan teknis dan organisasi yang memadai untuk melindungi data pribadi Anda dari akses, perubahan, pengungkapan, atau pemusnahan tanpa hak.",
+      "detail": "Kami menerapkan langkah pengamanan teknis dan organisasi yang dirancang untuk melindungi data pribadi Anda dari akses, perubahan, pengungkapan, atau pemusnahan tanpa hak, sesuai standar industri dan ketentuan hukum yang berlaku.",
+      "commitmentTitle": "Komitmen Keamanan",
+      "commitmentBody": "Kami menerapkan langkah pengamanan yang wajar untuk melindungi data Anda. Meskipun kami berupaya menjaga standar keamanan yang memadai, tidak ada metode pengiriman maupun penyimpanan yang sepenuhnya aman.",
+      "breachBody": "Apabila terjadi kegagalan pelindungan data pribadi, kami akan memenuhi seluruh kewajiban pemberitahuan sebagaimana diatur dalam UU PDP 2022 dan peraturan perundang-undangan Indonesia yang berlaku."
+    },
+    "rights": {
+      "title": "Hak Anda",
+      "lead": "Berdasarkan Undang-Undang Pelindungan Data Pribadi (UU PDP 2022), Anda memiliki hak-hak berikut:",
+      "accessTitle": "Hak untuk Mengakses",
+      "accessBody": "Meminta informasi mengenai data pribadi Anda yang kami simpan",
+      "rectificationTitle": "Hak untuk Memperbaiki",
+      "rectificationBody": "Meminta perbaikan atas data pribadi yang tidak akurat atau tidak lengkap",
+      "erasureTitle": "Hak untuk Menghapus",
+      "erasureBody": "Meminta penghapusan data pribadi Anda dalam keadaan tertentu",
+      "withdrawTitle": "Hak untuk Menarik Persetujuan",
+      "withdrawBody": "Menarik persetujuan pemrosesan data Anda sewaktu-waktu",
+      "objectTitle": "Hak untuk Mengajukan Keberatan",
+      "objectBody": "Mengajukan keberatan atas pemrosesan data pribadi Anda untuk tujuan tertentu",
+      "portabilityTitle": "Hak atas Portabilitas Data",
+      "portabilityBody": "Meminta data Anda dalam format terstruktur yang dapat dibaca mesin",
+      "restrictTitle": "Hak untuk Membatasi Pemrosesan",
+      "restrictBody": "Meminta pembatasan pemrosesan dalam keadaan tertentu",
+      "informationTitle": "Hak untuk Memperoleh Informasi",
+      "informationBody": "Memperoleh penjelasan mengenai cara data Anda diproses",
+      "exerciseTitle": "Menggunakan Hak Anda",
+      "exerciseLead": "Untuk menggunakan hak-hak tersebut, silakan hubungi kami di {email}. Kami akan menanggapi permintaan Anda dalam jangka waktu yang ditentukan oleh peraturan perundang-undangan Indonesia.",
+      "exerciseNote": "Perlu diperhatikan bahwa sebagian hak dapat dibatasi oleh kewajiban hukum atau kepentingan bisnis yang sah."
+    },
+    "retention": {
+      "title": "Penyimpanan Data",
+      "lead": "Kami menyimpan data pribadi Anda hanya selama diperlukan untuk memenuhi tujuan yang diuraikan dalam kebijakan ini atau sebagaimana diwajibkan oleh peraturan perundang-undangan.",
+      "generalTitle": "Prinsip Umum",
+      "generalBody": "Kami menyimpan data pribadi hanya selama diperlukan untuk tujuan yang diuraikan dalam kebijakan ini atau sebagaimana diwajibkan oleh hukum Indonesia.",
+      "generalNote": "Data tertentu dapat disimpan lebih lama apabila diwajibkan oleh ketentuan perpajakan, akuntansi, atau kewajiban hukum lainnya di Indonesia.",
+      "professionalTitle": "Konten Profesional",
+      "professionalBody": "Seluruh konten kreatif yang diproduksi oleh tim profesional kami (layanan kreatif Eskala) dapat kami simpan sebagai kekayaan intelektual kami."
+    },
+    "transfers": {
+      "title": "Transfer Data ke Luar Negeri",
+      "lead": "Data pribadi Anda dapat ditransfer dan diproses di luar wilayah Indonesia untuk keperluan penyimpanan awan, pemrosesan pembayaran, dan penyediaan layanan lainnya.",
+      "detail": "Apabila kami mentransfer data Anda ke luar negeri, kami memastikan tingkat pelindungan yang memadai sebagaimana disyaratkan UU PDP 2022 dan memperoleh persetujuan Anda apabila diperlukan."
+    },
+    "cookies": {
+      "title": "Cookie dan Teknologi Pelacakan",
+      "lead": "Kami menggunakan cookie dan teknologi pelacakan serupa untuk meningkatkan pengalaman Anda dan menyempurnakan layanan kami.",
+      "essentialTitle": "Cookie Esensial",
+      "essentialBody": "Diperlukan untuk fungsi dasar dan keamanan situs. Cookie ini tidak dapat dinonaktifkan.",
+      "nonEssentialTitle": "Cookie Non-Esensial",
+      "nonEssentialBody": "Digunakan untuk analitik, personalisasi, dan pemasaran. Anda dapat mengaturnya melalui pengaturan peramban.",
+      "manage": "Anda dapat mengelola preferensi cookie melalui pengaturan peramban Anda. Menonaktifkan cookie tertentu dapat memengaruhi fungsi situs."
+    },
+    "changes": {
+      "title": "Perubahan atas Kebijakan Ini",
+      "lead": "Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu untuk mencerminkan perubahan praktik, layanan, atau ketentuan hukum yang berlaku.",
+      "notificationTitle": "Pemberitahuan Perubahan",
+      "notificationBody": "Kami akan memberitahukan perubahan penting melalui email atau pengumuman yang jelas di situs kami",
+      "effectiveTitle": "Tanggal Berlaku",
+      "effectiveBody": "Perubahan mulai berlaku sepanjang diperkenankan oleh hukum, dengan pemberitahuan terlebih dahulu apabila disyaratkan",
+      "continuedTitle": "Penggunaan Berkelanjutan",
+      "continuedBody": "Penggunaan layanan kami secara berkelanjutan setelah adanya perubahan menandakan penerimaan Anda atas kebijakan yang diperbarui"
+    },
+    "contact": {
+      "title": "Hubungi Kami",
+      "lead": "Apabila Anda memiliki pertanyaan mengenai Kebijakan Privasi ini atau hendak menggunakan hak Anda, silakan hubungi kami:",
+      "dpoTitle": "Pejabat Pelindungan Data Pribadi",
+      "responseTitle": "Waktu Tanggapan",
+      "responseBody": "Kami akan menanggapi pertanyaan terkait privasi dalam jangka waktu yang ditentukan oleh peraturan perundang-undangan Indonesia.",
+      "companyTitle": "Informasi Perusahaan",
+      "authorityTitle": "Otoritas Pengawas",
+      "authorityBody": "Anda juga dapat menyampaikan pengaduan terkait pelindungan data pribadi kepada Kementerian Komunikasi dan Digital (Komdigi) Republik Indonesia, yang saat ini menjalankan fungsi pengawasan pelindungan data pribadi, atau kepada lembaga pengawas pelindungan data pribadi yang dibentuk berdasarkan UU PDP."
+    },
+    "compliance": {
+      "title": "Kepatuhan Hukum",
+      "body": "Kebijakan Privasi ini disusun sesuai Undang-Undang Pelindungan Data Pribadi (UU PDP No. 27 Tahun 2022) serta peraturan perundang-undangan Indonesia lainnya yang berlaku. Kami berkomitmen melindungi privasi Anda dan menangani data pribadi Anda secara bertanggung jawab.",
+      "badge1": "Patuh UU PDP 2022",
+      "badge2": "Hukum Indonesia"
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "privacy": {
+    "seo": {
+      "title": "Privacy Policy - Noktah Inovasi Teknologi",
+      "description": "Privacy Policy for Noktah Inovasi Teknologi. Learn how we collect, use, and protect your personal data in accordance with Indonesia's Personal Data Protection Law (UU PDP No. 27 of 2022).",
+      "keywords": "privacy policy, personal data protection, UU PDP, Law 27 2022, personal data, noktah"
+    },
+    "lastUpdatedDate": "22 September 2026",
+    "hero": {
+      "headingPre": "Privacy",
+      "headingAccent": "Policy",
+      "description": "Your privacy matters to us. Learn how we collect, use, and protect your personal data across all Noktah brands.",
+      "lastUpdatedLabel": "Last Updated:"
+    },
+    "intro": {
+      "title": "Introduction",
+      "appliesTo": "This Privacy Policy applies to {company} and both of our brands, {eskala} and {venyu}. We are operated under {parent}, an Indonesian company based in Sleman, Yogyakarta.",
+      "compliance": "This policy complies with Indonesia's Personal Data Protection Law (UU PDP No. 27 of 2022) and explains how we collect, use, process, and protect your personal data when you use our services.",
+      "ageRequirement": "Age Requirement: Our services are only available to individuals aged 18 years and above."
+    },
+    "collect": {
+      "title": "Information We Collect",
+      "personalTitle": "Personal Information",
+      "personalLead": "We collect the following personal data when you use our services:",
+      "identityLabel": "Identity Information:",
+      "identityBody": "Full name, date of birth, identity document numbers",
+      "contactLabel": "Contact Information:",
+      "contactBody": "Email address, phone number, physical address",
+      "digitalLabel": "Digital Content:",
+      "digitalBody": "Photos, videos, profile images, and other media content",
+      "personalizedLabel": "Personalized Data:",
+      "personalizedBody": "Preferences, settings, usage patterns, and behavioral data",
+      "technicalLabel": "Technical Information:",
+      "technicalBody": "IP address, device information, browser type, cookies",
+      "serviceTitle": "Service-Specific Data Collection",
+      "eskalaTitle": "Eskala (Healthcare Digital Marketing)",
+      "eskalaBody": "Healthcare facility details, campaign briefs, brand assets, content materials, and performance data for the ad accounts and social channels we manage on a client's behalf",
+      "venyuTitle": "Venyu (Sports Venue Management)",
+      "venyuBody": "Venue and court details, schedules and booking history, member and subscription records, staff attendance, and payment records"
+    },
+    "legalBasis": {
+      "title": "Legal Basis for Processing",
+      "lead": "We process your personal data based on the following legal grounds under UU PDP 2022:",
+      "consentTitle": "Consent",
+      "consentBody": "Your explicit, informed, and specific consent for particular purposes",
+      "contractTitle": "Contract Performance",
+      "contractBody": "Processing necessary to perform our services and contractual obligations",
+      "legalTitle": "Legal Obligations",
+      "legalBody": "Compliance with Indonesian legal and regulatory requirements",
+      "vitalTitle": "Vital Interests",
+      "vitalBody": "Protection of life, health, and safety of data subjects",
+      "publicTitle": "Public Interest",
+      "publicBody": "Tasks carried out in the public interest or official authority",
+      "legitimateTitle": "Legitimate Interests",
+      "legitimateBody": "Our legitimate business interests that don't override your rights"
+    },
+    "use": {
+      "title": "How We Use Your Information",
+      "lead": "We use your personal data for the following purposes:",
+      "serviceTitle": "Service Delivery",
+      "service1": "Providing and maintaining our services",
+      "service2": "Processing transactions and payments",
+      "service3": "Customer support and communication",
+      "service4": "Account management and authentication",
+      "businessTitle": "Business Operations",
+      "business1": "Service improvement and development",
+      "business2": "Analytics and performance monitoring",
+      "business3": "Marketing and promotional communications",
+      "business4": "Legal compliance and fraud prevention"
+    },
+    "content": {
+      "title": "Content Ownership and Licensing",
+      "professionalTitle": "Professional Content Creation",
+      "professionalLead": "{highlight} (Eskala's creative services, including social media content, brand materials, and marketing assets) become our intellectual property upon completion and payment.",
+      "professionalHighlight": "All creative content produced by our professional teams",
+      "professionalDetail": "This includes but is not limited to: social media content, brand identity materials, marketing campaigns, photography, videography, graphic design, copywriting, and any commissioned creative works.",
+      "ugcTitle": "User-Generated Content",
+      "ugcLead": "{highlight} (profile pictures, user photos, personal content) remains your property. However, by using our services, you grant us a license to:",
+      "ugcHighlight": "Content you upload or share",
+      "ugc1": "Display and store your content as part of our services",
+      "ugc2": "Process and analyze content for service improvement",
+      "ugc3": "Create backups and ensure service continuity",
+      "ugcWithdraw": "You can withdraw this license by deleting your content or terminating your account."
+    },
+    "sharing": {
+      "title": "Data Sharing and Disclosure",
+      "lead": "We may share your personal data in the following circumstances:",
+      "internalTitle": "Within Noktah Brands",
+      "internalBody": "Between Eskala and Venyu for integrated service delivery",
+      "vendorsTitle": "Service Providers",
+      "vendorsBody": "With trusted third-party vendors who assist in service delivery (payment processors, cloud storage, analytics)",
+      "legalTitle": "Legal Requirements",
+      "legalBody": "When required by Indonesian law, court orders, or government authorities",
+      "safetyTitle": "Safety and Security",
+      "safetyBody": "To protect our rights, safety, and security of users and prevent fraud or illegal activities"
+    },
+    "security": {
+      "title": "Data Security",
+      "lead": "We implement appropriate technical and organizational security measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.",
+      "detail": "We implement appropriate technical and organizational security measures designed to protect your personal data against unauthorized access, alteration, disclosure, or destruction, in accordance with industry standards and legal requirements.",
+      "commitmentTitle": "Security Commitment",
+      "commitmentBody": "We implement reasonable security measures to protect your data. While we strive to maintain appropriate security standards, no method of transmission or storage is 100% secure.",
+      "breachBody": "In the event of a data breach, we will comply with all notification requirements under UU PDP 2022 and applicable Indonesian law."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "lead": "Under Indonesian Personal Data Protection Law (UU PDP 2022), you have the following rights:",
+      "accessTitle": "Right to Access",
+      "accessBody": "Request information about what personal data we hold about you",
+      "rectificationTitle": "Right to Rectification",
+      "rectificationBody": "Request correction of inaccurate or incomplete personal data",
+      "erasureTitle": "Right to Erasure",
+      "erasureBody": "Request deletion of your personal data under certain circumstances",
+      "withdrawTitle": "Right to Withdraw Consent",
+      "withdrawBody": "Withdraw your consent for data processing at any time",
+      "objectTitle": "Right to Object",
+      "objectBody": "Object to processing of your personal data for specific purposes",
+      "portabilityTitle": "Right to Data Portability",
+      "portabilityBody": "Request your data in a structured, machine-readable format",
+      "restrictTitle": "Right to Restrict Processing",
+      "restrictBody": "Request limitation of processing under certain circumstances",
+      "informationTitle": "Right to Information",
+      "informationBody": "Be informed about how your data is being processed",
+      "exerciseTitle": "Exercising Your Rights",
+      "exerciseLead": "To exercise any of these rights, please contact us at {email}. We will respond to your request within the timeframe required by Indonesian law.",
+      "exerciseNote": "Please note that some rights may be limited by legal obligations or legitimate business interests."
+    },
+    "retention": {
+      "title": "Data Retention",
+      "lead": "We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy or as required by law.",
+      "generalTitle": "General Principle",
+      "generalBody": "We retain personal data only for as long as necessary for the purposes outlined in this policy or as required by Indonesian law.",
+      "generalNote": "Certain data may be retained for longer periods when required by Indonesian tax, accounting, or other legal obligations.",
+      "professionalTitle": "Professional Content",
+      "professionalBody": "All creative content produced by our professional teams (Eskala's creative services) may be retained as our intellectual property."
+    },
+    "transfers": {
+      "title": "International Data Transfers",
+      "lead": "Your personal data may be transferred to and processed outside Indonesia for cloud storage, payment processing, and other service delivery purposes.",
+      "detail": "When we transfer your data internationally, we ensure adequate protection as required by UU PDP 2022 and obtain your consent where necessary."
+    },
+    "cookies": {
+      "title": "Cookies and Tracking Technologies",
+      "lead": "We use cookies and similar tracking technologies to enhance your experience and improve our services.",
+      "essentialTitle": "Essential Cookies",
+      "essentialBody": "Required for basic website functionality and security. These cannot be disabled.",
+      "nonEssentialTitle": "Non-Essential Cookies",
+      "nonEssentialBody": "Used for analytics, personalization, and marketing. You can control these through your browser settings.",
+      "manage": "You can manage cookie preferences through your browser settings. Disabling certain cookies may affect website functionality."
+    },
+    "changes": {
+      "title": "Changes to This Policy",
+      "lead": "We may update this Privacy Policy from time to time to reflect changes in our practices, services, or legal requirements.",
+      "notificationTitle": "Notification of Changes",
+      "notificationBody": "We will notify you of significant changes via email or prominent notice on our website",
+      "effectiveTitle": "Effective Date",
+      "effectiveBody": "Changes become effective as permitted by law, with advance notice where required",
+      "continuedTitle": "Continued Use",
+      "continuedBody": "Your continued use of our services after changes indicates acceptance of the updated policy"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "lead": "If you have any questions about this Privacy Policy or wish to exercise your rights, please contact us:",
+      "dpoTitle": "Data Protection Officer",
+      "responseTitle": "Response Time",
+      "responseBody": "We will respond to your privacy-related inquiries within the timeframe required by Indonesian law.",
+      "companyTitle": "Company Information",
+      "authorityTitle": "Regulatory Authority",
+      "authorityBody": "You may also file personal data protection complaints with Indonesia's Ministry of Communication and Digital Affairs (Komdigi), which currently carries out the personal data protection supervisory function, or with the personal data protection supervisory authority established under UU PDP."
+    },
+    "compliance": {
+      "title": "Legal Compliance",
+      "body": "This Privacy Policy complies with Indonesia's Personal Data Protection Law (UU PDP No. 27 of 2022) and other applicable Indonesian regulations. We are committed to protecting your privacy and handling your personal data responsibly.",
+      "badge1": "UU PDP 2022 Compliant",
+      "badge2": "Indonesian Law"
+    }
+  }
+}

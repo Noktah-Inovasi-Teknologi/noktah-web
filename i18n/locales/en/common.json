@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "brands": "Brands",
+    "contact": "Contact Us",
+    "toggleMenu": "Toggle navigation menu",
+    "toggleTheme": "Toggle dark mode",
+    "language": "Language"
+  },
+  "footer": {
+    "tagline": "The main holding brand of CV. Amerta Meta Data, pushing beyond conventional limits through cross-field innovation.",
+    "officeHeading": "Our Office",
+    "contactHeading": "Contact Us",
+    "socialHeading": "Connect With Us",
+    "quickLinks": "Quick Links",
+    "brandsHeading": "Our Brands",
+    "copyright": "© {year} Noktah Inovasi Teknologi. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "brandTaglines": {
+    "eskala": "Healthcare Digital Marketing",
+    "venyu": "Sports Venue Management"
+  },
+  "common": {
+    "logoAlt": "Noktah Logo",
+    "opensInNewTab": "Opens in a new tab",
+    "lastUpdated": "Last updated",
+    "backToTop": "Back to top"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "about": {
+    "seo": {
+      "title": "Tentang Kami — Noktah Inovasi Teknologi | Perjalanan Inovasi Lintas Bidang",
+      "description": "Kenali Noktah Inovasi Teknologi, induk merek dari CV. Amerta Meta Data. Pelajari visi, misi, nilai, dan pendekatan inovasi lintas bidang kami yang memadukan pemasaran kesehatan, produksi kreatif, teknologi olahraga, serta rekayasa perangkat lunak.",
+      "ogTitle": "Tentang Kami — Noktah Inovasi Teknologi | Perjalanan Inovasi",
+      "ogDescription": "Perusahaan teknologi berwawasan ke depan yang menembus sekat konvensional lewat solusi inovatif lintas bidang. Berbasis di Sleman, Daerah Istimewa Yogyakarta, Indonesia.",
+      "twitterTitle": "Tentang Noktah Inovasi Teknologi",
+      "twitterDescription": "Kenali perjalanan inovasi kami: Berani, Kreatif, Adaptif, Inovatif. Membangun masa depan lewat kolaborasi lintas bidang.",
+      "keywords": "tentang noktah, perusahaan inovasi, teknologi lintas bidang, CV Amerta Meta Data, Yogyakarta Indonesia, profil perusahaan teknologi, nilai inovasi"
+    },
+    "hero": {
+      "subtitle": "Perjalanan Inovasi Kami",
+      "description": "Kenali bagaimana kami membangun solusi lintas bidang yang menembus batas konvensional di ranah teknologi, kreativitas, dan bisnis."
+    },
+    "overview": {
+      "heading": "Siapa {accent}",
+      "headingAccent": "Kami",
+      "lead": "Perusahaan teknologi berwawasan ke depan yang berdedikasi menembus sekat konvensional lewat solusi inovatif lintas bidang.",
+      "p1": "{company} adalah induk merek dari {parent}, beroperasi dari Sleman, Daerah Istimewa Yogyakarta, Indonesia. Fondasi kami berpijak pada satu prinsip: solusi yang paling berdampak lahir ketika beragam bidang dipertemukan.",
+      "p2": "Alih-alih mengurung diri dalam sekat industri yang biasa, kami sengaja bekerja lintas pemasaran kesehatan, produksi kreatif, teknologi olahraga, dan rekayasa perangkat lunak. Pendekatan lintas disiplin ini memungkinkan kami membawa wawasan dari satu ranah untuk memecahkan tantangan di ranah lain, dan melahirkan nilai yang khas.",
+      "p3": "Lewat dua merek yang masing-masing menggarap industrinya secara mendalam, kami menunjukkan bagaimana inovasi lintas bidang mampu menjawab kebutuhan pasar yang nyata sekaligus membangun bisnis yang berkelanjutan.",
+      "statEstablished": "Berdiri",
+      "statEstablishedSub": "Pusat Inovasi",
+      "statCountry": "Indonesia",
+      "statCountrySub": "Berbasis di Yogyakarta",
+      "statBrands": "2 Merek",
+      "statBrandsSub": "Portofolio Aktif",
+      "statCrossField": "Lintas Bidang",
+      "statCrossFieldSub": "Inovasi"
+    },
+    "visionMission": {
+      "heading": "Visi & {accent} Kami",
+      "headingAccent": "Misi",
+      "visionTitle": "Visi Kami",
+      "visionBody": "Menjadi ekosistem inovasi terdepan di Asia Tenggara, tempat pemasaran kesehatan, produksi kreatif, teknologi olahraga, dan rekayasa perangkat lunak bertemu untuk menjawab tantangan nyata yang kompleks melalui solusi kolaboratif lintas bidang.",
+      "missionTitle": "Misi Kami",
+      "mission1": "Mengembangkan solusi terobosan melalui integrasi strategis antar ranah teknologi dan keahlian industri yang beragam",
+      "mission2": "Menghadirkan dampak yang terukur dengan metodologi yang berani dan kreatif serta strategi penerapan yang adaptif",
+      "mission3": "Menumbuhkan budaya organisasi yang mengutamakan inovasi eksperimental dan pengembangan pengetahuan secara sistematis"
+    },
+    "values": {
+      "heading": "{accent} Inti Kami",
+      "headingAccent": "Nilai",
+      "description": "Nilai-nilai ini memandu semua yang kami kerjakan, dari cara kami memandang masalah hingga cara kami membangun solusi yang bertahan lama.",
+      "bold": {
+        "title": "Berani",
+        "body": "Kami mengejar inisiatif ambisius yang mungkin dianggap terlalu rumit atau tidak lazim oleh pihak lain. Kesediaan menggarap proyek menantang dengan risiko yang terukur inilah yang mendorong lahirnya terobosan."
+      },
+      "creative": {
+        "title": "Kreatif",
+        "body": "Cara kami memecahkan masalah melampaui batas-batas yang biasa, menyerap inspirasi dan metode dari berbagai disiplin untuk menciptakan solusi baru yang luput dari cara berpikir konvensional."
+      },
+      "adaptable": {
+        "title": "Adaptif",
+        "body": "Kami menjaga kelincahan organisasi agar dapat merespons cepat kemajuan teknologi dan perubahan pasar. Fleksibilitas ini membuat kami mampu menangkap peluang baru sambil menyesuaikan strategi seiring perubahan keadaan."
+      },
+      "innovative": {
+        "title": "Inovatif",
+        "body": "Inovasi meresap ke setiap aspek operasional kami, dari membenahi proses yang sudah berjalan hingga merintis solusi yang sama sekali baru. Kami sistematis dalam mencari peluang untuk meningkatkan efisiensi dan menciptakan nilai."
+      }
+    },
+    "structure": {
+      "heading": "{accent} Perusahaan",
+      "headingAccent": "Struktur",
+      "legalTitle": "Badan Hukum",
+      "holdingLabel": "Induk Merek",
+      "parentLabel": "Perusahaan Induk",
+      "typeLabel": "Bentuk Badan Usaha",
+      "typeValue": "Persekutuan Komanditer (CV)",
+      "focusTitle": "Fokus Bisnis",
+      "focus1": "Pemasaran Digital Fasilitas Kesehatan",
+      "focus2": "Layanan Kreatif & Produksi Konten",
+      "focus3": "Platform Teknologi Olahraga",
+      "focus4": "Rekayasa Perangkat Lunak",
+      "focus5": "Inovasi Lintas Bidang"
+    },
+    "approach": {
+      "heading": "Pendekatan {accent}",
+      "headingAccent": "Noktah",
+      "description": "Bagaimana kami mengubah pemikiran lintas bidang menjadi inovasi nyata yang benar-benar berdampak.",
+      "step1": {
+        "title": "Menemukan Titik Temu",
+        "body": "Kami mencari peluang di mana industri, teknologi, atau pendekatan yang berbeda dapat bertemu dan melahirkan kemungkinan baru."
+      },
+      "step2": {
+        "title": "Bereksperimen dengan Berani",
+        "body": "Kami membuat purwarupa dengan cepat, menguji asumsi, dan tidak takut gagal lebih awal selama ada pelajaran dari setiap iterasi."
+      },
+      "step3": {
+        "title": "Memperbesar Dampak",
+        "body": "Kami membangun solusi yang benar-benar berdampak, lalu mengembangkannya lewat portofolio merek agar menjangkau lebih banyak orang."
+      },
+      "philosophyTitle": "Filosofi Inovasi",
+      "philosophyQuote": "\"Proyek paling menarik justru muncul ketika kita memadukan hal-hal yang biasanya tidak berjalan bersama. Kepatuhan medis dengan kerja kreatif, olahraga dengan rekayasa perangkat lunak. Di situlah kami menemukan peluang terbaik.\"",
+      "philosophyNote": "Pendekatan ini membentuk kedua merek kami — dari pemasaran kesehatan Eskala yang berpijak pada regulasi hingga sistem manajemen venue Venyu."
+    },
+    "contact": {
+      "heading": "Mari {accent}",
+      "headingAccent": "Terhubung",
+      "description": "Siap menembus batas konvensional bersama? Mari bicarakan peluang kolaborasi kita.",
+      "officeTitle": "Kantor Kami",
+      "addressLabel": "Alamat",
+      "contactLabel": "Informasi Kontak",
+      "connectTitle": "Terhubung dengan Kami",
+      "socialLabel": "Media Sosial",
+      "quickActionsLabel": "Aksi Cepat",
+      "ctaBrands": "Jelajahi Merek Kami",
+      "ctaContact": "Hubungi Kami"
+    }
+  }
+}

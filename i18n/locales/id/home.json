@@ -1,0 +1,109 @@
+{
+  "home": {
+    "seo": {
+      "title": "Noktah Inovasi Teknologi — Menembus Batas Konvensional",
+      "description": "Perusahaan yang digerakkan inovasi, membangun solusi lintas bidang di ranah teknologi, kreativitas, bisnis, dan seterusnya. Kenali merek kami: Eskala dan Venyu.",
+      "ogTitle": "Noktah Inovasi Teknologi — Inovasi Lintas Bidang",
+      "ogDescription": "Membangun solusi terobosan lewat pemasaran kesehatan, produksi kreatif, teknologi olahraga, dan rekayasa perangkat lunak. Tempat industri bertemu.",
+      "twitterTitle": "Noktah Inovasi Teknologi — Pusat Inovasi",
+      "twitterDescription": "Perusahaan inovasi lintas bidang dengan merek Eskala dan Venyu.",
+      "keywords": "inovasi, teknologi, pemasaran digital kesehatan, produksi kreatif, teknologi olahraga, rekayasa perangkat lunak, solusi lintas bidang, Indonesia, Yogyakarta"
+    },
+    "hero": {
+      "tagline": "Menembus Batas Konvensional",
+      "description": "Perusahaan yang digerakkan inovasi, membangun solusi lintas bidang yang mendefinisikan ulang batas kemungkinan di ranah teknologi, kreativitas, bisnis, dan seterusnya.",
+      "ctaBrands": "Jelajahi Merek Kami",
+      "ctaJoin": "Bergabung dengan Misi Kami"
+    },
+    "vision": {
+      "heading": "Lahir untuk {accent}",
+      "headingAccent": "Berinovasi",
+      "description": "Kami percaya solusi terbaik lahir ketika berbagai industri, sudut pandang, dan teknologi dipertemukan. Karena itu kami bekerja lintas bidang untuk menciptakan dampak yang berarti.",
+      "bold": {
+        "title": "Berani",
+        "body": "Kami mengambil risiko yang terukur dan tidak ragu mengejar gagasan ambisius yang benar-benar bernilai."
+      },
+      "creative": {
+        "title": "Kreatif",
+        "body": "Sudut pandang baru dan pendekatan yang tidak biasa membantu kami memecahkan masalah dengan cara yang belum terpikirkan orang lain."
+      },
+      "adaptable": {
+        "title": "Adaptif",
+        "body": "Kami bergerak lincah dan responsif, cepat menyesuaikan diri dengan teknologi baru dan pergeseran pasar."
+      },
+      "innovative": {
+        "title": "Inovatif",
+        "body": "Inovasi menggerakkan semua yang kami lakukan, dari cara kami memandang masalah hingga cara kami membangun solusi yang bertahan lama."
+      }
+    },
+    "brands": {
+      "heading": "Jagat {accent} Kami",
+      "headingAccent": "Merek",
+      "description": "Dua merek, dua industri yang jauh berbeda, satu cara kerja yang sama: memahami pekerjaan sehari-hari pelanggan lebih dulu, baru membangun solusinya.",
+      "eskala": "Pemasaran digital untuk fasilitas kesehatan — pengelolaan media sosial dan iklan berbayar yang berpijak pada regulasi kesehatan Indonesia serta standar medis internasional.",
+      "venyu": "Sistem manajemen jadwal dan pemesanan untuk venue olahraga — jadwal lapangan, booking, langganan, member, dan pembayaran dalam satu tempat."
+    },
+    "crossField": {
+      "heading": "Tempat Industri {accent}",
+      "headingAccent": "Bertemu",
+      "description": "Hal menarik justru terjadi ketika bidang-bidang yang berbeda dipertemukan. Kami memadukan kepatuhan medis dengan kerja kreatif, dan olahraga dengan rekayasa perangkat lunak, untuk membangun solusi yang melampaui sekat industri.",
+      "healthcare": {
+        "title": "Pemasaran Kesehatan",
+        "body": "Konten yang patuh regulasi sekaligus menjangkau pasien"
+      },
+      "sports": {
+        "title": "Teknologi Olahraga",
+        "body": "Operasional venue yang berjalan rapi setiap hari"
+      },
+      "creative": {
+        "title": "Produksi Kreatif",
+        "body": "Konten profesional dengan ritme yang berkelanjutan"
+      },
+      "software": {
+        "title": "Rekayasa Perangkat Lunak",
+        "body": "Platform yang dibangun untuk pekerjaan nyata"
+      },
+      "approachTitle": "Pendekatan Noktah",
+      "approachQuote": "\"Ketika kepatuhan medis dipadukan dengan kerja kreatif, atau olahraga dipertemukan dengan rekayasa perangkat lunak, hal-hal luar biasa mulai terjadi. Di situlah kami bermain.\"",
+      "approachNote": "Inovasi sejati lahir dari kemampuan menghubungkan noktah-noktah yang tak dilihat orang lain."
+    },
+    "audiences": {
+      "heading": "Dibangun untuk {accent}",
+      "headingAccent": "Semua",
+      "description": "Baik Anda mencari solusi mutakhir, peluang kemitraan, atau tempat untuk membangun karier, selalu ada yang cocok untuk Anda di sini.",
+      "customers": {
+        "title": "Untuk Pelanggan",
+        "body": "Temukan solusi mutakhir yang menjawab masalah nyata dan meningkatkan bisnis maupun kehidupan Anda.",
+        "cta": "Jelajahi Solusi"
+      },
+      "collaborators": {
+        "title": "Untuk Mitra",
+        "body": "Berkolaborasi dengan para inovator yang sevisi dalam mendorong batas kemungkinan.",
+        "cta": "Jadi Mitra Kami"
+      },
+      "talent": {
+        "title": "Untuk Talenta",
+        "body": "Bangun masa depan bersama kami. Bergabunglah dengan tim yang menghargai kreativitas, inovasi, dan keberanian melampaui batas.",
+        "cta": "Gabung Tim Kami"
+      }
+    },
+    "culture": {
+      "heading": "{accent} Inovasi Kami",
+      "headingAccent": "Budaya",
+      "description": "Kami percaya inovasi terbaik lahir dari tim yang beragam, di lingkungan yang mendorong eksperimen, memandang kegagalan sebagai pelajaran, dan menghargai keberanian berpikir.",
+      "experiment": {
+        "title": "Bereksperimen Tanpa Ragu",
+        "body": "Kami mendorong pengambilan risiko yang terukur dan belajar dari setiap hasilnya."
+      },
+      "crossFunctional": {
+        "title": "Berpikir Lintas Fungsi",
+        "body": "Solusi terbaik muncul ketika berbagai sudut pandang saling berkolaborasi."
+      },
+      "moveFast": {
+        "title": "Bergerak Cepat, Belajar Lebih Cepat",
+        "body": "Kecepatan dan kelincahan adalah kunci untuk tetap unggul hari ini."
+      },
+      "imageCaption": "Inovasi dalam Aksi"
+    }
+  }
+}

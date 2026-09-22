@@ -1,49 +1,43 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="h-screen flex items-center justify-center relative overflow-hidden bg-gray-50 dark:bg-[#0D1117]">
-      <!-- Breathing Circle Animation -->
+    <section class="h-screen flex items-center justify-center relative overflow-hidden">
       <div class="absolute inset-0 overflow-hidden flex items-center justify-center">
-        <div class="breathing-circle"></div>
+        <div class="breathing-circle" />
       </div>
 
       <div class="text-center z-10 max-w-5xl px-4">
         <div class="mb-8">
-          <!-- Noktah Logo -->
           <div class="mb-6">
-            <img 
-              src="/images/noktah-logo.png" 
-              alt="Noktah Logo" 
+            <img
+              src="/images/noktah-logo.png"
+              :alt="t('common.logoAlt')"
               class="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 mx-auto object-contain"
-            />
+            >
           </div>
-          
-          <!-- Title -->
+
           <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-gray-900 dark:text-white mb-6 leading-none">
             <span class="font-bold italic" style="font-family: 'Montserrat', sans-serif;">
               NOKTAH
             </span>
           </h1>
-          
-          <!-- Subtitle -->
+
           <div class="overflow-hidden mb-4">
             <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 animate-fade-in-up animation-delay-500">
-              About Our Innovation Journey
+              {{ t('about.hero.subtitle') }}
             </p>
           </div>
-          
-          <!-- Description -->
+
           <div class="overflow-hidden mb-12">
             <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
-              Discover how we're building cross-field solutions that push beyond conventional limits in technology, creativity, and business.
+              {{ t('about.hero.description') }}
             </p>
-            </div>
+          </div>
         </div>
-        
-        <!-- Enhanced Scroll Indicator -->
+
         <div class="flex flex-col items-center animate-fade-in-up animation-delay-1200">
           <div class="w-5 h-8 sm:w-6 sm:h-10 border-2 border-gray-400 rounded-full flex justify-center mb-1 sm:mb-2 animate-bounce">
-            <div class="w-1 h-2 sm:h-3 bg-gray-400 rounded-full animate-ping mt-1 sm:mt-2"></div>
+            <div class="w-1 h-2 sm:h-3 bg-gray-400 rounded-full animate-ping mt-1 sm:mt-2" />
           </div>
           <UIcon name="i-heroicons-chevron-down" class="text-lg sm:text-xl text-gray-400" />
         </div>
@@ -51,61 +45,43 @@
     </section>
 
     <!-- Company Overview -->
-    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
-      <!-- Floating geometric shapes for visual interest -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-20 left-10 w-32 h-32 bg-primary-300/30 dark:bg-primary-700/40 rounded-full blur-xl animate-pulse"></div>
-        <div class="absolute bottom-20 right-10 w-24 h-24 bg-violet-300/30 dark:bg-violet-700/40 rounded-full blur-lg animate-pulse animation-delay-1000"></div>
-        <div class="absolute top-1/2 right-1/4 w-16 h-16 bg-blue-300/30 dark:bg-blue-700/40 rounded-full blur-md animate-pulse animation-delay-2000"></div>
-      </div>
+    <section class="py-20 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Who We <span class="text-primary-500">Are</span>
-          </h2>
+          <i18n-t keypath="about.overview.heading" tag="h2" class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6" scope="global">
+            <template #accent>
+              <span class="text-primary-500">{{ t('about.overview.headingAccent') }}</span>
+            </template>
+          </i18n-t>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            A forward-thinking technology company dedicated to breaking conventional boundaries through innovative cross-field solutions.
+            {{ t('about.overview.lead') }}
           </p>
         </div>
-        
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div>
             <div class="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-700 dark:text-gray-300">
-              <p>
-                <strong class="text-primary-600 dark:text-primary-400">Noktah Inovasi Teknologi</strong> serves as the main holding brand of <strong>CV. Amerta Meta Data</strong>, operating from Gresik, East Java, Indonesia. Our foundation rests on a core principle: the most impactful solutions emerge when diverse fields converge.
-              </p>
-              <p>
-                Rather than confining ourselves to traditional industry silos, we deliberately operate across artificial intelligence, creative services, sports technology, and hardware engineering. This interdisciplinary approach enables us to apply insights from one domain to solve challenges in another, creating unique value propositions.
-              </p>
-              <p>
-                Through our portfolio of four specialized brands, we demonstrate how cross-field innovation can address real market needs while building sustainable, scalable businesses.
-              </p>
+              <i18n-t keypath="about.overview.p1" tag="p" scope="global">
+                <template #company>
+                  <strong class="text-primary-600 dark:text-primary-400">Noktah Inovasi Teknologi</strong>
+                </template>
+                <template #parent>
+                  <strong>CV. Amerta Meta Data</strong>
+                </template>
+              </i18n-t>
+              <p>{{ t('about.overview.p2') }}</p>
+              <p>{{ t('about.overview.p3') }}</p>
             </div>
           </div>
-          
+
           <div class="relative">
-            <div class="aspect-square bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl flex items-center justify-center p-8">
+            <div class="glass aspect-square rounded-2xl flex items-center justify-center p-8">
               <div class="text-center space-y-8">
                 <div class="grid grid-cols-2 gap-6">
-                  <div class="text-center">
-                    <UIcon name="i-heroicons-building-office" class="text-4xl text-primary-600 dark:text-primary-400 mx-auto mb-3" />
-                    <h4 class="text-base font-bold text-gray-900 dark:text-white">Established</h4>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Innovation Hub</p>
-                  </div>
-                  <div class="text-center">
-                    <UIcon name="i-heroicons-globe-asia-australia" class="text-4xl text-emerald-600 dark:text-emerald-400 mx-auto mb-3" />
-                    <h4 class="text-base font-bold text-gray-900 dark:text-white">Indonesia</h4>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Based in Gresik</p>
-                  </div>
-                  <div class="text-center">
-                    <UIcon name="i-heroicons-rocket-launch" class="text-4xl text-violet-600 dark:text-violet-400 mx-auto mb-3" />
-                    <h4 class="text-base font-bold text-gray-900 dark:text-white">4 Brands</h4>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Active Portfolio</p>
-                  </div>
-                  <div class="text-center">
-                    <UIcon name="i-heroicons-puzzle-piece" class="text-4xl text-orange-600 dark:text-orange-400 mx-auto mb-3" />
-                    <h4 class="text-base font-bold text-gray-900 dark:text-white">Cross-Field</h4>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Innovation</p>
+                  <div v-for="stat in stats" :key="stat.key" class="text-center">
+                    <UIcon :name="stat.icon" class="text-4xl mx-auto mb-3" :class="stat.color" />
+                    <h4 class="text-base font-bold text-gray-900 dark:text-white">{{ t(`about.overview.${stat.key}`) }}</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">{{ t(`about.overview.${stat.key}Sub`) }}</p>
                   </div>
                 </div>
               </div>
@@ -116,60 +92,40 @@
     </section>
 
     <!-- Our Vision & Mission -->
-    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
-      <!-- Neural network inspired background -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-30 dark:opacity-20">
-        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1200 800">
-          <defs>
-            <pattern id="dots" patternUnits="userSpaceOnUse" width="60" height="60">
-              <circle cx="30" cy="30" r="1.5" class="fill-primary-600 dark:fill-primary-400" opacity="0.5"/>
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#dots)" />
-        </svg>
-      </div>
-      
+    <section class="py-20 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Our Vision & <span class="text-primary-500">Mission</span>
-          </h2>
+          <i18n-t keypath="about.visionMission.heading" tag="h2" class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6" scope="global">
+            <template #accent>
+              <span class="text-primary-500">{{ t('about.visionMission.headingAccent') }}</span>
+            </template>
+          </i18n-t>
         </div>
-        
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
-          <!-- Vision -->
-          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="glass p-6 lg:p-8 rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-eye" class="text-4xl text-primary-600 dark:text-primary-400 mr-4" />
-                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Our Vision</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">{{ t('about.visionMission.visionTitle') }}</h3>
               </div>
             </template>
             <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              To establish Southeast Asia's premier innovation ecosystem where artificial intelligence, creative services, sports technology, and hardware engineering converge to address complex, real-world challenges through collaborative cross-field solutions.
+              {{ t('about.visionMission.visionBody') }}
             </p>
           </UCard>
 
-          <!-- Mission -->
-          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="glass p-6 lg:p-8 rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-flag" class="text-4xl text-emerald-600 dark:text-emerald-400 mr-4" />
-                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Our Mission</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">{{ t('about.visionMission.missionTitle') }}</h3>
               </div>
             </template>
             <div class="space-y-4 text-base text-gray-700 dark:text-gray-300">
-              <p class="flex items-start">
+              <p v-for="n in 3" :key="n" class="flex items-start">
                 <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
-                Develop breakthrough solutions through strategic integration of diverse technological domains and industry expertise
-              </p>
-              <p class="flex items-start">
-                <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
-                Generate measurable impact by applying bold, creative methodologies with adaptive implementation strategies
-              </p>
-              <p class="flex items-start">
-                <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
-                Cultivate an organizational culture that prioritizes experimental innovation and systematic knowledge advancement
+                {{ t(`about.visionMission.mission${n}`) }}
               </p>
             </div>
           </UCard>
@@ -178,123 +134,83 @@
     </section>
 
     <!-- Core Values -->
-    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
+    <section class="py-20 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Our Core <span class="text-primary-500">Values</span>
-          </h2>
+          <i18n-t keypath="about.values.heading" tag="h2" class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6" scope="global">
+            <template #accent>
+              <span class="text-primary-500">{{ t('about.values.headingAccent') }}</span>
+            </template>
+          </i18n-t>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            These values guide everything we do, from how we approach problems to how we build lasting solutions.
+            {{ t('about.values.description') }}
           </p>
         </div>
-        
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
+          <UCard
+            v-for="v in values"
+            :key="v.key"
+            class="glass glass-interactive text-center p-6 lg:p-8 rounded-2xl"
+          >
             <template #header>
               <div class="flex justify-center mb-6">
-                <UIcon name="i-heroicons-bolt" class="text-5xl text-orange-500 dark:text-orange-400" />
+                <UIcon :name="v.icon" class="text-5xl" :class="v.color" />
               </div>
             </template>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Bold</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We pursue ambitious initiatives that others might consider too complex or unconventional. Our willingness to tackle challenging projects with calculated risk-taking drives breakthrough innovation.</p>
-          </UCard>
-
-          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
-            <template #header>
-              <div class="flex justify-center mb-6">
-                <UIcon name="i-heroicons-paint-brush" class="text-5xl text-rose-500 dark:text-rose-400" />
-              </div>
-            </template>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Creative</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Our approach to problem-solving transcends traditional boundaries, drawing inspiration and methodologies from diverse disciplines to create novel solutions that conventional thinking might overlook.</p>
-          </UCard>
-
-          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
-            <template #header>
-              <div class="flex justify-center mb-6">
-                <UIcon name="i-heroicons-arrows-right-left" class="text-5xl text-emerald-500 dark:text-emerald-400" />
-              </div>
-            </template>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Adaptable</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We maintain organizational agility that enables rapid response to technological advances and market evolution. This flexibility allows us to capitalize on emerging opportunities while adjusting strategies as conditions change.</p>
-          </UCard>
-
-          <UCard class="text-center p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/[0.10] hover:border-white/[0.35] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-500 rounded-2xl">
-            <template #header>
-              <div class="flex justify-center mb-6">
-                <UIcon name="i-heroicons-light-bulb" class="text-5xl text-violet-500 dark:text-violet-400" />
-              </div>
-            </template>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Innovative</h3>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Innovation permeates every aspect of our operations, from optimizing established processes to pioneering entirely new solutions. We systematically seek opportunities to enhance efficiency and create value.</p>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">{{ t(`about.values.${v.key}.title`) }}</h3>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">{{ t(`about.values.${v.key}.body`) }}</p>
           </UCard>
         </div>
       </div>
     </section>
 
     <!-- Company Structure & Legal -->
-    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
+    <section class="py-20 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Company <span class="text-primary-500">Structure</span>
-          </h2>
+          <i18n-t keypath="about.structure.heading" tag="h2" class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6" scope="global">
+            <template #accent>
+              <span class="text-primary-500">{{ t('about.structure.headingAccent') }}</span>
+            </template>
+          </i18n-t>
         </div>
-        
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
-          <!-- Legal Entity -->
-          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="glass p-6 lg:p-8 rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-building-office-2" class="text-4xl text-primary-600 dark:text-primary-400 mr-4" />
-                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Legal Entity</h3>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('about.structure.legalTitle') }}</h3>
               </div>
             </template>
             <div class="space-y-4">
               <div>
-                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Holding Brand</h4>
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">{{ t('about.structure.holdingLabel') }}</h4>
                 <p class="text-gray-700 dark:text-gray-300">Noktah Inovasi Teknologi</p>
               </div>
               <div>
-                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Parent Company</h4>
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">{{ t('about.structure.parentLabel') }}</h4>
                 <p class="text-gray-700 dark:text-gray-300">CV. Amerta Meta Data</p>
               </div>
               <div>
-                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Company Type</h4>
-                <p class="text-gray-700 dark:text-gray-300">Commanditaire Vennootschap (CV)</p>
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">{{ t('about.structure.typeLabel') }}</h4>
+                <p class="text-gray-700 dark:text-gray-300">{{ t('about.structure.typeValue') }}</p>
               </div>
             </div>
           </UCard>
 
-          <!-- Business Focus -->
-          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="glass p-6 lg:p-8 rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-chart-bar" class="text-4xl text-emerald-600 dark:text-emerald-400 mr-4" />
-                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Business Focus</h3>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('about.structure.focusTitle') }}</h3>
               </div>
             </template>
             <div class="space-y-3">
-              <div class="flex items-center">
-                <UIcon name="i-heroicons-cpu-chip" class="text-primary-500 mr-3" />
-                <span class="text-gray-700 dark:text-gray-300">Artificial Intelligence Solutions</span>
-              </div>
-              <div class="flex items-center">
-                <UIcon name="i-heroicons-camera" class="text-amber-500 mr-3" />
-                <span class="text-gray-700 dark:text-gray-300">Creative & Photography Services</span>
-              </div>
-              <div class="flex items-center">
-                <UIcon name="i-heroicons-trophy" class="text-emerald-500 mr-3" />
-                <span class="text-gray-700 dark:text-gray-300">Sports Technology Platforms</span>
-              </div>
-              <div class="flex items-center">
-                <UIcon name="i-heroicons-wrench-screwdriver" class="text-violet-500 mr-3" />
-                <span class="text-gray-700 dark:text-gray-300">Hardware Engineering</span>
-              </div>
-              <div class="flex items-center">
-                <UIcon name="i-heroicons-puzzle-piece" class="text-orange-500 mr-3" />
-                <span class="text-gray-700 dark:text-gray-300">Cross-Field Innovation</span>
+              <div v-for="f in focusAreas" :key="f.key" class="flex items-center">
+                <UIcon :name="f.icon" class="mr-3" :class="f.color" />
+                <span class="text-gray-700 dark:text-gray-300">{{ t(`about.structure.${f.key}`) }}</span>
               </div>
             </div>
           </UCard>
@@ -303,72 +219,50 @@
     </section>
 
     <!-- Our Approach -->
-    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
-      <!-- Floating innovation elements -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-20 left-10 w-4 h-4 bg-primary-500/40 dark:bg-primary-400/30 rounded-full animate-bounce animation-delay-500"></div>
-        <div class="absolute bottom-20 right-10 w-6 h-6 bg-emerald-500/40 dark:bg-emerald-400/30 rounded-full animate-bounce animation-delay-1500"></div>
-        <div class="absolute top-1/3 right-1/3 w-3 h-3 bg-orange-500/40 dark:bg-orange-400/30 rounded-full animate-bounce animation-delay-2500"></div>
-      </div>
-      
+    <section class="py-20 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            The Noktah <span class="text-primary-500">Approach</span>
-          </h2>
+          <i18n-t keypath="about.approach.heading" tag="h2" class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6" scope="global">
+            <template #accent>
+              <span class="text-primary-500">{{ t('about.approach.headingAccent') }}</span>
+            </template>
+          </i18n-t>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            How we turn cross-field thinking into tangible innovation that creates real impact.
+            {{ t('about.approach.description') }}
           </p>
         </div>
 
         <div class="space-y-16">
-          <!-- Approach Steps -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            <!-- Step 1 -->
-            <div class="text-center relative">
-              <div class="w-24 h-24 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span class="text-2xl font-bold text-primary-600 dark:text-primary-400">01</span>
+            <div
+              v-for="(step, i) in steps"
+              :key="step.key"
+              class="text-center relative"
+            >
+              <div class="glass w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-2xl font-bold" :class="step.color">{{ String(i + 1).padStart(2, '0') }}</span>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Identify Intersections</h3>
-              <p class="text-gray-600 dark:text-gray-400">We look for opportunities where different industries, technologies, or approaches can converge to create new possibilities.</p>
-              
-              <!-- Connection line -->
-              <div class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-primary-400/60 transform translate-x-12"></div>
-            </div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">{{ t(`about.approach.${step.key}.title`) }}</h3>
+              <p class="text-gray-600 dark:text-gray-400">{{ t(`about.approach.${step.key}.body`) }}</p>
 
-            <!-- Step 2 -->
-            <div class="text-center relative">
-              <div class="w-24 h-24 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span class="text-2xl font-bold text-emerald-600 dark:text-emerald-400">02</span>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Experiment Boldly</h3>
-              <p class="text-gray-600 dark:text-gray-400">We prototype rapidly, test assumptions, and aren't afraid to fail fast and learn from every iteration.</p>
-              
-              <!-- Connection line -->
-              <div class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-emerald-400/60 transform translate-x-12"></div>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="text-center">
-              <div class="w-24 h-24 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span class="text-2xl font-bold text-orange-600 dark:text-orange-400">03</span>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Scale Impact</h3>
-              <p class="text-gray-600 dark:text-gray-400">We build solutions that create meaningful impact, then scale them through our brand portfolio to reach wider audiences.</p>
+              <div
+                v-if="i < steps.length - 1"
+                class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 transform translate-x-12"
+                :class="step.line"
+              />
             </div>
           </div>
 
-          <!-- Innovation Philosophy -->
-          <div class="text-center bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl p-12 max-w-5xl mx-auto">
+          <div class="glass text-center rounded-2xl p-12 max-w-5xl mx-auto">
             <div class="flex items-center justify-center mb-6">
-              <UIcon name="i-heroicons-sparkles" class="text-4xl text-yellow-500 mr-4 animate-pulse" />
-              <h4 class="text-2xl font-bold text-gray-900 dark:text-white">Innovation Philosophy</h4>
+              <UIcon name="i-heroicons-sparkles" class="text-4xl text-yellow-500 mr-4" />
+              <h4 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('about.approach.philosophyTitle') }}</h4>
             </div>
             <blockquote class="text-xl text-gray-700 dark:text-gray-300 font-medium mb-6 italic">
-              "The most interesting projects happen when you combine things that don't usually go together. AI + creative work, sports + tech, hardware + software. That's where we find the best opportunities."
+              {{ t('about.approach.philosophyQuote') }}
             </blockquote>
             <p class="text-gray-600 dark:text-gray-400">
-              This approach shapes all our brands - from Eskala's all-in-one creative partnership delivering revenue-focused brand solutions to Fieldpass's sports booking platform.
+              {{ t('about.approach.philosophyNote') }}
             </p>
           </div>
         </div>
@@ -376,57 +270,61 @@
     </section>
 
     <!-- Contact & Location -->
-    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
+    <section class="py-20 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Get in <span class="text-primary-500">Touch</span>
-          </h2>
+          <i18n-t keypath="about.contact.heading" tag="h2" class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6" scope="global">
+            <template #accent>
+              <span class="text-primary-500">{{ t('about.contact.headingAccent') }}</span>
+            </template>
+          </i18n-t>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Ready to push beyond conventional limits together? Let's explore how we can collaborate.
+            {{ t('about.contact.description') }}
           </p>
         </div>
-        
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
-          <!-- Contact Information -->
-          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="glass p-6 lg:p-8 rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-map-pin" class="text-4xl text-primary-600 dark:text-primary-400 mr-4" />
-                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Our Office</h3>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('about.contact.officeTitle') }}</h3>
               </div>
             </template>
             <div class="space-y-6">
-              <!-- Address -->
               <div>
-                <h4 class="font-semibold text-gray-900 dark:text-white mb-3">Address</h4>
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-3">{{ t('about.contact.addressLabel') }}</h4>
                 <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Bukit Menganti Regency C-10<br>
-                  Boteng, Menganti, Gresik<br>
-                  Jawa Timur, Indonesia 61174
+                  <template v-for="(line, i) in COMPANY.addressLines" :key="line">
+                    {{ line }}<br v-if="i < COMPANY.addressLines.length - 1">
+                  </template>
                 </p>
               </div>
-              
-              <!-- Contact Details -->
+
               <div>
-                <h4 class="font-semibold text-gray-900 dark:text-white mb-3">Contact Information</h4>
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-3">{{ t('about.contact.contactLabel') }}</h4>
                 <div class="space-y-3">
                   <div class="flex items-center">
                     <UIcon name="i-heroicons-envelope" class="text-primary-500 mr-3" />
-                    <a href="mailto:core@noktah.co" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300">
-                      core@noktah.co
+                    <a :href="COMPANY.emailHref" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300">
+                      {{ COMPANY.email }}
                     </a>
                   </div>
                   <div class="flex items-center">
                     <UIcon name="i-heroicons-phone" class="text-emerald-500 mr-3" />
-                    <a href="tel:+6285173017749" class="text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300">
-                      +62 851-7301-7749
+                    <a :href="COMPANY.phoneHref" class="text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300">
+                      {{ COMPANY.phoneDisplay }}
                     </a>
                   </div>
                   <div class="flex items-center">
                     <UIcon name="i-simple-icons-whatsapp" class="text-green-500 mr-3" />
-                    <a href="https://wa.me/6285173017749" target="_blank" class="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300 flex items-center">
-                      WhatsApp: +62 851-7301-7749
+                    <a
+                      :href="COMPANY.whatsappHref"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300 flex items-center"
+                    >
+                      WhatsApp: {{ COMPANY.phoneDisplay }}
                       <UIcon name="i-heroicons-arrow-top-right-on-square" class="text-xs ml-2" />
                     </a>
                   </div>
@@ -435,29 +333,37 @@
             </div>
           </UCard>
 
-          <!-- Social & Links -->
-          <UCard class="p-6 lg:p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+          <UCard class="glass p-6 lg:p-8 rounded-2xl">
             <template #header>
               <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-link" class="text-4xl text-emerald-600 dark:text-emerald-400 mr-4" />
-                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Connect With Us</h3>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('about.contact.connectTitle') }}</h3>
               </div>
             </template>
             <div class="space-y-6">
-              <!-- Social Media -->
               <div>
-                <h4 class="font-semibold text-gray-900 dark:text-white mb-4">Social Media</h4>
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-4">{{ t('about.contact.socialLabel') }}</h4>
                 <div class="space-y-3">
-                  <a href="https://instagram.com/noktah.it" target="_blank" class="flex items-center p-3 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl hover:bg-white/[0.10] transition-all duration-300">
+                  <a
+                    :href="COMPANY.instagramUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="glass glass-interactive flex items-center p-3 rounded-2xl"
+                  >
                     <UIcon name="i-simple-icons-instagram" class="text-2xl text-pink-500 mr-4" />
                     <div>
                       <p class="font-medium text-gray-900 dark:text-white">Instagram</p>
-                      <p class="text-sm text-gray-600 dark:text-gray-400">@noktah.it</p>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">{{ COMPANY.instagramHandle }}</p>
                     </div>
                     <UIcon name="i-heroicons-arrow-top-right-on-square" class="text-lg text-gray-500 ml-auto" />
                   </a>
-                  
-                  <a href="https://id.linkedin.com/company/noktah-inovasi-teknologi" target="_blank" class="flex items-center p-3 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl hover:bg-white/[0.10] transition-all duration-300">
+
+                  <a
+                    :href="COMPANY.linkedinUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="glass glass-interactive flex items-center p-3 rounded-2xl"
+                  >
                     <UIcon name="i-simple-icons-linkedin" class="text-2xl text-blue-500 mr-4" />
                     <div>
                       <p class="font-medium text-gray-900 dark:text-white">LinkedIn</p>
@@ -467,20 +373,19 @@
                   </a>
                 </div>
               </div>
-              
-              <!-- Quick Actions -->
+
               <div>
-                <h4 class="font-semibold text-gray-900 dark:text-white mb-4">Quick Actions</h4>
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-4">{{ t('about.contact.quickActionsLabel') }}</h4>
                 <div class="space-y-3">
-                  <NuxtLink to="/brands" class="block">
+                  <NuxtLink :to="localePath('/brands')" class="block">
                     <UButton class="w-full justify-between rounded-full" variant="soft">
-                      Explore Our Brands
+                      {{ t('about.contact.ctaBrands') }}
                       <UIcon name="i-heroicons-arrow-right" />
                     </UButton>
                   </NuxtLink>
-                  <NuxtLink to="/contact" class="block">
+                  <NuxtLink :to="localePath('/contact')" class="block">
                     <UButton class="w-full justify-between rounded-full" variant="outline">
-                      Contact Us
+                      {{ t('about.contact.ctaContact') }}
                       <UIcon name="i-heroicons-arrow-right" />
                     </UButton>
                   </NuxtLink>
@@ -495,24 +400,54 @@
 </template>
 
 <script setup>
-// SEO Meta
+const { t } = useI18n()
+const localePath = useLocalePath()
+
 useSeoMeta({
-  title: 'About - Noktah Inovasi Teknologi | Cross-Field Innovation Journey',
-  description: 'Learn about Noktah Inovasi Teknologi, the main holding brand of CV. Amerta Meta Data. Discover our vision, mission, values, and cross-field innovation approach combining AI, creative services, sports technology, and hardware engineering.',
-  ogTitle: 'About - Noktah Inovasi Teknologi | Innovation Journey',
-  ogDescription: 'Forward-thinking technology company dedicated to breaking conventional boundaries through innovative cross-field solutions. Based in Gresik, East Java, Indonesia.',
+  title: () => t('about.seo.title'),
+  description: () => t('about.seo.description'),
+  ogTitle: () => t('about.seo.ogTitle'),
+  ogDescription: () => t('about.seo.ogDescription'),
   ogImage: '/images/noktah-logo.png',
-  ogUrl: 'https://noktah.co/about',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'About Noktah Inovasi Teknologi',
-  twitterDescription: 'Discover our innovation journey: Bold, Creative, Adaptable, Innovative. Building the future through cross-field collaboration.',
+  twitterTitle: () => t('about.seo.twitterTitle'),
+  twitterDescription: () => t('about.seo.twitterDescription'),
   twitterImage: '/images/noktah-logo.png',
-  keywords: 'about noktah, innovation company, cross-field technology, CV Amerta Meta Data, Gresik Indonesia, technology company profile, innovation values'
+  keywords: () => t('about.seo.keywords'),
 })
+
+const stats = [
+  { key: 'statEstablished', icon: 'i-heroicons-building-office', color: 'text-primary-600 dark:text-primary-400' },
+  { key: 'statCountry', icon: 'i-heroicons-globe-asia-australia', color: 'text-emerald-600 dark:text-emerald-400' },
+  { key: 'statBrands', icon: 'i-heroicons-rocket-launch', color: 'text-violet-600 dark:text-violet-400' },
+  { key: 'statCrossField', icon: 'i-heroicons-puzzle-piece', color: 'text-orange-600 dark:text-orange-400' },
+]
+
+const values = [
+  { key: 'bold', icon: 'i-heroicons-bolt', color: 'text-orange-500 dark:text-orange-400' },
+  { key: 'creative', icon: 'i-heroicons-paint-brush', color: 'text-rose-500 dark:text-rose-400' },
+  { key: 'adaptable', icon: 'i-heroicons-arrows-right-left', color: 'text-emerald-500 dark:text-emerald-400' },
+  { key: 'innovative', icon: 'i-heroicons-light-bulb', color: 'text-violet-500 dark:text-violet-400' },
+]
+
+const focusAreas = [
+  { key: 'focus1', icon: 'i-heroicons-cpu-chip', color: 'text-primary-500' },
+  { key: 'focus2', icon: 'i-heroicons-camera', color: 'text-amber-500' },
+  { key: 'focus3', icon: 'i-heroicons-trophy', color: 'text-emerald-500' },
+  { key: 'focus4', icon: 'i-heroicons-wrench-screwdriver', color: 'text-violet-500' },
+  { key: 'focus5', icon: 'i-heroicons-puzzle-piece', color: 'text-orange-500' },
+]
+
+const steps = [
+  { key: 'step1', color: 'text-primary-600 dark:text-primary-400', line: 'bg-primary-400/60' },
+  { key: 'step2', color: 'text-emerald-600 dark:text-emerald-400', line: 'bg-emerald-400/60' },
+  { key: 'step3', color: 'text-orange-600 dark:text-orange-400', line: '' },
+]
 </script>
 
 <style scoped>
-/* Breathing circle animation */
+/* Page-local breathing circle: smaller and calmer than the hero one on
+   the homepage, sized for a shorter section. */
 .breathing-circle {
   position: absolute;
   top: 50%;
@@ -536,15 +471,9 @@ useSeoMeta({
   }
 }
 
-/* Animation delays */
-.animation-delay-500 { animation-delay: 0.5s; }
-.animation-delay-1000 { animation-delay: 1s; }
-.animation-delay-1500 { animation-delay: 1.5s; }
-.animation-delay-2000 { animation-delay: 2s; }
-.animation-delay-2500 { animation-delay: 2.5s; }
-
-/* Smooth section transitions */
-section {
-  background-attachment: local;
+@media (prefers-reduced-motion: reduce) {
+  .breathing-circle {
+    animation: none;
+  }
 }
 </style>

@@ -1,18 +1,12 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="h-screen flex items-center justify-center relative overflow-hidden bg-gray-50 dark:bg-[#0D1117]">
+    <section class="h-screen flex items-center justify-center relative overflow-hidden">
       <!-- Breathing Circle Animation -->
       <div class="absolute inset-0 overflow-hidden flex items-center justify-center">
         <div class="breathing-circle"></div>
       </div>
       
-      <!-- Floating geometric shapes for visual interest -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-20 left-10 w-32 h-32 bg-primary-300/30 dark:bg-primary-700/40 rounded-full blur-xl animate-pulse"></div>
-        <div class="absolute bottom-20 right-10 w-24 h-24 bg-violet-300/30 dark:bg-violet-700/40 rounded-full blur-lg animate-pulse animation-delay-1000"></div>
-        <div class="absolute top-1/2 right-1/4 w-16 h-16 bg-blue-300/30 dark:bg-blue-700/40 rounded-full blur-md animate-pulse animation-delay-2000"></div>
-      </div>
 
       <div class="text-center z-10 max-w-5xl px-4">
         <div class="mb-8">
@@ -35,17 +29,17 @@
           <!-- Subtitle -->
           <div class="overflow-hidden mb-4">
             <p class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-200 animate-fade-in-up animation-delay-500">
-              Terms of Service
+              {{ t('terms.hero.headingPre') }} <span class="text-primary-500">{{ t('terms.hero.headingAccent') }}</span>
             </p>
           </div>
           
           <!-- Description -->
           <div class="overflow-hidden mb-12">
             <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
-              Please read these terms carefully before using our services. These terms govern your use of all Noktah brands and services.
+              {{ t('terms.hero.description') }}
             </p>
             <p class="text-sm text-gray-500 dark:text-gray-500 mt-4">
-              Last Updated: {{ lastUpdated }}
+              {{ t('terms.hero.lastUpdatedLabel') }} {{ lastUpdated }}
             </p>
           </div>
         </div>
@@ -63,60 +57,63 @@
     </section>
 
     <!-- Terms of Service Content -->
-    <section class="py-20 relative bg-gray-50 dark:bg-[#0D1117]">
+    <section class="py-20 relative">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Introduction & Acceptance -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-document-text" class="text-4xl text-primary-600 dark:text-primary-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Introduction & Acceptance</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.intro.title') }}</h2>
             </div>
           </template>
           <div class="space-y-4 text-gray-700 dark:text-gray-300">
+            <i18n-t keypath="terms.intro.agreement" tag="p" scope="global">
+                <template #company><strong>Noktah Inovasi Teknologi</strong></template>
+                <template #parent><strong>CV. Amerta Meta Data</strong></template>
+                <template #eskala><strong>Eskala</strong></template>
+                <template #venyu><strong>Venyu</strong></template>
+              </i18n-t>
             <p>
-              These Terms of Service ("Terms") constitute a legally binding agreement between you and <strong>Noktah Inovasi Teknologi</strong>, operated under <strong>CV. Amerta Meta Data</strong>, governing your use of our services and all subsidiary brands including <strong>Eskala</strong>, <strong>Memomancy</strong>, <strong>Fieldpass</strong>, and <strong>Heavy Station</strong>.
-            </p>
-            <p>
-              By accessing or using our services, you agree to be bound by these Terms and our Privacy Policy. These Terms comply with Indonesian law and regulations, including the Civil Code, Consumer Protection Law, and Electronic Information and Transaction Law.
+              {{ t('terms.intro.acceptance') }}
             </p>
             <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-4">
               <p class="text-red-800 dark:text-red-200 font-medium">
                 <UIcon name="i-heroicons-exclamation-triangle" class="inline mr-2" />
-                Age Requirement: You must be at least 18 years old to use our services. By using our services, you represent that you meet this age requirement.
+                {{ t('terms.intro.ageRequirement') }}
               </p>
             </div>
           </div>
         </UCard>
 
         <!-- User Accounts & Registration -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-user-circle" class="text-4xl text-emerald-600 dark:text-emerald-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">User Accounts & Registration</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.accounts.title') }}</h2>
             </div>
           </template>
           <div class="space-y-6 text-gray-700 dark:text-gray-300">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Account Creation</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.accounts.creationTitle') }}</h3>
               <ul class="space-y-2">
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>You must provide accurate, current, and complete information during registration</span>
+                  <span>{{ t('terms.accounts.c1') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>You are responsible for maintaining the confidentiality of your account credentials</span>
+                  <span>{{ t('terms.accounts.c2') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>You must notify us immediately of any unauthorized use of your account</span>
+                  <span>{{ t('terms.accounts.c3') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>One person or entity may maintain only one account per service</span>
+                  <span>{{ t('terms.accounts.c4') }}</span>
                 </li>
               </ul>
             </div>
@@ -124,84 +121,76 @@
             <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4">
               <h4 class="font-semibold text-blue-800 dark:text-blue-200 mb-2">
                 <UIcon name="i-heroicons-information-circle" class="inline mr-2" />
-                Account Security
+                {{ t('terms.accounts.securityTitle') }}
               </h4>
               <p class="text-blue-700 dark:text-blue-300 text-sm">
-                You are fully responsible for all activities that occur under your account. We reserve the right to suspend or terminate accounts that violate these terms or engage in suspicious activities.
+                {{ t('terms.accounts.securityBody') }}
               </p>
             </div>
           </div>
         </UCard>
 
         <!-- Service Usage & Restrictions -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-wrench-screwdriver" class="text-4xl text-violet-600 dark:text-violet-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Service Usage & Restrictions</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.usage.title') }}</h2>
             </div>
           </template>
           <div class="space-y-6 text-gray-700 dark:text-gray-300">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Permitted Use</h3>
-              <p class="mb-3">You may use our services for lawful purposes only, including:</p>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.usage.permittedTitle') }}</h3>
+              <p class="mb-3">{{ t('terms.usage.permittedLead') }}</p>
               <ul class="space-y-2">
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Creative services and professional consultation through Eskala</span>
+                  <span>{{ t('terms.usage.p1') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Photography services and booking through Memomancy</span>
-                </li>
-                <li class="flex items-start">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Sports facility reservations through Fieldpass</span>
-                </li>
-                <li class="flex items-start">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>PC hardware products and services through Heavy Station</span>
+                  <span>{{ t('terms.usage.p2') }}</span>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Prohibited Activities</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.usage.prohibitedTitle') }}</h3>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="space-y-2">
                   <div class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Violating any applicable laws or regulations</span>
+                    <span class="text-sm">{{ t('terms.usage.x1') }}</span>
                   </div>
                   <div class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Impersonating others or misrepresenting identity</span>
+                    <span class="text-sm">{{ t('terms.usage.x2') }}</span>
                   </div>
                   <div class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Uploading malicious code or viruses</span>
+                    <span class="text-sm">{{ t('terms.usage.x3') }}</span>
                   </div>
                   <div class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Harassing, threatening, or abusing others</span>
+                    <span class="text-sm">{{ t('terms.usage.x4') }}</span>
                   </div>
                 </div>
                 <div class="space-y-2">
                   <div class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Attempting to reverse engineer our services</span>
+                    <span class="text-sm">{{ t('terms.usage.x5') }}</span>
                   </div>
                   <div class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Scraping or automated data collection</span>
+                    <span class="text-sm">{{ t('terms.usage.x6') }}</span>
                   </div>
                   <div class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Interfering with service operations</span>
+                    <span class="text-sm">{{ t('terms.usage.x7') }}</span>
                   </div>
                   <div class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Distributing spam or unsolicited content</span>
+                    <span class="text-sm">{{ t('terms.usage.x8') }}</span>
                   </div>
                 </div>
               </div>
@@ -210,37 +199,37 @@
         </UCard>
 
         <!-- Content & Intellectual Property -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-sparkles" class="text-4xl text-amber-600 dark:text-amber-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Content & Intellectual Property</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.ip.title') }}</h2>
             </div>
           </template>
           <div class="space-y-6 text-gray-700 dark:text-gray-300">
             <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-6">
               <h3 class="text-lg font-semibold text-amber-800 dark:text-amber-200 mb-4">
                 <UIcon name="i-heroicons-briefcase" class="inline mr-2" />
-                Professional Content Ownership
+                {{ t('terms.ip.professionalTitle') }}
               </h3>
               <div class="space-y-3">
                 <p class="text-amber-700 dark:text-amber-300">
-                  <strong>All professional content created by our teams becomes our intellectual property upon completion and payment:</strong>
+                  <strong>{{ t('terms.ip.professionalLead') }}</strong>
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div class="bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 rounded-lg p-3">
                     <h4 class="font-semibold text-purple-800 dark:text-purple-200 text-sm mb-2">
                       <UIcon name="i-heroicons-sparkles" class="inline mr-1" />
-                      Eskala Creative Services
+                      {{ t('terms.ip.eskalaTitle') }}
                     </h4>
-                    <p class="text-xs text-purple-700 dark:text-purple-300">Social media content, brand materials, marketing campaigns, copywriting, AI-generated content, creative consultation deliverables</p>
+                    <p class="text-xs text-purple-700 dark:text-purple-300">{{ t('terms.ip.eskalaBody') }}</p>
                   </div>
-                  <div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-lg p-3">
-                    <h4 class="font-semibold text-emerald-800 dark:text-emerald-200 text-sm mb-2">
-                      <UIcon name="i-heroicons-camera" class="inline mr-1" />
-                      Memomancy Photography
+                  <div class="bg-lime-50 dark:bg-lime-900/20 border border-lime-200 dark:border-lime-800 rounded-lg p-3">
+                    <h4 class="font-semibold text-lime-800 dark:text-lime-200 text-sm mb-2">
+                      <UIcon name="i-heroicons-calendar-days" class="inline mr-1" />
+                      {{ t('terms.ip.venyuTitle') }}
                     </h4>
-                    <p class="text-xs text-emerald-700 dark:text-emerald-300">Professional photography, videography, edited images, creative direction, final deliverables</p>
+                    <p class="text-xs text-lime-700 dark:text-lime-300">{{ t('terms.ip.venyuBody') }}</p>
                   </div>
                 </div>
               </div>
@@ -249,24 +238,24 @@
             <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6">
               <h3 class="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-4">
                 <UIcon name="i-heroicons-photo" class="inline mr-2" />
-                User Content & License
+                {{ t('terms.ip.userTitle') }}
               </h3>
               <div class="space-y-3">
                 <p class="text-blue-700 dark:text-blue-300">
-                  Content you provide (briefs, reference materials, personal photos) remains yours, but you grant us:
+                  {{ t('terms.ip.userLead') }}
                 </p>
                 <ul class="space-y-2 text-sm text-blue-600 dark:text-blue-400">
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
-                    <span>Right to use for service delivery and fulfillment</span>
+                    <span>{{ t('terms.ip.u1') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
-                    <span>Right to create derivative works for your projects</span>
+                    <span>{{ t('terms.ip.u2') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
-                    <span>Right to store and process for service improvement</span>
+                    <span>{{ t('terms.ip.u3') }}</span>
                   </li>
                 </ul>
               </div>
@@ -275,118 +264,56 @@
             <div class="bg-gray-50 dark:bg-gray-900/20 border border-gray-200 dark:border-gray-800 rounded-xl p-6">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">
                 <UIcon name="i-heroicons-shield-check" class="inline mr-2" />
-                Our Intellectual Property
+                {{ t('terms.ip.ourTitle') }}
               </h3>
               <p class="text-gray-600 dark:text-gray-400 text-sm">
-                All trademarks, logos, service marks, and trade names (Noktah, Eskala, Memomancy, Fieldpass, Heavy Station) are our exclusive property. Unauthorized use is strictly prohibited.
+                {{ t('terms.ip.ourBody') }}
               </p>
             </div>
           </div>
         </UCard>
 
         <!-- Payment & Billing -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-credit-card" class="text-4xl text-green-600 dark:text-green-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Payment & Billing</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.payment.title') }}</h2>
             </div>
           </template>
           <div class="space-y-6 text-gray-700 dark:text-gray-300">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Payment Terms</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.payment.termsTitle') }}</h3>
               <ul class="space-y-2">
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-banknotes" class="text-green-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>All prices are quoted in Indonesian Rupiah (IDR) unless otherwise stated</span>
+                  <span>{{ t('terms.payment.t1') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-clock" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Payment is required in advance for most services unless otherwise agreed</span>
+                  <span>{{ t('terms.payment.t2') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-receipt-percent" class="text-purple-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>All prices include applicable Indonesian taxes (VAT/PPN) where required</span>
+                  <span>{{ t('terms.payment.t3') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-arrow-path" class="text-orange-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Recurring payments for subscriptions are processed automatically</span>
+                  <span>{{ t('terms.payment.t4') }}</span>
                 </li>
               </ul>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-xl p-4">
-                <h4 class="font-semibold text-emerald-800 dark:text-emerald-200 mb-3">
-                  <UIcon name="i-heroicons-camera" class="inline mr-2" />
-                  Memomancy Booking Terms
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800 rounded-xl p-4">
+                <h4 class="font-semibold text-sky-800 dark:text-sky-200 mb-3">
+                  <UIcon name="i-heroicons-megaphone" class="inline mr-2" />
+                  {{ t('terms.payment.eskalaTitle') }}
                 </h4>
-                <ul class="space-y-2 text-sm text-emerald-700 dark:text-emerald-300">
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>50% deposit required to confirm photo sessions</span>
-                  </li>
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Cancellation must be made 48 hours in advance</span>
-                  </li>
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Weather delays eligible for rescheduling</span>
-                  </li>
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Final payment due on session completion</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-xl p-4">
-                <h4 class="font-semibold text-orange-800 dark:text-orange-200 mb-3">
-                  <UIcon name="i-heroicons-trophy" class="inline mr-2" />
-                  Fieldpass Booking Terms
-                </h4>
-                <ul class="space-y-2 text-sm text-orange-700 dark:text-orange-300">
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Full payment required to confirm reservations</span>
-                  </li>
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Cancellation must be made 24 hours in advance</span>
-                  </li>
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>No-show bookings are non-refundable</span>
-                  </li>
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Weather-related cancellations eligible for rescheduling</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-800 rounded-xl p-4">
-                <h4 class="font-semibold text-slate-800 dark:text-slate-200 mb-3">
-                  <UIcon name="i-heroicons-cpu-chip" class="inline mr-2" />
-                  Heavy Station Purchase Terms
-                </h4>
-                <ul class="space-y-2 text-sm text-slate-700 dark:text-slate-300">
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-slate-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>All products include manufacturer warranty</span>
-                  </li>
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-slate-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Return policy: 7 days for defective items</span>
-                  </li>
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-slate-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Installation services available separately</span>
-                  </li>
-                  <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-slate-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Technical support included for 30 days</span>
+                <ul class="space-y-2 text-sm text-sky-700 dark:text-sky-300">
+                  <li v-for="n in ['e1', 'e2', 'e3']" :key="n" class="flex items-start">
+                    <UIcon name="i-heroicons-check" class="text-sky-500 mr-2 mt-0.5 shrink-0" />
+                    <span>{{ t(`terms.payment.${n}`) }}</span>
                   </li>
                 </ul>
               </div>
@@ -395,79 +322,79 @@
             <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-4">
               <h4 class="font-semibold text-red-800 dark:text-red-200 mb-2">
                 <UIcon name="i-heroicons-exclamation-triangle" class="inline mr-2" />
-                Late Payment & Refunds
+                {{ t('terms.payment.lateTitle') }}
               </h4>
               <p class="text-red-700 dark:text-red-300 text-sm mb-2">
-                Late payments may result in service suspension. Refunds are processed according to Indonesian Consumer Protection Law and our specific service terms.
+                {{ t('terms.payment.lateBody') }}
               </p>
               <p class="text-xs text-red-600 dark:text-red-400">
-                Disputed payments will be resolved according to Indonesian banking regulations and our dispute resolution procedures.
+                {{ t('terms.payment.disputeBody') }}
               </p>
             </div>
           </div>
         </UCard>
 
         <!-- Service Availability & Modifications -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-server" class="text-4xl text-blue-600 dark:text-blue-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Service Availability & Modifications</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.availability.title') }}</h2>
             </div>
           </template>
           <div class="space-y-4 text-gray-700 dark:text-gray-300">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Service Availability</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.availability.availabilityTitle') }}</h3>
               <p class="mb-3">
-                We strive to maintain high service availability but cannot guarantee uninterrupted access. Services may be temporarily unavailable due to:
+                {{ t('terms.availability.availabilityLead') }}
               </p>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul class="space-y-2">
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-wrench-screwdriver" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Scheduled maintenance and updates</span>
+                    <span class="text-sm">{{ t('terms.availability.a1') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-bolt" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Emergency technical issues</span>
+                    <span class="text-sm">{{ t('terms.availability.a2') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-shield-exclamation" class="text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Security incidents or investigations</span>
+                    <span class="text-sm">{{ t('terms.availability.a3') }}</span>
                   </li>
                 </ul>
                 <ul class="space-y-2">
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-signal-slash" class="text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Third-party service disruptions</span>
+                    <span class="text-sm">{{ t('terms.availability.a4') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-exclamation-triangle" class="text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Force majeure events</span>
+                    <span class="text-sm">{{ t('terms.availability.a5') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-scale" class="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Legal or regulatory requirements</span>
+                    <span class="text-sm">{{ t('terms.availability.a6') }}</span>
                   </li>
                 </ul>
               </div>
             </div>
 
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Service Modifications</h3>
-              <p class="mb-3">We reserve the right to modify, suspend, or discontinue services with reasonable notice:</p>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.availability.modificationsTitle') }}</h3>
+              <p class="mb-3">{{ t('terms.availability.modificationsLead') }}</p>
               <ul class="space-y-2">
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-bell" class="text-primary-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span class="text-sm">30 days notice for major changes affecting functionality</span>
+                  <span class="text-sm">{{ t('terms.availability.m1') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-calendar" class="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span class="text-sm">7 days notice for minor updates and improvements</span>
+                  <span class="text-sm">{{ t('terms.availability.m2') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-lightning-bolt" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span class="text-sm">Immediate changes for security or legal compliance</span>
+                  <UIcon name="i-heroicons-bolt" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span class="text-sm">{{ t('terms.availability.m3') }}</span>
                 </li>
               </ul>
             </div>
@@ -475,57 +402,57 @@
         </UCard>
 
         <!-- User Conduct & Prohibited Activities -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-shield-exclamation" class="text-4xl text-rose-600 dark:text-rose-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">User Conduct & Prohibited Activities</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.conduct.title') }}</h2>
             </div>
           </template>
           <div class="space-y-6 text-gray-700 dark:text-gray-300">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Community Standards</h3>
-              <p class="mb-3">We maintain a professional environment that respects Indonesian cultural values and legal requirements:</p>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.conduct.standardsTitle') }}</h3>
+              <p class="mb-3">{{ t('terms.conduct.standardsLead') }}</p>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 class="font-semibold text-green-600 dark:text-green-400 mb-2">Encouraged Behavior</h4>
+                  <h4 class="font-semibold text-green-600 dark:text-green-400 mb-2">{{ t('terms.conduct.encouragedTitle') }}</h4>
                   <ul class="space-y-1 text-sm">
                     <li class="flex items-start">
                       <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Professional communication</span>
+                      <span>{{ t('terms.conduct.e1') }}</span>
                     </li>
                     <li class="flex items-start">
                       <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Constructive feedback</span>
+                      <span>{{ t('terms.conduct.e2') }}</span>
                     </li>
                     <li class="flex items-start">
                       <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Respectful collaboration</span>
+                      <span>{{ t('terms.conduct.e3') }}</span>
                     </li>
                     <li class="flex items-start">
                       <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Timely project communication</span>
+                      <span>{{ t('terms.conduct.e4') }}</span>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h4 class="font-semibold text-red-600 dark:text-red-400 mb-2">Prohibited Behavior</h4>
+                  <h4 class="font-semibold text-red-600 dark:text-red-400 mb-2">{{ t('terms.conduct.prohibitedTitle') }}</h4>
                   <ul class="space-y-1 text-sm">
                     <li class="flex items-start">
                       <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Harassment or discrimination</span>
+                      <span>{{ t('terms.conduct.x1') }}</span>
                     </li>
                     <li class="flex items-start">
                       <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Fraudulent activities</span>
+                      <span>{{ t('terms.conduct.x2') }}</span>
                     </li>
                     <li class="flex items-start">
                       <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Sharing inappropriate content</span>
+                      <span>{{ t('terms.conduct.x3') }}</span>
                     </li>
                     <li class="flex items-start">
                       <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Violating intellectual property</span>
+                      <span>{{ t('terms.conduct.x4') }}</span>
                     </li>
                   </ul>
                 </div>
@@ -535,27 +462,27 @@
             <div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-xl p-6">
               <h3 class="text-lg font-semibold text-yellow-800 dark:text-yellow-200 mb-3">
                 <UIcon name="i-heroicons-exclamation-triangle" class="inline mr-2" />
-                Enforcement Actions
+                {{ t('terms.conduct.enforcementTitle') }}
               </h3>
               <p class="text-yellow-700 dark:text-yellow-300 mb-3">
-                Violations may result in warnings, account suspension, or permanent termination depending on severity. We reserve the right to:
+                {{ t('terms.conduct.enforcementLead') }}
               </p>
               <ul class="space-y-2 text-sm text-yellow-600 dark:text-yellow-400">
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-eye-slash" class="text-yellow-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Remove or restrict access to content</span>
+                  <span>{{ t('terms.conduct.f1') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-pause" class="text-yellow-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Temporarily suspend accounts</span>
+                  <span>{{ t('terms.conduct.f2') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-no-symbol" class="text-yellow-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Permanently terminate accounts</span>
+                  <span>{{ t('terms.conduct.f3') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-scale" class="text-yellow-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Report illegal activities to authorities</span>
+                  <span>{{ t('terms.conduct.f4') }}</span>
                 </li>
               </ul>
             </div>
@@ -563,67 +490,67 @@
         </UCard>
 
         <!-- Termination of Services -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-power" class="text-4xl text-purple-600 dark:text-purple-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Termination of Services</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.termination.title') }}</h2>
             </div>
           </template>
           <div class="space-y-6 text-gray-700 dark:text-gray-300">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Termination by You</h3>
-              <p class="mb-3">You may terminate your account at any time:</p>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.termination.byYouTitle') }}</h3>
+              <p class="mb-3">{{ t('terms.termination.byYouLead') }}</p>
               <ul class="space-y-2">
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-user-minus" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Account deletion can be requested through our support team</span>
+                  <span>{{ t('terms.termination.y1') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-document-arrow-down" class="text-green-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>You can request data export before account deletion</span>
+                  <span>{{ t('terms.termination.y2') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-banknotes" class="text-orange-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Outstanding payments must be settled before termination</span>
+                  <span>{{ t('terms.termination.y3') }}</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-clock" class="text-purple-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Active projects must be completed or transferred</span>
+                  <span>{{ t('terms.termination.y4') }}</span>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Termination by Us</h3>
-              <p class="mb-3">We may terminate accounts for:</p>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.termination.byUsTitle') }}</h3>
+              <p class="mb-3">{{ t('terms.termination.byUsLead') }}</p>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul class="space-y-2">
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Violation of these Terms</span>
+                    <span class="text-sm">{{ t('terms.termination.u1') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-credit-card" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Non-payment of fees</span>
+                    <span class="text-sm">{{ t('terms.termination.u2') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-scale" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Illegal activities</span>
+                    <span class="text-sm">{{ t('terms.termination.u3') }}</span>
                   </li>
                 </ul>
                 <ul class="space-y-2">
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-shield-exclamation" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Security threats</span>
+                    <span class="text-sm">{{ t('terms.termination.u4') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-clock" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Extended inactivity</span>
+                    <span class="text-sm">{{ t('terms.termination.u5') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-building-office" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span class="text-sm">Business closure</span>
+                    <span class="text-sm">{{ t('terms.termination.u6') }}</span>
                   </li>
                 </ul>
               </div>
@@ -632,79 +559,79 @@
             <div class="bg-gray-50 dark:bg-gray-900/20 border border-gray-200 dark:border-gray-800 rounded-xl p-4">
               <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2">
                 <UIcon name="i-heroicons-information-circle" class="inline mr-2" />
-                Effect of Termination
+                {{ t('terms.termination.effectTitle') }}
               </h4>
               <p class="text-gray-600 dark:text-gray-400 text-sm">
-                Upon termination, your access to services will cease immediately. Content ownership and licensing terms survive termination. We may retain certain data as required by law or for legitimate business purposes.
+                {{ t('terms.termination.effectBody') }}
               </p>
             </div>
           </div>
         </UCard>
 
         <!-- Disclaimers & Limitation of Liability -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-exclamation-triangle" class="text-4xl text-yellow-600 dark:text-yellow-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Disclaimers & Limitation of Liability</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.liability.title') }}</h2>
             </div>
           </template>
           <div class="space-y-6 text-gray-700 dark:text-gray-300">
             <div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-xl p-6">
               <h3 class="text-lg font-semibold text-yellow-800 dark:text-yellow-200 mb-4">
                 <UIcon name="i-heroicons-shield-exclamation" class="inline mr-2" />
-                Service Disclaimers
+                {{ t('terms.liability.disclaimersTitle') }}
               </h3>
               <div class="space-y-3 text-sm text-yellow-700 dark:text-yellow-300">
                 <p>
-                  <strong>Services are provided "as is" without warranties of any kind.</strong> While we strive for quality and reliability, we cannot guarantee:
+                  <strong>{{ t('terms.liability.asIs') }}</strong> {{ t('terms.liability.disclaimersLead') }}
                 </p>
                 <ul class="space-y-2">
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Uninterrupted or error-free operation</span>
+                    <span>{{ t('terms.liability.d1') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Specific business outcomes or results</span>
+                    <span>{{ t('terms.liability.d2') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Compatibility with all systems or platforms</span>
+                    <span>{{ t('terms.liability.d3') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Complete security against all threats</span>
+                    <span>{{ t('terms.liability.d4') }}</span>
                   </li>
                 </ul>
               </div>
             </div>
 
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Limitation of Liability</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.liability.limitationTitle') }}</h3>
               <p class="mb-3">
-                To the maximum extent permitted by Indonesian law, our liability is limited:
+                {{ t('terms.liability.limitationLead') }}
               </p>
               <div class="space-y-4">
                 <div class="flex items-start">
                   <UIcon name="i-heroicons-currency-dollar" class="text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 class="font-semibold text-gray-900 dark:text-white">Financial Limits</h4>
-                    <p class="text-sm">Our total liability shall not exceed the amount you paid for services in the 12 months preceding the claim</p>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('terms.liability.financialTitle') }}</h4>
+                    <p class="text-sm">{{ t('terms.liability.financialBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
                   <UIcon name="i-heroicons-clock" class="text-blue-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 class="font-semibold text-gray-900 dark:text-white">Types of Damages</h4>
-                    <p class="text-sm">We are not liable for indirect, incidental, consequential, or punitive damages</p>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('terms.liability.damagesTitle') }}</h4>
+                    <p class="text-sm">{{ t('terms.liability.damagesBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
                   <UIcon name="i-heroicons-shield-check" class="text-purple-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 class="font-semibold text-gray-900 dark:text-white">Professional Services</h4>
-                    <p class="text-sm">Eskala and Memomancy services include professional indemnity coverage as required by Indonesian law</p>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('terms.liability.professionalTitle') }}</h4>
+                    <p class="text-sm">{{ t('terms.liability.professionalBody') }}</p>
                   </div>
                 </div>
               </div>
@@ -713,71 +640,71 @@
             <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-4">
               <h4 class="font-semibold text-red-800 dark:text-red-200 mb-2">
                 <UIcon name="i-heroicons-information-circle" class="inline mr-2" />
-                Exceptions
+                {{ t('terms.liability.exceptionsTitle') }}
               </h4>
               <p class="text-red-700 dark:text-red-300 text-sm">
-                Limitations do not apply to liability for death, personal injury, fraud, or gross negligence. Your statutory consumer rights under Indonesian law remain unaffected.
+                {{ t('terms.liability.exceptionsBody') }}
               </p>
             </div>
           </div>
         </UCard>
 
         <!-- Governing Law & Dispute Resolution -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-scale" class="text-4xl text-indigo-600 dark:text-indigo-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Governing Law & Dispute Resolution</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.law.title') }}</h2>
             </div>
           </template>
           <div class="space-y-6 text-gray-700 dark:text-gray-300">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Governing Law</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.law.governingTitle') }}</h3>
               <p class="mb-3">
-                These Terms and your use of our services are governed by and construed in accordance with the laws of the Republic of Indonesia, including:
+                {{ t('terms.law.governingLead') }}
               </p>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul class="space-y-2 text-sm">
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-document-text" class="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Indonesian Civil Code</span>
+                    <span>{{ t('terms.law.l1') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-shield-check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Consumer Protection Law No. 8/1999</span>
+                    <span>{{ t('terms.law.l2') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-computer-desktop" class="text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Electronic Information and Transaction Law</span>
+                    <span>{{ t('terms.law.l3') }}</span>
                   </li>
                 </ul>
                 <ul class="space-y-2 text-sm">
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-lock-closed" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Personal Data Protection Law UU PDP 2022</span>
+                    <span>{{ t('terms.law.l4') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-building-office" class="text-teal-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Company Law and Business Regulations</span>
+                    <span>{{ t('terms.law.l5') }}</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-banknotes" class="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Taxation and Financial Services Laws</span>
+                    <span>{{ t('terms.law.l6') }}</span>
                   </li>
                 </ul>
               </div>
             </div>
 
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Dispute Resolution Process</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.law.disputeTitle') }}</h3>
               <div class="space-y-4">
                 <div class="flex items-start">
                   <div class="bg-primary-100 dark:bg-primary-900/30 rounded-full p-2 mr-4">
                     <span class="text-primary-600 dark:text-primary-400 font-bold text-sm">1</span>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900 dark:text-white">Direct Communication</h4>
-                    <p class="text-sm">Contact our support team at core@noktah.co to resolve issues informally</p>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('terms.law.step1Title') }}</h4>
+                    <p class="text-sm">{{ t('terms.law.step1Body') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
@@ -785,8 +712,8 @@
                     <span class="text-emerald-600 dark:text-emerald-400 font-bold text-sm">2</span>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900 dark:text-white">Mediation</h4>
-                    <p class="text-sm">If direct resolution fails, disputes may be mediated through Indonesian Consumer Dispute Settlement Agency (BPSK)</p>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('terms.law.step2Title') }}</h4>
+                    <p class="text-sm">{{ t('terms.law.step2Body') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
@@ -794,8 +721,8 @@
                     <span class="text-orange-600 dark:text-orange-400 font-bold text-sm">3</span>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900 dark:text-white">Arbitration</h4>
-                    <p class="text-sm">Unresolved disputes may be submitted to binding arbitration under Indonesian Arbitration Law</p>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('terms.law.step3Title') }}</h4>
+                    <p class="text-sm">{{ t('terms.law.step3Body') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
@@ -803,8 +730,8 @@
                     <span class="text-red-600 dark:text-red-400 font-bold text-sm">4</span>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900 dark:text-white">Court Jurisdiction</h4>
-                    <p class="text-sm">Final disputes are subject to the exclusive jurisdiction of courts in Gresik, East Java, Indonesia</p>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('terms.law.step4Title') }}</h4>
+                    <p class="text-sm">{{ t('terms.law.step4Body') }}</p>
                   </div>
                 </div>
               </div>
@@ -813,70 +740,68 @@
             <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4">
               <h4 class="font-semibold text-blue-800 dark:text-blue-200 mb-2">
                 <UIcon name="i-heroicons-clock" class="inline mr-2" />
-                Time Limitations
+                {{ t('terms.law.timeTitle') }}
               </h4>
               <p class="text-blue-700 dark:text-blue-300 text-sm">
-                Claims must be filed within one (1) year of the date the cause of action arose, or as otherwise required by Indonesian law. Consumer protection claims may have different time limits as specified by Indonesian Consumer Protection Law.
+                {{ t('terms.law.timeBody') }}
               </p>
             </div>
           </div>
         </UCard>
 
         <!-- Contact Information -->
-        <UCard class="mb-8 p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
             <div class="flex items-center mb-6">
               <UIcon name="i-heroicons-envelope" class="text-4xl text-rose-600 dark:text-rose-400 mr-4" />
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Contact Us</h2>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('terms.contact.title') }}</h2>
             </div>
           </template>
           <div class="space-y-6 text-gray-700 dark:text-gray-300">
             <p>
-              If you have questions about these Terms of Service, need support, or wish to report violations, please contact us:
+              {{ t('terms.contact.lead') }}
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="space-y-4">
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Legal & Compliance</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-2">{{ t('terms.contact.legalTitle') }}</h4>
                   <div class="space-y-2 text-sm">
                     <div class="flex items-center">
                       <UIcon name="i-heroicons-envelope" class="text-rose-500 mr-2" />
-                      <span>core@noktah.co</span>
+                      <span>{{ COMPANY.email }}</span>
                     </div>
                     <div class="flex items-center">
                       <UIcon name="i-heroicons-phone" class="text-green-500 mr-2" />
-                      <span>+62 851-7301-7749</span>
+                      <span>{{ COMPANY.phoneDisplay }}</span>
                     </div>
                   </div>
                 </div>
                 
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Business Hours</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-2">{{ t('terms.contact.hoursTitle') }}</h4>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Monday - Friday: 09:00 - 18:00 WIB<br>
-                    Saturday: 09:00 - 15:00 WIB<br>
-                    Sunday: Closed
+                    {{ t('terms.contact.hours1') }}<br>
+                    {{ t('terms.contact.hours2') }}<br>
+                    {{ t('terms.contact.hours3') }}
                   </p>
                 </div>
               </div>
               
               <div class="space-y-4">
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Legal Entity</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-2">{{ t('terms.contact.entityTitle') }}</h4>
                   <div class="text-sm space-y-1">
                     <p><strong>Noktah Inovasi Teknologi</strong></p>
                     <p>CV. Amerta Meta Data</p>
-                    <p>Bukit Menganti Regency C-10</p>
-                    <p>Boteng, Menganti, Gresik</p>
-                    <p>Jawa Timur, Indonesia 61174</p>
+                    <p v-for="line in COMPANY.addressLines" :key="line">{{ line }}</p>
                   </div>
                 </div>
                 
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Response Time</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-2">{{ t('terms.contact.responseTitle') }}</h4>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
-                    We aim to respond to all inquiries within 2 business days. Legal matters may require additional processing time.
+                    {{ t('terms.contact.responseBody') }}
                   </p>
                 </div>
               </div>
@@ -885,23 +810,23 @@
         </UCard>
 
         <!-- Legal Compliance Statement -->
-        <UCard class="p-8 bg-white/[0.07] backdrop-blur-sm border border-white/[0.29] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl">
+        <UCard class="glass p-8 rounded-2xl">
           <div class="text-center space-y-4">
             <div class="flex items-center justify-center mb-4">
               <UIcon name="i-heroicons-shield-check" class="text-3xl text-green-500 mr-3" />
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white">Legal Compliance</h3>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white">{{ t('terms.compliance.title') }}</h3>
             </div>
             <p class="text-gray-700 dark:text-gray-300">
-              These Terms of Service comply with Indonesian legal requirements and international best practices. We are committed to operating transparently and maintaining the highest standards of legal and ethical business conduct.
+              {{ t('terms.compliance.body') }}
             </p>
             <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-              <span>Indonesian Law Compliant</span>
+              <span>{{ t('terms.compliance.badge1') }}</span>
               <span>•</span>
-              <span>Consumer Protection Act</span>
+              <span>{{ t('terms.compliance.badge2') }}</span>
               <span>•</span>
-              <span>UU PDP 2022</span>
+              <span>{{ t('terms.compliance.badge3') }}</span>
               <span>•</span>
-              <span>Last Updated: {{ lastUpdated }}</span>
+              <span>{{ t('terms.hero.lastUpdatedLabel') }} {{ lastUpdated }}</span>
             </div>
           </div>
         </UCard>
@@ -912,24 +837,21 @@
 </template>
 
 <script setup>
-// Page meta
-// SEO Meta
+const { t } = useI18n()
+
 useSeoMeta({
-  title: 'Terms of Service - Noktah Inovasi Teknologi | Legal Framework',
-  description: 'Terms of Service for Noktah Inovasi Teknologi and all brands (Eskala, Memomancy, Fieldpass, Heavy Station). Indonesian law compliant legal framework for services and partnerships.',
-  ogTitle: 'Terms of Service - Noktah Inovasi Teknologi',
-  ogDescription: 'Comprehensive terms of service covering all Noktah brands. Indonesian law compliant legal framework.',
+  title: () => t('terms.seo.title'),
+  description: () => t('terms.seo.description'),
+  ogTitle: () => t('terms.seo.title'),
+  ogDescription: () => t('terms.seo.description'),
   ogImage: '/images/noktah-logo.png',
-  ogUrl: 'https://noktah.co/terms-of-service',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Noktah Terms of Service',
-  twitterDescription: 'Legal framework for all Noktah brands. Indonesian law compliant terms and conditions.',
-  twitterImage: '/images/noktah-logo.png',
-  keywords: 'terms of service, legal framework, Indonesian law, noktah terms, service agreement, user agreement, legal compliance'
+  keywords: () => t('terms.seo.keywords'),
 })
+// Page meta
 
 // Last updated date
-const lastUpdated = ref('18 Agustus 2025')
+const lastUpdated = computed(() => t('terms.lastUpdatedDate'))
 </script>
 
 <style scoped>
