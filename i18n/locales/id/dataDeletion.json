@@ -2,7 +2,7 @@
   "dataDeletion": {
     "seo": {
       "title": "Penghapusan Data — Noktah Inovasi Teknologi",
-      "description": "Cara meminta penghapusan data pribadi Anda dari Noktah, Eskala, dan Venyu, termasuk data dari akun Instagram dan TikTok yang terhubung."
+      "description": "Cara meminta penghapusan data pribadi Anda dari Noktah, Eskala, dan Venyu, termasuk data dari Halaman Facebook serta akun Instagram dan TikTok yang terhubung."
     },
     "lastUpdatedDate": "28 September 2026",
     "hero": {
@@ -14,15 +14,16 @@
     "who": {
       "title": "Siapa yang Dapat Mengajukan",
       "lead": "Halaman ini berlaku bagi siapa pun yang datanya kami proses, termasuk:",
-      "connected": "Pemilik akun Instagram atau TikTok yang pernah dihubungkan ke sistem kami",
+      "connected": "Pemilik Halaman Facebook serta akun Instagram atau TikTok yang pernah dihubungkan ke sistem kami",
       "clients": "Klien dan calon klien Eskala maupun Venyu",
       "endUsers": "Member dan pelanggan venue yang menggunakan Venyu",
       "visitors": "Siapa pun yang pernah menghubungi kami lewat email, WhatsApp, atau situs ini"
     },
     "disconnect": {
       "title": "Langkah Pertama: Cabut Akses Aplikasi",
-      "lead": "Jika akun Instagram atau TikTok Anda terhubung dengan kami, Anda dapat langsung mencabut akses kami dari aplikasinya. Nama menu bisa sedikit berbeda tergantung versi aplikasi.",
-      "instagram": "Buka Pengaturan dan aktivitas › Izin situs web › Aplikasi dan situs web, lalu hapus Noktah Hub dari daftar yang aktif.",
+      "lead": "Jika Halaman Facebook, akun Instagram, atau akun TikTok Anda terhubung dengan kami, Anda dapat langsung mencabut akses kami dari platformnya. Nama menu bisa sedikit berbeda tergantung versi aplikasi.",
+      "facebook": "Di Facebook, buka Pengaturan & privasi › Pengaturan › Integrasi Bisnis, lalu hapus Noktah Hub Customer. Jika Anda menghubungkannya melalui portofolio bisnis, hapus juga dari Meta Business Suite di Pengaturan › Integrasi › Aplikasi yang terhubung. Langkah ini sekaligus mengakhiri akses kami ke akun Instagram yang tertaut ke Halaman Anda.",
+      "instagram": "Untuk akun Instagram yang dihubungkan tersendiri, bukan melalui Halaman Facebook: buka Pengaturan dan aktivitas › Izin situs web › Aplikasi dan situs web, lalu hapus Noktah Hub dari daftar yang aktif.",
       "tiktok": "Buka Pengaturan dan privasi › Keamanan dan izin › Izin aplikasi dan layanan, lalu hapus akses Noktah Hub.",
       "note": "Mencabut akses menghentikan kami membaca data baru, tetapi tidak menghapus data yang sudah tersimpan. Untuk menghapusnya, kirim permintaan seperti di bawah ini."
     },
@@ -31,7 +32,7 @@
       "lead": "Kirim email ke {email} dengan subjek {subject}, dan sertakan:",
       "includeName": "Nama Anda",
       "includeService": "Layanan yang berkaitan: Eskala, Venyu, akun media sosial yang terhubung, atau komunikasi dengan kami",
-      "includeAccount": "Pengenal akun, seperti nama pengguna Instagram atau TikTok, atau email dan nomor telepon yang terdaftar",
+      "includeAccount": "Pengenal akun, seperti nama Halaman Facebook atau nama pengguna Instagram maupun TikTok, atau email dan nomor telepon yang terdaftar",
       "includeScope": "Data yang ingin dihapus: seluruhnya, atau bagian tertentu saja",
       "includeContact": "Email atau nomor yang dapat kami hubungi untuk konfirmasi",
       "mailSubject": "Permintaan Penghapusan Data",

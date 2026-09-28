@@ -123,7 +123,7 @@
           </div>
         </UCard>
 
-        <!-- Connected Instagram & TikTok Accounts -->
+        <!-- Connected Facebook, Instagram & TikTok Accounts -->
         <UCard id="platform-data" class="glass mb-8 p-8 rounded-2xl scroll-mt-24">
           <template #header>
             <div class="flex items-center mb-6">
@@ -132,7 +132,16 @@
             </div>
           </template>
           <div class="space-y-6 text-gray-700 dark:text-gray-300">
-            <p>{{ t('privacy.platform.lead') }}</p>
+            <div class="space-y-3">
+              <p>{{ t('privacy.platform.lead') }}</p>
+              <ul class="space-y-2">
+                <li v-for="key in platformRouteKeys" :key="key" class="flex items-start">
+                  <UIcon name="i-heroicons-link" class="text-pink-500 mr-2 mt-1 shrink-0" />
+                  <span>{{ t(`privacy.platform.${key}`) }}</span>
+                </li>
+              </ul>
+              <p>{{ t('privacy.platform.consent') }}</p>
+            </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -163,6 +172,14 @@
                   <span>{{ t(`privacy.platform.${key}`) }}</span>
                 </li>
               </ul>
+            </div>
+
+            <div class="flex items-start">
+              <UIcon name="i-heroicons-sparkles" class="text-violet-500 mr-3 mt-1 shrink-0" />
+              <div>
+                <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.platform.aiTitle') }}</h4>
+                <p class="text-sm">{{ t('privacy.platform.aiBody') }}</p>
+              </div>
             </div>
 
             <div class="bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 rounded-xl p-4 space-y-2">
@@ -385,6 +402,13 @@
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.sharing.vendorsTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.sharing.vendorsBody') }}</p>
+                  <ul class="space-y-1 text-sm mt-2">
+                    <li v-for="key in vendorKeys" :key="key" class="flex items-start">
+                      <UIcon name="i-heroicons-chevron-right" class="text-emerald-500 mr-1 mt-0.5 shrink-0" />
+                      <span>{{ t(`privacy.sharing.${key}`) }}</span>
+                    </li>
+                  </ul>
+                  <p class="text-sm mt-2">{{ t('privacy.sharing.vendorsNote') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
@@ -392,6 +416,13 @@
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.sharing.legalTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.sharing.legalBody') }}</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <UIcon name="i-heroicons-building-library" class="text-sky-500 mr-3 mt-1 shrink-0" />
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.sharing.authorityTitle') }}</h4>
+                  <p class="text-sm">{{ t('privacy.sharing.authorityBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
@@ -802,9 +833,11 @@ const localePath = useLocalePath()
 
 // Key names only — strings are looked up with t() in the template so they
 // follow a language switch without a reload.
-const platformReadKeys = ['read1', 'read2', 'read3', 'read4']
-const platformNotReadKeys = ['notRead1', 'notRead2', 'notRead3', 'notRead4']
-const platformUseKeys = ['use1', 'use2', 'use3']
+const platformRouteKeys = ['route1', 'route2', 'route3']
+const platformReadKeys = ['read1', 'read2', 'read3', 'read4', 'read5']
+const platformNotReadKeys = ['notRead1', 'notRead2', 'notRead3', 'notRead4', 'notRead5']
+const platformUseKeys = ['use1', 'use2', 'use3', 'use4']
+const vendorKeys = ['vendor1', 'vendor2', 'vendor3']
 const securityKeys = ['measure1', 'measure2', 'measure3', 'measure4']
 
 useSeoMeta({

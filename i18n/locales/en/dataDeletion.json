@@ -2,7 +2,7 @@
   "dataDeletion": {
     "seo": {
       "title": "Data Deletion — Noktah Inovasi Teknologi",
-      "description": "How to ask Noktah, Eskala and Venyu to delete your personal data, including data from connected Instagram and TikTok accounts."
+      "description": "How to ask Noktah, Eskala and Venyu to delete your personal data, including data from connected Facebook Pages and Instagram and TikTok accounts."
     },
     "lastUpdatedDate": "28 September 2026",
     "hero": {
@@ -14,15 +14,16 @@
     "who": {
       "title": "Who Can Ask",
       "lead": "This page applies to anyone whose data we process, including:",
-      "connected": "Owners of Instagram or TikTok accounts that have been connected to our systems",
+      "connected": "Owners of Facebook Pages and Instagram or TikTok accounts that have been connected to our systems",
       "clients": "Clients and prospective clients of Eskala or Venyu",
       "endUsers": "Members and customers of venues that use Venyu",
       "visitors": "Anyone who has contacted us by email, WhatsApp or through this website"
     },
     "disconnect": {
       "title": "First Step: Remove the App's Access",
-      "lead": "If your Instagram or TikTok account is connected to us, you can remove our access directly in the app. Menu names can differ slightly between app versions.",
-      "instagram": "Go to Settings and activity › Website permissions › Apps and websites, then remove Noktah Hub from the active list.",
+      "lead": "If your Facebook Page, Instagram or TikTok account is connected to us, you can remove our access directly on the platform. Menu names can differ slightly between app versions.",
+      "facebook": "In Facebook, go to Settings and privacy › Settings › Business integrations, then remove Noktah Hub Customer. If you connected through a business portfolio, also remove it in Meta Business Suite under Settings › Integrations › Connected apps. This also ends our access to the Instagram account linked to your Page.",
+      "instagram": "For an Instagram account connected on its own, not through a Facebook Page: go to Settings and activity › Website permissions › Apps and websites, then remove Noktah Hub from the active list.",
       "tiktok": "Go to Settings and privacy › Security and permissions › App and services permissions, then remove Noktah Hub's access.",
       "note": "Removing access stops us reading any new data, but it does not delete data we already hold. To delete that, send a request as described below."
     },
@@ -31,7 +32,7 @@
       "lead": "Email {email} with the subject {subject}, and include:",
       "includeName": "Your name",
       "includeService": "What it relates to: Eskala, Venyu, a connected social media account, or your correspondence with us",
-      "includeAccount": "An account identifier, such as your Instagram or TikTok username, or the email or phone number you registered with",
+      "includeAccount": "An account identifier, such as your Facebook Page name or Instagram or TikTok username, or the email or phone number you registered with",
       "includeScope": "What you want deleted: everything, or only specific data",
       "includeContact": "An email address or number where we can confirm with you",
       "mailSubject": "Data Deletion Request",

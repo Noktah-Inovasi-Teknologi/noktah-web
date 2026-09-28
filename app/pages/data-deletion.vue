@@ -50,6 +50,13 @@
           <div class="space-y-4 text-gray-700 dark:text-gray-300">
             <p>{{ t('dataDeletion.disconnect.lead') }}</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="glass-thin rounded-xl p-4 md:col-span-2">
+                <h3 class="font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
+                  <UIcon name="i-simple-icons-facebook" class="mr-2" />
+                  Facebook
+                </h3>
+                <p class="text-sm">{{ t('dataDeletion.disconnect.facebook') }}</p>
+              </div>
               <div class="glass-thin rounded-xl p-4">
                 <h3 class="font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
                   <UIcon name="i-simple-icons-instagram" class="mr-2" />
