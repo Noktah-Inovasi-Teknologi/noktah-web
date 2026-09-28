@@ -39,13 +39,13 @@ export default defineNuxtConfig({
         code: "id",
         language: "id-ID",
         name: "Bahasa Indonesia",
-        files: ["id/common.json", "id/home.json", "id/about.json", "id/brands.json", "id/contact.json", "id/privacy.json", "id/terms.json"],
+        files: ["id/common.json", "id/home.json", "id/about.json", "id/brands.json", "id/contact.json", "id/privacy.json", "id/terms.json", "id/dataDeletion.json"],
       },
       {
         code: "en",
         language: "en-US",
         name: "English",
-        files: ["en/common.json", "en/home.json", "en/about.json", "en/brands.json", "en/contact.json", "en/privacy.json", "en/terms.json"],
+        files: ["en/common.json", "en/home.json", "en/about.json", "en/brands.json", "en/contact.json", "en/privacy.json", "en/terms.json", "en/dataDeletion.json"],
       },
     ],
     // Accept-Language rather than IP geolocation: it reflects what the
@@ -62,6 +62,13 @@ export default defineNuxtConfig({
     bundle: { optimizeTranslationDirective: false },
   },
   
+  // Meta's and TikTok's developer dashboards are commonly filled in with the
+  // short /privacy URL; the page itself lives at /privacy-policy.
+  routeRules: {
+    "/privacy": { redirect: { to: "/privacy-policy", statusCode: 301 } },
+    "/en/privacy": { redirect: { to: "/en/privacy-policy", statusCode: 301 } },
+  },
+
   // Global SEO & App Configuration
   app: {
     head: {

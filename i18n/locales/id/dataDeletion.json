@@ -1,0 +1,81 @@
+{
+  "dataDeletion": {
+    "seo": {
+      "title": "Penghapusan Data — Noktah Inovasi Teknologi",
+      "description": "Cara meminta penghapusan data pribadi Anda dari Noktah, Eskala, dan Venyu, termasuk data dari akun Instagram dan TikTok yang terhubung."
+    },
+    "lastUpdatedDate": "28 September 2026",
+    "hero": {
+      "headingPre": "Penghapusan",
+      "headingAccent": "Data",
+      "description": "Anda dapat meminta kami menghapus data pribadi Anda kapan saja. Halaman ini menjelaskan caranya dan apa yang terjadi setelah permintaan Anda kami terima.",
+      "lastUpdatedLabel": "Terakhir Diperbarui:"
+    },
+    "who": {
+      "title": "Siapa yang Dapat Mengajukan",
+      "lead": "Halaman ini berlaku bagi siapa pun yang datanya kami proses, termasuk:",
+      "connected": "Pemilik akun Instagram atau TikTok yang pernah dihubungkan ke sistem kami",
+      "clients": "Klien dan calon klien Eskala maupun Venyu",
+      "endUsers": "Member dan pelanggan venue yang menggunakan Venyu",
+      "visitors": "Siapa pun yang pernah menghubungi kami lewat email, WhatsApp, atau situs ini"
+    },
+    "disconnect": {
+      "title": "Langkah Pertama: Cabut Akses Aplikasi",
+      "lead": "Jika akun Instagram atau TikTok Anda terhubung dengan kami, Anda dapat langsung mencabut akses kami dari aplikasinya. Nama menu bisa sedikit berbeda tergantung versi aplikasi.",
+      "instagram": "Buka Pengaturan dan aktivitas › Izin situs web › Aplikasi dan situs web, lalu hapus Noktah Hub dari daftar yang aktif.",
+      "tiktok": "Buka Pengaturan dan privasi › Keamanan dan izin › Izin aplikasi dan layanan, lalu hapus akses Noktah Hub.",
+      "note": "Mencabut akses menghentikan kami membaca data baru, tetapi tidak menghapus data yang sudah tersimpan. Untuk menghapusnya, kirim permintaan seperti di bawah ini."
+    },
+    "request": {
+      "title": "Mengajukan Permintaan Penghapusan",
+      "lead": "Kirim email ke {email} dengan subjek {subject}, dan sertakan:",
+      "includeName": "Nama Anda",
+      "includeService": "Layanan yang berkaitan: Eskala, Venyu, akun media sosial yang terhubung, atau komunikasi dengan kami",
+      "includeAccount": "Pengenal akun, seperti nama pengguna Instagram atau TikTok, atau email dan nomor telepon yang terdaftar",
+      "includeScope": "Data yang ingin dihapus: seluruhnya, atau bagian tertentu saja",
+      "includeContact": "Email atau nomor yang dapat kami hubungi untuk konfirmasi",
+      "mailSubject": "Permintaan Penghapusan Data",
+      "mailBody": "Nama:\nLayanan (Eskala / Venyu / akun media sosial terhubung / lainnya):\nNama pengguna atau email terdaftar:\nData yang ingin dihapus (seluruhnya / sebagian):\nKontak untuk konfirmasi:\n",
+      "button": "Tulis Email Permintaan",
+      "whatsapp": "Hubungi via WhatsApp",
+      "verify": "Untuk melindungi Anda, kami akan memastikan permintaan benar-benar datang dari pemilik data, misalnya dengan meminta Anda membalas dari email yang terdaftar atau mengirim pesan dari akun yang bersangkutan. Kami tidak akan pernah meminta kata sandi Anda."
+    },
+    "process": {
+      "title": "Apa yang Terjadi Setelahnya",
+      "ackTitle": "Kami mengonfirmasi penerimaan",
+      "ackBody": "Kami membalas permintaan Anda dengan nomor referensi yang dapat Anda gunakan untuk menanyakan statusnya, dan meminta verifikasi bila diperlukan.",
+      "verifyTitle": "Kami memverifikasi identitas",
+      "verifyBody": "Bila diperlukan, kami meminta bukti bahwa Anda adalah pemilik data atau akun tersebut.",
+      "stopTitle": "Kami menghentikan pemrosesan",
+      "stopBody": "Paling lambat 3 x 24 jam sejak permintaan kami terima, kami berhenti memproses data Anda. Token akses media sosial yang tersimpan kami hapus setelah identitas Anda terverifikasi.",
+      "deleteTitle": "Kami menghapus data",
+      "deleteBody": "Data dihapus dari sistem utama kami. Salinan di cadangan ikut terhapus saat cadangan diperbarui, paling lama 30 hari kemudian.",
+      "doneTitle": "Kami memberi tahu Anda",
+      "doneBody": "Kami mengirim konfirmasi tertulis setelah penghapusan selesai, termasuk keterangan tentang data yang wajib tetap kami simpan beserta alasannya."
+    },
+    "keep": {
+      "title": "Data yang Mungkin Tetap Kami Simpan",
+      "lead": "Dalam keadaan tertentu kami tidak dapat langsung menghapus seluruh data:",
+      "legalTitle": "Kewajiban hukum",
+      "legalBody": "Dokumen keuangan dan perpajakan, seperti faktur dan bukti pembayaran, wajib disimpan selama 10 tahun menurut ketentuan perpajakan.",
+      "claimsTitle": "Sengketa dan klaim hukum",
+      "claimsBody": "Data yang diperlukan untuk menyelesaikan sengketa, menagih pembayaran yang belum lunas, atau membela hak kami secara hukum, sampai urusan tersebut selesai.",
+      "aggregateTitle": "Statistik agregat dan anonim",
+      "aggregateBody": "Data yang sudah digabungkan atau dianonimkan sehingga tidak lagi dapat mengidentifikasi Anda maupun akun Anda.",
+      "recordTitle": "Catatan permintaan",
+      "recordBody": "Catatan singkat tentang permintaan Anda, yaitu nama, tanggal, dan nomor referensi, sebagai bukti bahwa permintaan tersebut telah kami laksanakan.",
+      "note": "Data yang tetap disimpan dibatasi aksesnya, tidak digunakan untuk tujuan lain, dan dihapus setelah alasan penyimpanannya berakhir."
+    },
+    "clients": {
+      "title": "Jika Data Anda Dikelola oleh Klien Kami",
+      "body": "Jika Anda member venue yang menggunakan Venyu, atau pasien maupun calon pasien fasilitas kesehatan yang bekerja sama dengan Eskala, data Anda dikendalikan oleh venue atau fasilitas tersebut. Kami hanya memproses data itu atas nama mereka.",
+      "forward": "Sebaiknya ajukan permintaan langsung kepada mereka. Jika Anda menghubungi kami, kami akan meneruskan permintaan Anda kepada klien yang bersangkutan dan membantu mereka melaksanakannya."
+    },
+    "status": {
+      "title": "Status dan Pengaduan",
+      "body": "Untuk menanyakan status permintaan, balas email konfirmasi kami atau hubungi kami dengan menyebutkan nomor referensi Anda.",
+      "complaint": "Jika Anda tidak puas dengan tanggapan kami, Anda dapat menyampaikan pengaduan kepada Kementerian Komunikasi dan Digital (Komdigi) atau lembaga penyelenggara pelindungan data pribadi yang dibentuk berdasarkan UU PDP.",
+      "policy": "Penjelasan lengkap tentang data yang kami kumpulkan dan hak-hak Anda tersedia di {link}."
+    }
+  }
+}

@@ -149,6 +149,9 @@
                 <NuxtLink :to="localePath('/terms-of-service')" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors duration-300">
                   {{ t('footer.terms') }}
                 </NuxtLink>
+                <NuxtLink :to="localePath('/data-deletion')" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors duration-300">
+                  {{ t('footer.dataDeletion') }}
+                </NuxtLink>
               </div>
             </div>
           </div>

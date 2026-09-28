@@ -38,6 +38,9 @@
                 <template #parent><strong>CV. Amerta Meta Data</strong></template>
               </i18n-t>
             <p>
+              {{ t('privacy.intro.roles') }}
+            </p>
+            <p>
               {{ t('privacy.intro.compliance') }}
             </p>
             <div class="bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 rounded-xl p-4">
@@ -104,6 +107,99 @@
                 </div>
               </div>
             </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('privacy.collect.publicTitle') }}</h3>
+              <p>{{ t('privacy.collect.publicBody') }}</p>
+            </div>
+
+            <div class="bg-rose-50 dark:bg-rose-900/20 border border-rose-200 dark:border-rose-800 rounded-xl p-4">
+              <h3 class="font-semibold text-rose-800 dark:text-rose-200 mb-2">
+                <UIcon name="i-heroicons-heart" class="inline mr-2" />
+                {{ t('privacy.collect.patientTitle') }}
+              </h3>
+              <p class="text-sm text-rose-700 dark:text-rose-300">{{ t('privacy.collect.patientBody') }}</p>
+            </div>
+          </div>
+        </UCard>
+
+        <!-- Connected Instagram & TikTok Accounts -->
+        <UCard id="platform-data" class="glass mb-8 p-8 rounded-2xl scroll-mt-24">
+          <template #header>
+            <div class="flex items-center mb-6">
+              <UIcon name="i-heroicons-chart-bar-square" class="text-4xl text-pink-600 dark:text-pink-400 mr-4" />
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('privacy.platform.title') }}</h2>
+            </div>
+          </template>
+          <div class="space-y-6 text-gray-700 dark:text-gray-300">
+            <p>{{ t('privacy.platform.lead') }}</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('privacy.platform.readTitle') }}</h3>
+                <ul class="space-y-2 text-sm">
+                  <li v-for="key in platformReadKeys" :key="key" class="flex items-start">
+                    <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>{{ t(`privacy.platform.${key}`) }}</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('privacy.platform.notReadTitle') }}</h3>
+                <ul class="space-y-2 text-sm">
+                  <li v-for="key in platformNotReadKeys" :key="key" class="flex items-start">
+                    <UIcon name="i-heroicons-x-mark" class="text-rose-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>{{ t(`privacy.platform.${key}`) }}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('privacy.platform.useTitle') }}</h3>
+              <ul class="space-y-2 text-sm">
+                <li v-for="key in platformUseKeys" :key="key" class="flex items-start">
+                  <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span>{{ t(`privacy.platform.${key}`) }}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 rounded-xl p-4 space-y-2">
+              <h3 class="font-semibold text-primary-800 dark:text-primary-200">
+                <UIcon name="i-heroicons-shield-check" class="inline mr-2" />
+                {{ t('privacy.platform.commitTitle') }}
+              </h3>
+              <p class="text-sm text-primary-700 dark:text-primary-300">{{ t('privacy.platform.commitBody') }}</p>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-start">
+                <UIcon name="i-heroicons-clock" class="text-indigo-500 mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.platform.retentionTitle') }}</h4>
+                  <p class="text-sm">{{ t('privacy.platform.retentionBody') }}</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <UIcon name="i-heroicons-link-slash" class="text-orange-500 mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.platform.disconnectTitle') }}</h4>
+                  <i18n-t keypath="privacy.platform.disconnectBody" tag="p" class="text-sm" scope="global">
+                    <template #link>
+                      <NuxtLink :to="localePath('/data-deletion')" class="text-primary-600 dark:text-primary-400 underline underline-offset-2">{{ t('footer.dataDeletion') }}</NuxtLink>
+                    </template>
+                  </i18n-t>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <UIcon name="i-heroicons-globe-alt" class="text-cyan-500 mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.platform.thirdPartyTitle') }}</h4>
+                  <p class="text-sm">{{ t('privacy.platform.thirdPartyBody') }}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </UCard>
 
@@ -133,27 +229,13 @@
                     <p class="text-sm">{{ t('privacy.legalBasis.contractBody') }}</p>
                   </div>
                 </div>
+              </div>
+              <div class="space-y-3">
                 <div class="flex items-start">
                   <UIcon name="i-heroicons-building-library" class="text-orange-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.legalBasis.legalTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.legalBasis.legalBody') }}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="space-y-3">
-                <div class="flex items-start">
-                  <UIcon name="i-heroicons-heart" class="text-rose-500 mr-3 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.legalBasis.vitalTitle') }}</h4>
-                    <p class="text-sm">{{ t('privacy.legalBasis.vitalBody') }}</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <UIcon name="i-heroicons-building-office" class="text-violet-500 mr-3 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.legalBasis.publicTitle') }}</h4>
-                    <p class="text-sm">{{ t('privacy.legalBasis.publicBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
@@ -319,6 +401,19 @@
                   <p class="text-sm">{{ t('privacy.sharing.safetyBody') }}</p>
                 </div>
               </div>
+              <div class="flex items-start">
+                <UIcon name="i-heroicons-arrows-right-left" class="text-violet-500 mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.sharing.transferTitle') }}</h4>
+                  <p class="text-sm">{{ t('privacy.sharing.transferBody') }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-xl p-4">
+              <p class="text-sm text-emerald-800 dark:text-emerald-200 font-medium">
+                <UIcon name="i-heroicons-no-symbol" class="inline mr-2" />
+                {{ t('privacy.sharing.noSale') }}
+              </p>
             </div>
           </div>
         </UCard>
@@ -336,8 +431,15 @@
               {{ t('privacy.security.lead') }}
             </p>
             
-            <p class="mb-4">
-              {{ t('privacy.security.detail') }}
+            <ul class="space-y-2">
+              <li v-for="key in securityKeys" :key="key" class="flex items-start">
+                <UIcon name="i-heroicons-lock-closed" class="text-green-500 mr-2 mt-1 flex-shrink-0" />
+                <span>{{ t(`privacy.security.${key}`) }}</span>
+              </li>
+            </ul>
+
+            <p>
+              {{ t('privacy.security.yourPart') }}
             </p>
 
             <div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-xl p-6">
@@ -439,6 +541,14 @@
                   <strong>{{ COMPANY.email }}</strong>
                 </template>
               </i18n-t>
+              <i18n-t keypath="privacy.rights.exerciseDeletion" tag="p" class="mb-3" scope="global">
+                <template #link>
+                  <NuxtLink :to="localePath('/data-deletion')" class="underline underline-offset-2 font-medium">{{ t('footer.dataDeletion') }}</NuxtLink>
+                </template>
+              </i18n-t>
+              <p class="text-sm text-primary-600 dark:text-primary-400 mb-2">
+                {{ t('privacy.rights.exerciseVerify') }}
+              </p>
               <p class="text-sm text-primary-600 dark:text-primary-400">
                 {{ t('privacy.rights.exerciseNote') }}
               </p>
@@ -477,6 +587,27 @@
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.retention.professionalTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.retention.professionalBody') }}</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <UIcon name="i-heroicons-chart-bar-square" class="text-pink-500 mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.retention.platformTitle') }}</h4>
+                  <p class="text-sm">{{ t('privacy.retention.platformBody') }}</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <UIcon name="i-heroicons-server-stack" class="text-gray-500 mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.retention.backupTitle') }}</h4>
+                  <p class="text-sm">{{ t('privacy.retention.backupBody') }}</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <UIcon name="i-heroicons-chart-pie" class="text-violet-500 mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.retention.aggregateTitle') }}</h4>
+                  <p class="text-sm">{{ t('privacy.retention.aggregateBody') }}</p>
                 </div>
               </div>
             </div>
@@ -525,6 +656,13 @@
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.cookies.nonEssentialTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.cookies.nonEssentialBody') }}</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <UIcon name="i-heroicons-key" class="text-violet-500 mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.cookies.appTitle') }}</h4>
+                  <p class="text-sm">{{ t('privacy.cookies.appBody') }}</p>
                 </div>
               </div>
               <div class="bg-gray-50 dark:bg-gray-900/20 border border-gray-200 dark:border-gray-800 rounded-xl p-4">
@@ -660,6 +798,14 @@
 
 <script setup>
 const { t } = useI18n()
+const localePath = useLocalePath()
+
+// Key names only — strings are looked up with t() in the template so they
+// follow a language switch without a reload.
+const platformReadKeys = ['read1', 'read2', 'read3', 'read4']
+const platformNotReadKeys = ['notRead1', 'notRead2', 'notRead3', 'notRead4']
+const platformUseKeys = ['use1', 'use2', 'use3']
+const securityKeys = ['measure1', 'measure2', 'measure3', 'measure4']
 
 useSeoMeta({
   title: () => t('privacy.seo.title'),

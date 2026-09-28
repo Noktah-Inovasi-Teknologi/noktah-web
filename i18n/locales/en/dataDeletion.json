@@ -1,0 +1,81 @@
+{
+  "dataDeletion": {
+    "seo": {
+      "title": "Data Deletion — Noktah Inovasi Teknologi",
+      "description": "How to ask Noktah, Eskala and Venyu to delete your personal data, including data from connected Instagram and TikTok accounts."
+    },
+    "lastUpdatedDate": "28 September 2026",
+    "hero": {
+      "headingPre": "Data",
+      "headingAccent": "Deletion",
+      "description": "You can ask us to delete your personal data at any time. This page explains how, and what happens once we receive your request.",
+      "lastUpdatedLabel": "Last Updated:"
+    },
+    "who": {
+      "title": "Who Can Ask",
+      "lead": "This page applies to anyone whose data we process, including:",
+      "connected": "Owners of Instagram or TikTok accounts that have been connected to our systems",
+      "clients": "Clients and prospective clients of Eskala or Venyu",
+      "endUsers": "Members and customers of venues that use Venyu",
+      "visitors": "Anyone who has contacted us by email, WhatsApp or through this website"
+    },
+    "disconnect": {
+      "title": "First Step: Remove the App's Access",
+      "lead": "If your Instagram or TikTok account is connected to us, you can remove our access directly in the app. Menu names can differ slightly between app versions.",
+      "instagram": "Go to Settings and activity › Website permissions › Apps and websites, then remove Noktah Hub from the active list.",
+      "tiktok": "Go to Settings and privacy › Security and permissions › App and services permissions, then remove Noktah Hub's access.",
+      "note": "Removing access stops us reading any new data, but it does not delete data we already hold. To delete that, send a request as described below."
+    },
+    "request": {
+      "title": "Sending a Deletion Request",
+      "lead": "Email {email} with the subject {subject}, and include:",
+      "includeName": "Your name",
+      "includeService": "What it relates to: Eskala, Venyu, a connected social media account, or your correspondence with us",
+      "includeAccount": "An account identifier, such as your Instagram or TikTok username, or the email or phone number you registered with",
+      "includeScope": "What you want deleted: everything, or only specific data",
+      "includeContact": "An email address or number where we can confirm with you",
+      "mailSubject": "Data Deletion Request",
+      "mailBody": "Name:\nRelates to (Eskala / Venyu / connected social media account / other):\nUsername or registered email:\nData to delete (all / part):\nContact for confirmation:\n",
+      "button": "Write the Request Email",
+      "whatsapp": "Contact us on WhatsApp",
+      "verify": "To protect you, we will make sure the request really comes from the person the data belongs to, for example by asking you to reply from your registered email or to message us from the account concerned. We will never ask for your password."
+    },
+    "process": {
+      "title": "What Happens Next",
+      "ackTitle": "We confirm receipt",
+      "ackBody": "We reply with a reference number you can use to check on your request, and ask for verification if needed.",
+      "verifyTitle": "We verify your identity",
+      "verifyBody": "Where needed, we ask for proof that the data or account is yours.",
+      "stopTitle": "We stop processing",
+      "stopBody": "Within 3 x 24 hours of receiving your request, we stop processing your data. Stored social media access tokens are deleted once your identity is verified.",
+      "deleteTitle": "We delete the data",
+      "deleteBody": "The data is deleted from our primary systems. Copies in backups are removed as the backups roll over, within 30 days at most.",
+      "doneTitle": "We let you know",
+      "doneBody": "Once deletion is complete we confirm in writing, and tell you about any data we are required to keep and why."
+    },
+    "keep": {
+      "title": "Data We May Still Keep",
+      "lead": "In some cases we cannot delete everything straight away:",
+      "legalTitle": "Legal obligations",
+      "legalBody": "Financial and tax records, such as invoices and proof of payment, must be kept for 10 years under Indonesian tax law.",
+      "claimsTitle": "Disputes and legal claims",
+      "claimsBody": "Data needed to resolve a dispute, collect an unpaid amount, or defend our legal rights, until the matter is closed.",
+      "aggregateTitle": "Aggregated and anonymised statistics",
+      "aggregateBody": "Data that has been combined or anonymised so it can no longer identify you or your account.",
+      "recordTitle": "A record of the request",
+      "recordBody": "A short record of your request (your name, the date and the reference number) as proof that we carried it out.",
+      "note": "Anything we keep is access-restricted, not used for any other purpose, and deleted once the reason for keeping it ends."
+    },
+    "clients": {
+      "title": "If Your Data Is Managed by One of Our Clients",
+      "body": "If you are a member of a venue that uses Venyu, or a patient or prospective patient of a healthcare facility that works with Eskala, your data is controlled by that venue or facility. We only process it on their behalf.",
+      "forward": "It is best to send your request to them directly. If you contact us instead, we will pass your request on to the client concerned and help them carry it out."
+    },
+    "status": {
+      "title": "Status and Complaints",
+      "body": "To check on a request, reply to our confirmation email or contact us quoting your reference number.",
+      "complaint": "If you are not satisfied with our response, you can complain to Indonesia's Ministry of Communication and Digital Affairs (Komdigi), or to the personal data protection authority established under UU PDP.",
+      "policy": "A full account of the data we collect and your rights is in our {link}."
+    }
+  }
+}
