@@ -66,23 +66,23 @@
               <p class="mb-3">{{ t('privacy.collect.personalLead') }}</p>
               <ul class="space-y-2">
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 shrink-0" />
                   <span><strong>{{ t('privacy.collect.identityLabel') }}</strong> {{ t('privacy.collect.identityBody') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 shrink-0" />
                   <span><strong>{{ t('privacy.collect.contactLabel') }}</strong> {{ t('privacy.collect.contactBody') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 shrink-0" />
                   <span><strong>{{ t('privacy.collect.digitalLabel') }}</strong> {{ t('privacy.collect.digitalBody') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 shrink-0" />
                   <span><strong>{{ t('privacy.collect.personalizedLabel') }}</strong> {{ t('privacy.collect.personalizedBody') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 shrink-0" />
                   <span><strong>{{ t('privacy.collect.technicalLabel') }}</strong> {{ t('privacy.collect.technicalBody') }}</span>
                 </li>
               </ul>
@@ -139,7 +139,7 @@
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('privacy.platform.readTitle') }}</h3>
                 <ul class="space-y-2 text-sm">
                   <li v-for="key in platformReadKeys" :key="key" class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t(`privacy.platform.${key}`) }}</span>
                   </li>
                 </ul>
@@ -148,7 +148,7 @@
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('privacy.platform.notReadTitle') }}</h3>
                 <ul class="space-y-2 text-sm">
                   <li v-for="key in platformNotReadKeys" :key="key" class="flex items-start">
-                    <UIcon name="i-heroicons-x-mark" class="text-rose-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-mark" class="text-rose-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t(`privacy.platform.${key}`) }}</span>
                   </li>
                 </ul>
@@ -159,7 +159,7 @@
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('privacy.platform.useTitle') }}</h3>
               <ul class="space-y-2 text-sm">
                 <li v-for="key in platformUseKeys" :key="key" class="flex items-start">
-                  <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 shrink-0" />
                   <span>{{ t(`privacy.platform.${key}`) }}</span>
                 </li>
               </ul>
@@ -175,14 +175,14 @@
 
             <div class="space-y-3">
               <div class="flex items-start">
-                <UIcon name="i-heroicons-clock" class="text-indigo-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-clock" class="text-indigo-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.platform.retentionTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.platform.retentionBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-link-slash" class="text-orange-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-link-slash" class="text-orange-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.platform.disconnectTitle') }}</h4>
                   <i18n-t keypath="privacy.platform.disconnectBody" tag="p" class="text-sm" scope="global">
@@ -193,7 +193,7 @@
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-globe-alt" class="text-cyan-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-globe-alt" class="text-cyan-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.platform.thirdPartyTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.platform.thirdPartyBody') }}</p>
@@ -216,14 +216,14 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div class="space-y-3">
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-hand-raised" class="text-primary-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-hand-raised" class="text-primary-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.legalBasis.consentTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.legalBasis.consentBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-document-text" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-document-text" class="text-emerald-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.legalBasis.contractTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.legalBasis.contractBody') }}</p>
@@ -232,14 +232,14 @@
               </div>
               <div class="space-y-3">
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-building-library" class="text-orange-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-building-library" class="text-orange-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.legalBasis.legalTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.legalBasis.legalBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-scale" class="text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-scale" class="text-blue-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.legalBasis.legitimateTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.legalBasis.legitimateBody') }}</p>
@@ -265,19 +265,19 @@
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('privacy.use.serviceTitle') }}</h3>
                 <ul class="space-y-2 text-sm">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('privacy.use.service1') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('privacy.use.service2') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('privacy.use.service3') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('privacy.use.service4') }}</span>
                   </li>
                 </ul>
@@ -286,19 +286,19 @@
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('privacy.use.businessTitle') }}</h3>
                 <ul class="space-y-2 text-sm">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('privacy.use.business1') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('privacy.use.business2') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('privacy.use.business3') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="text-blue-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('privacy.use.business4') }}</span>
                   </li>
                 </ul>
@@ -342,15 +342,15 @@
                 </i18n-t>
                 <ul class="space-y-2 text-sm text-blue-600 dark:text-blue-400">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 shrink-0" />
                     <span>{{ t('privacy.content.ugc1') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 shrink-0" />
                     <span>{{ t('privacy.content.ugc2') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 shrink-0" />
                     <span>{{ t('privacy.content.ugc3') }}</span>
                   </li>
                 </ul>
@@ -374,35 +374,35 @@
             <p>{{ t('privacy.sharing.lead') }}</p>
             <div class="space-y-4">
               <div class="flex items-start">
-                <UIcon name="i-heroicons-building-office-2" class="text-primary-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-building-office-2" class="text-primary-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.sharing.internalTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.sharing.internalBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-wrench-screwdriver" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-wrench-screwdriver" class="text-emerald-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.sharing.vendorsTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.sharing.vendorsBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-scale" class="text-orange-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-scale" class="text-orange-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.sharing.legalTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.sharing.legalBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-shield-exclamation" class="text-rose-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-shield-exclamation" class="text-rose-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.sharing.safetyTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.sharing.safetyBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-arrows-right-left" class="text-violet-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-arrows-right-left" class="text-violet-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.sharing.transferTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.sharing.transferBody') }}</p>
@@ -433,7 +433,7 @@
             
             <ul class="space-y-2">
               <li v-for="key in securityKeys" :key="key" class="flex items-start">
-                <UIcon name="i-heroicons-lock-closed" class="text-green-500 mr-2 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-lock-closed" class="text-green-500 mr-2 mt-1 shrink-0" />
                 <span>{{ t(`privacy.security.${key}`) }}</span>
               </li>
             </ul>
@@ -471,28 +471,28 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="space-y-4">
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-eye" class="text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-eye" class="text-blue-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.rights.accessTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.rights.accessBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-pencil" class="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-pencil" class="text-green-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.rights.rectificationTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.rights.rectificationBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-trash" class="text-red-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-trash" class="text-red-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.rights.erasureTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.rights.erasureBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-x-circle" class="text-orange-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-x-circle" class="text-orange-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.rights.withdrawTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.rights.withdrawBody') }}</p>
@@ -501,28 +501,28 @@
               </div>
               <div class="space-y-4">
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-stop" class="text-purple-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-stop" class="text-purple-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.rights.objectTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.rights.objectBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-arrow-down-tray" class="text-teal-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-arrow-down-tray" class="text-teal-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.rights.portabilityTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.rights.portabilityBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-pause" class="text-yellow-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-pause" class="text-yellow-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.rights.restrictTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.rights.restrictBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-information-circle" class="text-indigo-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-information-circle" class="text-indigo-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.rights.informationTitle') }}</h4>
                     <p class="text-sm">{{ t('privacy.rights.informationBody') }}</p>
@@ -569,42 +569,42 @@
             
             <div class="space-y-4">
               <div class="flex items-start">
-                <UIcon name="i-heroicons-clock" class="text-primary-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-clock" class="text-primary-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.retention.generalTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.retention.generalBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-scale" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-scale" class="text-emerald-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.sharing.legalTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.retention.generalNote') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-camera" class="text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-camera" class="text-amber-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.retention.professionalTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.retention.professionalBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-chart-bar-square" class="text-pink-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-chart-bar-square" class="text-pink-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.retention.platformTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.retention.platformBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-server-stack" class="text-gray-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-server-stack" class="text-gray-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.retention.backupTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.retention.backupBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-chart-pie" class="text-violet-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-chart-pie" class="text-violet-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.retention.aggregateTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.retention.aggregateBody') }}</p>
@@ -645,21 +645,21 @@
             
             <div class="space-y-4">
               <div class="flex items-start">
-                <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.cookies.essentialTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.cookies.essentialBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-chart-bar" class="text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-chart-bar" class="text-blue-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.cookies.nonEssentialTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.cookies.nonEssentialBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-key" class="text-violet-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-key" class="text-violet-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.cookies.appTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.cookies.appBody') }}</p>
@@ -689,21 +689,21 @@
             </p>
             <div class="space-y-3">
               <div class="flex items-start">
-                <UIcon name="i-heroicons-bell" class="text-primary-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-bell" class="text-primary-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.changes.notificationTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.changes.notificationBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-calendar" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-calendar" class="text-emerald-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.changes.effectiveTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.changes.effectiveBody') }}</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <UIcon name="i-heroicons-document-text" class="text-orange-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-document-text" class="text-orange-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('privacy.changes.continuedTitle') }}</h4>
                   <p class="text-sm">{{ t('privacy.changes.continuedBody') }}</p>

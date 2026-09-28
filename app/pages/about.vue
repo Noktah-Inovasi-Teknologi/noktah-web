@@ -124,7 +124,7 @@
             </template>
             <div class="space-y-4 text-base text-gray-700 dark:text-gray-300">
               <p v-for="n in 3" :key="n" class="flex items-start">
-                <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mr-3 mt-1 shrink-0" />
                 {{ t(`about.visionMission.mission${n}`) }}
               </p>
             </div>

@@ -100,19 +100,19 @@
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.accounts.creationTitle') }}</h3>
               <ul class="space-y-2">
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.accounts.c1') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.accounts.c2') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.accounts.c3') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check" class="text-emerald-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.accounts.c4') }}</span>
                 </li>
               </ul>
@@ -144,11 +144,11 @@
               <p class="mb-3">{{ t('terms.usage.permittedLead') }}</p>
               <ul class="space-y-2">
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                   <span>{{ t('terms.usage.p1') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                   <span>{{ t('terms.usage.p2') }}</span>
                 </li>
               </ul>
@@ -159,37 +159,37 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="space-y-2">
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.usage.x1') }}</span>
                   </div>
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.usage.x2') }}</span>
                   </div>
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.usage.x3') }}</span>
                   </div>
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.usage.x4') }}</span>
                   </div>
                 </div>
                 <div class="space-y-2">
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.usage.x5') }}</span>
                   </div>
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.usage.x6') }}</span>
                   </div>
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.usage.x7') }}</span>
                   </div>
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.usage.x8') }}</span>
                   </div>
                 </div>
@@ -246,15 +246,15 @@
                 </p>
                 <ul class="space-y-2 text-sm text-blue-600 dark:text-blue-400">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 shrink-0" />
                     <span>{{ t('terms.ip.u1') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 shrink-0" />
                     <span>{{ t('terms.ip.u2') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check" class="text-blue-500 mr-2 mt-1 shrink-0" />
                     <span>{{ t('terms.ip.u3') }}</span>
                   </li>
                 </ul>
@@ -286,19 +286,19 @@
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{{ t('terms.payment.termsTitle') }}</h3>
               <ul class="space-y-2">
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-banknotes" class="text-green-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-banknotes" class="text-green-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.payment.t1') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-clock" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-clock" class="text-blue-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.payment.t2') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-receipt-percent" class="text-purple-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-receipt-percent" class="text-purple-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.payment.t3') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-arrow-path" class="text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-arrow-path" class="text-orange-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.payment.t4') }}</span>
                 </li>
               </ul>
@@ -351,29 +351,29 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul class="space-y-2">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-wrench-screwdriver" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-wrench-screwdriver" class="text-orange-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.availability.a1') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-bolt" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-bolt" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.availability.a2') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-shield-exclamation" class="text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-shield-exclamation" class="text-purple-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.availability.a3') }}</span>
                   </li>
                 </ul>
                 <ul class="space-y-2">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-signal-slash" class="text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-signal-slash" class="text-gray-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.availability.a4') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="text-yellow-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.availability.a5') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-scale" class="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-scale" class="text-blue-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.availability.a6') }}</span>
                   </li>
                 </ul>
@@ -385,15 +385,15 @@
               <p class="mb-3">{{ t('terms.availability.modificationsLead') }}</p>
               <ul class="space-y-2">
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-bell" class="text-primary-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <UIcon name="i-heroicons-bell" class="text-primary-500 mr-2 mt-0.5 shrink-0" />
                   <span class="text-sm">{{ t('terms.availability.m1') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-calendar" class="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <UIcon name="i-heroicons-calendar" class="text-emerald-500 mr-2 mt-0.5 shrink-0" />
                   <span class="text-sm">{{ t('terms.availability.m2') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-bolt" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <UIcon name="i-heroicons-bolt" class="text-orange-500 mr-2 mt-0.5 shrink-0" />
                   <span class="text-sm">{{ t('terms.availability.m3') }}</span>
                 </li>
               </ul>
@@ -418,19 +418,19 @@
                   <h4 class="font-semibold text-green-600 dark:text-green-400 mb-2">{{ t('terms.conduct.encouragedTitle') }}</h4>
                   <ul class="space-y-1 text-sm">
                     <li class="flex items-start">
-                      <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                       <span>{{ t('terms.conduct.e1') }}</span>
                     </li>
                     <li class="flex items-start">
-                      <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                       <span>{{ t('terms.conduct.e2') }}</span>
                     </li>
                     <li class="flex items-start">
-                      <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                       <span>{{ t('terms.conduct.e3') }}</span>
                     </li>
                     <li class="flex items-start">
-                      <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                       <span>{{ t('terms.conduct.e4') }}</span>
                     </li>
                   </ul>
@@ -439,19 +439,19 @@
                   <h4 class="font-semibold text-red-600 dark:text-red-400 mb-2">{{ t('terms.conduct.prohibitedTitle') }}</h4>
                   <ul class="space-y-1 text-sm">
                     <li class="flex items-start">
-                      <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                       <span>{{ t('terms.conduct.x1') }}</span>
                     </li>
                     <li class="flex items-start">
-                      <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                       <span>{{ t('terms.conduct.x2') }}</span>
                     </li>
                     <li class="flex items-start">
-                      <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                       <span>{{ t('terms.conduct.x3') }}</span>
                     </li>
                     <li class="flex items-start">
-                      <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                       <span>{{ t('terms.conduct.x4') }}</span>
                     </li>
                   </ul>
@@ -469,19 +469,19 @@
               </p>
               <ul class="space-y-2 text-sm text-yellow-600 dark:text-yellow-400">
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-eye-slash" class="text-yellow-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-eye-slash" class="text-yellow-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.conduct.f1') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-pause" class="text-yellow-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-pause" class="text-yellow-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.conduct.f2') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-no-symbol" class="text-yellow-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-no-symbol" class="text-yellow-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.conduct.f3') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-scale" class="text-yellow-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-scale" class="text-yellow-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.conduct.f4') }}</span>
                 </li>
               </ul>
@@ -503,19 +503,19 @@
               <p class="mb-3">{{ t('terms.termination.byYouLead') }}</p>
               <ul class="space-y-2">
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-user-minus" class="text-blue-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-user-minus" class="text-blue-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.termination.y1') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-document-arrow-down" class="text-green-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-document-arrow-down" class="text-green-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.termination.y2') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-banknotes" class="text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-banknotes" class="text-orange-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.termination.y3') }}</span>
                 </li>
                 <li class="flex items-start">
-                  <UIcon name="i-heroicons-clock" class="text-purple-500 mr-2 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-clock" class="text-purple-500 mr-2 mt-1 shrink-0" />
                   <span>{{ t('terms.termination.y4') }}</span>
                 </li>
               </ul>
@@ -527,29 +527,29 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul class="space-y-2">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.termination.u1') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-credit-card" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-credit-card" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.termination.u2') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-scale" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-scale" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.termination.u3') }}</span>
                   </li>
                 </ul>
                 <ul class="space-y-2">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-shield-exclamation" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-shield-exclamation" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.termination.u4') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-clock" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-clock" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.termination.u5') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-building-office" class="text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-building-office" class="text-red-500 mr-2 mt-0.5 shrink-0" />
                     <span class="text-sm">{{ t('terms.termination.u6') }}</span>
                   </li>
                 </ul>
@@ -588,19 +588,19 @@
                 </p>
                 <ul class="space-y-2">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('terms.liability.d1') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('terms.liability.d2') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('terms.liability.d3') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-x-circle" class="text-yellow-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('terms.liability.d4') }}</span>
                   </li>
                 </ul>
@@ -614,21 +614,21 @@
               </p>
               <div class="space-y-4">
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-currency-dollar" class="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-currency-dollar" class="text-green-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('terms.liability.financialTitle') }}</h4>
                     <p class="text-sm">{{ t('terms.liability.financialBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-clock" class="text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-clock" class="text-blue-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('terms.liability.damagesTitle') }}</h4>
                     <p class="text-sm">{{ t('terms.liability.damagesBody') }}</p>
                   </div>
                 </div>
                 <div class="flex items-start">
-                  <UIcon name="i-heroicons-shield-check" class="text-purple-500 mr-3 mt-1 flex-shrink-0" />
+                  <UIcon name="i-heroicons-shield-check" class="text-purple-500 mr-3 mt-1 shrink-0" />
                   <div>
                     <h4 class="font-semibold text-gray-900 dark:text-white">{{ t('terms.liability.professionalTitle') }}</h4>
                     <p class="text-sm">{{ t('terms.liability.professionalBody') }}</p>
@@ -666,29 +666,29 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul class="space-y-2 text-sm">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-document-text" class="text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-document-text" class="text-blue-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('terms.law.l1') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-shield-check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-shield-check" class="text-green-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('terms.law.l2') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-computer-desktop" class="text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-computer-desktop" class="text-purple-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('terms.law.l3') }}</span>
                   </li>
                 </ul>
                 <ul class="space-y-2 text-sm">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-lock-closed" class="text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-lock-closed" class="text-orange-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('terms.law.l4') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-building-office" class="text-teal-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-building-office" class="text-teal-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('terms.law.l5') }}</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-banknotes" class="text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-banknotes" class="text-emerald-500 mr-2 mt-0.5 shrink-0" />
                     <span>{{ t('terms.law.l6') }}</span>
                   </li>
                 </ul>

@@ -10,7 +10,7 @@
     >
       <div class="flex h-14 items-center justify-between gap-3 pl-3 pr-3 sm:pl-4 sm:pr-4">
         <!-- Logo / wordmark -->
-        <NuxtLink :to="localePath('/')" class="flex flex-shrink-0 items-center gap-2 sm:gap-3">
+        <NuxtLink :to="localePath('/')" class="flex shrink-0 items-center gap-2 sm:gap-3">
           <!-- No nested glass: a backdrop-filter inside a backdrop-filter
                samples its parent's already-blurred output and muddies it. -->
           <span

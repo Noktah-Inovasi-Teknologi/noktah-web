@@ -32,7 +32,7 @@
             <p>{{ t('dataDeletion.who.lead') }}</p>
             <ul class="space-y-2">
               <li v-for="key in whoKeys" :key="key" class="flex items-start">
-                <UIcon name="i-heroicons-check" class="text-primary-500 mr-2 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-check" class="text-primary-500 mr-2 mt-1 shrink-0" />
                 <span>{{ t(`dataDeletion.who.${key}`) }}</span>
               </li>
             </ul>
@@ -89,7 +89,7 @@
             </i18n-t>
             <ul class="space-y-2">
               <li v-for="key in includeKeys" :key="key" class="flex items-start">
-                <UIcon name="i-heroicons-check" class="text-rose-500 mr-2 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-check" class="text-rose-500 mr-2 mt-1 shrink-0" />
                 <span>{{ t(`dataDeletion.request.${key}`) }}</span>
               </li>
             </ul>
@@ -120,7 +120,7 @@
           </template>
           <ol class="space-y-5 text-gray-700 dark:text-gray-300">
             <li v-for="(key, i) in processKeys" :key="key" class="flex items-start">
-              <span class="glass-thin rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold text-gray-900 dark:text-white mr-4 flex-shrink-0">{{ i + 1 }}</span>
+              <span class="glass-thin rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold text-gray-900 dark:text-white mr-4 shrink-0">{{ i + 1 }}</span>
               <div>
                 <h3 class="font-semibold text-gray-900 dark:text-white">{{ t(`dataDeletion.process.${key}Title`) }}</h3>
                 <p class="text-sm">{{ t(`dataDeletion.process.${key}Body`) }}</p>
@@ -141,7 +141,7 @@
             <p>{{ t('dataDeletion.keep.lead') }}</p>
             <ul class="space-y-3">
               <li v-for="key in keepKeys" :key="key" class="flex items-start">
-                <UIcon name="i-heroicons-lock-closed" class="text-indigo-500 mr-3 mt-1 flex-shrink-0" />
+                <UIcon name="i-heroicons-lock-closed" class="text-indigo-500 mr-3 mt-1 shrink-0" />
                 <div>
                   <h3 class="font-semibold text-gray-900 dark:text-white">{{ t(`dataDeletion.keep.${key}Title`) }}</h3>
                   <p class="text-sm">{{ t(`dataDeletion.keep.${key}Body`) }}</p>
