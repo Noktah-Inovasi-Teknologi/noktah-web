@@ -35,10 +35,10 @@ with the `cloudflare_module` Nitro preset.
 
 - **`wrangler deploy` needs a fresh build.** Nitro merges `wrangler.toml` into
   `.output/server/wrangler.json`, and Wrangler follows that generated file.
-- **Keep `keep_vars = true`.** `NUXT_ACCESS_CLIENT_ID` and `NUXT_ACCESS_CLIENT_SECRET`
-  are set in the dashboard, and a deploy would otherwise delete them.
-- **`[vars]` is for non-secret values only.** This repo is public, so credentials
-  never go in `wrangler.toml`.
+- **Runtime variables are Worker secrets.** `NUXT_ACCESS_CLIENT_ID`,
+  `NUXT_ACCESS_CLIENT_SECRET`, `NUXT_HUB_API_BASE` and `NUXT_PUBLIC_TURNSTILE_SITE_KEY`
+  are set with `wrangler secret put`, and deploys keep them. Do not add those names
+  under `[vars]`. This repo is public, so credentials never go in `wrangler.toml`.
 - **Routes in `wrangler.toml` are live config.** A deploy applies them to `noktah.co`
   and `www.noktah.co`.
 

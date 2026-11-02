@@ -8,9 +8,9 @@ name = "noktah-web"
 compatibility_date = "2025-07-15"
 compatibility_flags = ["nodejs_compat"]
 
-# NUXT_ACCESS_CLIENT_ID and NUXT_ACCESS_CLIENT_SECRET are set in the Cloudflare
-# dashboard. Without this, every deploy deletes dashboard variables. Never put
-# their values in this file; it is committed.
+# Runtime variables are Worker secrets, which survive deploys on their own. Do
+# not add a [vars] entry with the same name as a secret. This stops a deploy
+# deleting anything added as a plain variable in the dashboard.
 keep_vars = true
 
 # Both default to off or unset once `routes` is present, so a deploy would
@@ -22,8 +22,3 @@ routes = [
   { pattern = "noktah.co", custom_domain = true },
   { pattern = "www.noktah.co/*", zone_name = "noktah.co" },
 ]
-
-# Non-secret values only: this repo is public.
-[vars]
-NUXT_HUB_API_BASE = "https://hub-api.noktah.co"
-NUXT_PUBLIC_TURNSTILE_SITE_KEY = "0x4AAAAAAFwvmQHWZJMVUyVk"
