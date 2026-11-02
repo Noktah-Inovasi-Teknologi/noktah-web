@@ -5,7 +5,7 @@
       "description": "Kebijakan Privasi Noktah Inovasi Teknologi, Eskala, dan Venyu: data yang kami kumpulkan, termasuk dari Halaman Facebook serta akun Instagram dan TikTok yang terhubung, cara kami menggunakannya, dan cara meminta penghapusannya.",
       "keywords": "kebijakan privasi, pelindungan data pribadi, UU PDP, UU 27 2022, penghapusan data, facebook, instagram, tiktok, noktah"
     },
-    "lastUpdatedDate": "28 September 2026",
+    "lastUpdatedDate": "2 November 2026",
     "hero": {
       "headingPre": "Kebijakan",
       "headingAccent": "Privasi",
@@ -175,6 +175,24 @@
       "exerciseDeletion": "Untuk permintaan penghapusan data, termasuk data dari Halaman Facebook atau akun Instagram maupun TikTok yang terhubung, ikuti langkah di halaman {link}.",
       "exerciseVerify": "Kami dapat meminta verifikasi identitas sebelum menindaklanjuti permintaan, agar data Anda tidak jatuh ke tangan yang salah. Sesuai UU PDP, permintaan akses, perbaikan, penarikan persetujuan, serta penundaan atau pembatasan pemrosesan kami tanggapi paling lambat 3 x 24 jam sejak permintaan kami terima. Apabila verifikasi diperlukan, permintaan verifikasi kami sampaikan dalam jangka waktu tersebut.",
       "exerciseNote": "Hak-hak tersebut dapat dibatasi dalam keadaan yang diatur undang-undang, misalnya apabila data wajib kami simpan berdasarkan ketentuan hukum lain. Untuk data yang kami proses atas nama klien, permintaan Anda akan kami teruskan kepada klien sebagai Pengendali Data Pribadi dan kami akan membantu pelaksanaannya."
+    },
+    "applicants": {
+      "title": "Pelamar Kerja",
+      "lead": "Bagian ini berlaku bagi Anda yang melamar lewat halaman Karier kami.",
+      "dataTitle": "Data yang Kami Kumpulkan dan Untuk Apa",
+      "dataBody": "Nama, email, nomor WhatsApp, domisili, kesediaan mulai bekerja, ekspektasi gaji, dari mana Anda tahu lowongan ini, CV dalam bentuk PDF, tautan portofolio bila Anda isi, dan jawaban atas pertanyaan dari tim. Kami memakainya untuk menilai lamaran Anda dan menghubungi Anda tentang proses seleksi.",
+      "aiTitle": "Layanan AI di Luar Indonesia",
+      "aiBody": "CV dan jawaban tugas umum Anda dibaca oleh layanan AI yang berada di luar Indonesia untuk membantu tim kami merangkumnya. Setiap keputusan tetap diambil oleh orang, bukan oleh AI.",
+      "detectionTitle": "Pemeriksaan Cara Jawaban Ditulis",
+      "detectionBody": "Kami memeriksa cara jawaban ditulis, termasuk aktivitas di halaman (misalnya teks yang ditempel, waktu pengerjaan tiap langkah, dan meninggalkan halaman) serta pertanyaan langsung saat wawancara. Kami tidak memakai alat pendeteksi AI. Memakai AI untuk menulis atau memoles jawaban berarti Anda gugur.",
+      "referencesTitle": "Referensi Kerja",
+      "referencesBody": "Kami menghubungi referensi kerja Anda, termasuk tempat kerja Anda saat ini. Nama referensi Anda pilih sendiri saat wawancara.",
+      "keptTitle": "Lamaran Sebelumnya dan Masa Simpan",
+      "keptBody": "Data lamaran kami simpan paling lama 12 bulan, lalu kami hapus. Selama data itu ada, lamaran sebelumnya dan catatan penyaringan (red flag) yang pernah dibuat akan terlihat oleh tim kami ketika Anda melamar lagi. Catatan itu ikut terhapus bersama data Anda.",
+      "requestsTitle": "Permintaan Terkait Data Anda",
+      "requestsBody": "Untuk mengakses, memperbaiki, atau meminta penghapusan data lamaran Anda, kirim email ke {email}. Permintaan kami tangani secara manual.",
+      "contactFormTitle": "Formulir Kontak",
+      "contactFormBody": "Pesan dari formulir kontak dikirim sebagai email ke kotak masuk perusahaan dan tidak kami simpan di situs ini."
     },
     "retention": {
       "title": "Penyimpanan Data",

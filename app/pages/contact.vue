@@ -160,6 +160,11 @@
                   <p v-if="errors.message" class="text-red-500 text-sm mt-1">{{ errors.message }}</p>
                 </div>
 
+                <TurnstileBox ref="turnstile" v-model="token" />
+
+                <p v-if="sent" class="rounded-xl border border-green-300 bg-green-50 p-4 text-sm text-green-900 dark:border-green-500/40 dark:bg-green-500/10 dark:text-green-100" role="status">{{ t('contact.form.successAlert') }}</p>
+                <p v-if="failure" class="rounded-xl border border-red-300 bg-red-50 p-4 text-sm text-red-900 dark:border-red-500/40 dark:bg-red-500/10 dark:text-red-100" role="alert">{{ failure }}</p>
+
                 <!-- Submit Button -->
                 <div class="pt-4">
                   <UButton
@@ -357,6 +362,9 @@
           <template #item="{ item }">
             <div class="text-gray-600 dark:text-gray-400 px-6 pb-6">
               {{ item.content }}
+              <NuxtLink v-if="item.career" :to="localePath('/career')" class="block mt-2 font-medium text-primary-500 underline underline-offset-2">
+                {{ t('contact.faq.careerLink') }}
+              </NuxtLink>
             </div>
           </template>
         </UAccordion>
@@ -366,7 +374,8 @@
 </template>
 
 <script setup>
-const { t } = useI18n()
+const { t, locale } = useI18n()
+const localePath = useLocalePath()
 
 useSeoMeta({
   title: () => t('contact.seo.title'),
@@ -393,6 +402,11 @@ const form = ref({
 
 const errors = ref({})
 const isSubmitting = ref(false)
+const token = ref('')
+const turnstile = ref(null)
+const sent = ref(false)
+const failure = ref('')
+const siteKey = useRuntimeConfig().public.turnstileSiteKey
 
 // Subject options. Computed so switching language re-labels the select
 // in place rather than leaving stale strings behind.
@@ -403,11 +417,17 @@ const SUBJECT_KEYS = [
 ]
 const subjectOptions = computed(() => SUBJECT_KEYS.map(k => t(`contact.subjects.${k}`)))
 
+// Careers have their own page and form: the choice leads there instead of sending an email.
+watch(() => form.value.subject, (s) => {
+  if (s === t('contact.subjects.career')) navigateTo(localePath('/career'))
+})
+
 // FAQ items, likewise locale-reactive.
 const faqItems = computed(() =>
   [1, 2, 3, 4, 5, 6].map(n => ({
     label: t(`contact.faq.q${n}`),
     content: t(`contact.faq.a${n}`),
+    career: n === 5,
   })),
 )
 
@@ -445,33 +465,44 @@ const validateForm = () => {
   return isValid
 }
 
-// Form submission
+// Form submission: shown as sent only after the Hub says it was delivered.
 const submitForm = async () => {
+  sent.value = false
+  failure.value = ''
   if (!validateForm()) return
+  if (siteKey && !token.value) {
+    failure.value = t('contact.form.robotError')
+    return
+  }
 
   isSubmitting.value = true
-
+  const f = form.value
   try {
-    // Simulate form submission (replace with actual implementation)
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    // Reset form on success
-    form.value = {
-      name: '',
-      email: '',
-      company: '',
-      subject: '',
-      message: ''
+    const res = await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        name: f.name.trim(),
+        email: f.email.trim(),
+        subject: f.subject,
+        message: f.company.trim() ? `${f.message.trim()}
+
+${t('contact.form.company')}: ${f.company.trim()}` : f.message.trim(),
+        locale: locale.value,
+        'cf-turnstile-response': token.value,
+      },
+    })
+    if (res?.sent === true) {
+      sent.value = true
+      form.value = { name: '', email: '', company: '', subject: '', message: '' }
+    } else {
+      failure.value = t('contact.form.errorAlert')
     }
-    
-    // Show success message (you can implement toast notifications)
-    alert(t('contact.form.successAlert'))
-    
-  } catch (error) {
-    console.error('Form submission error:', error)
-    alert(t('contact.form.errorAlert'))
+  } catch (e) {
+    const code = e?.data?.error
+    failure.value = code === 'spam' ? t('contact.form.robotError') : t('contact.form.errorAlert')
   } finally {
     isSubmitting.value = false
+    turnstile.value?.reset() // a Turnstile token works once
   }
 }
 </script>

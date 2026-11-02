@@ -587,6 +587,28 @@
           </div>
         </UCard>
 
+        <!-- Job applicants -->
+        <UCard id="applicants" class="glass mb-8 p-8 rounded-2xl scroll-mt-24">
+          <template #header>
+            <div class="flex items-center mb-6">
+              <UIcon name="i-heroicons-briefcase" class="text-4xl text-indigo-600 dark:text-indigo-400 mr-4" />
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t('privacy.applicants.title') }}</h2>
+            </div>
+          </template>
+          <div class="space-y-4 text-gray-700 dark:text-gray-300">
+            <p>{{ t('privacy.applicants.lead') }}</p>
+            <div v-for="k in ['data', 'ai', 'detection', 'references', 'kept', 'requests', 'contactForm']" :key="k">
+              <h4 class="font-semibold text-gray-900 dark:text-white">{{ t(`privacy.applicants.${k}Title`) }}</h4>
+              <i18n-t v-if="k === 'requests'" keypath="privacy.applicants.requestsBody" tag="p" class="text-sm" scope="global">
+                <template #email>
+                  <strong>{{ COMPANY.email }}</strong>
+                </template>
+              </i18n-t>
+              <p v-else class="text-sm">{{ t(`privacy.applicants.${k}Body`) }}</p>
+            </div>
+          </div>
+        </UCard>
+
         <!-- Data Retention -->
         <UCard class="glass mb-8 p-8 rounded-2xl">
           <template #header>
