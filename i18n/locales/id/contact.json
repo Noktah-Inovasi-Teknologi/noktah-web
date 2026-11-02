@@ -32,8 +32,9 @@
       "messagePlaceholder": "Ceritakan proyek, peluang kemitraan, atau bagaimana kami bisa membantu...",
       "submit": "Kirim Pesan",
       "submitting": "Mengirim...",
-      "successAlert": "Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda kembali.",
-      "errorAlert": "Terjadi kesalahan saat mengirim pesan Anda. Silakan coba lagi."
+      "successAlert": "Terima kasih, pesan Anda sudah terkirim. Kami akan membalas lewat email.",
+      "errorAlert": "Pesan belum terkirim. Coba lagi sebentar lagi.",
+      "robotError": "Kami tidak bisa memastikan Anda bukan robot. Selesaikan pemeriksaan keamanan, lalu coba lagi."
     },
     "validation": {
       "nameRequired": "Nama wajib diisi",
@@ -86,7 +87,8 @@
       "q4": "Industri apa saja yang Anda tangani?",
       "a4": "Kami bekerja di berbagai industri, mulai dari layanan kesehatan, pemasaran dan produksi kreatif, olahraga dan rekreasi, hingga sektor mana pun yang dapat memperoleh nilai dari inovasi lintas bidang. Portofolio kami yang beragam memungkinkan kami membawa sudut pandang baru ke berbagai tantangan.",
       "q5": "Bagaimana cara bergabung dengan tim Noktah?",
-      "a5": "Kami selalu mencari individu berbakat yang punya semangat serupa pada inovasi. Pilih \"Peluang Karier\" pada formulir kontak di atas, atau kirim email langsung beserta CV Anda dan penjelasan singkat tentang kontribusi yang ingin Anda berikan pada misi inovasi lintas bidang kami.",
+      "a5": "Lihat posisi yang sedang dibuka di halaman Karier kami, lalu lamar langsung dari sana.",
+      "careerLink": "Buka halaman Karier",
       "q6": "Berapa lama waktu pengerjaan proyek pada umumnya?",
       "a6": "Lama pengerjaan sangat bergantung pada cakupan dan kompleksitas proyek. Kami biasanya menyampaikan lini masa terperinci pada tahap konsultasi awal. Pendekatan lintas bidang kami kadang memungkinkan percepatan pengembangan dengan menerapkan solusi yang sudah terbukti di industri lain."
     }

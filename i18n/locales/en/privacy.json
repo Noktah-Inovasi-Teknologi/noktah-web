@@ -5,7 +5,7 @@
       "description": "Privacy Policy for Noktah Inovasi Teknologi, Eskala and Venyu: what data we collect, including from connected Facebook Pages and Instagram and TikTok accounts, how we use it, and how to ask us to delete it.",
       "keywords": "privacy policy, personal data protection, UU PDP, Law 27 2022, data deletion, facebook, instagram, tiktok, noktah"
     },
-    "lastUpdatedDate": "28 September 2026",
+    "lastUpdatedDate": "2 November 2026",
     "hero": {
       "headingPre": "Privacy",
       "headingAccent": "Policy",
@@ -175,6 +175,24 @@
       "exerciseDeletion": "For deletion requests, including data from a connected Facebook Page or Instagram or TikTok account, follow the steps on our {link} page.",
       "exerciseVerify": "We may verify your identity before acting on a request, so your data does not end up with the wrong person. As UU PDP requires, we act on requests for access, correction, withdrawal of consent, and postponing or restricting processing within 3 x 24 hours of receiving them. If we need to verify your identity, we will ask within that time.",
       "exerciseNote": "These rights can be limited in circumstances set out in law, for example where other legislation requires us to keep the data. For data we process on a client's behalf, we will pass your request on to that client as the Personal Data Controller and help them carry it out."
+    },
+    "applicants": {
+      "title": "Job Applicants",
+      "lead": "This section applies to you if you apply through our Careers page.",
+      "dataTitle": "What We Collect and Why",
+      "dataBody": "Your name, email, WhatsApp number, where you live, when you can start, expected salary, how you heard about the position, your CV as a PDF, a portfolio link if you add one, and your answers to the team's questions. We use it to assess your application and to contact you about the hiring process.",
+      "aiTitle": "An AI Service Outside Indonesia",
+      "aiBody": "Your CV and your answers to the general tasks are read by an AI service located outside Indonesia to help our team summarise them. A person makes every decision, not the AI.",
+      "detectionTitle": "How We Check Your Answers",
+      "detectionBody": "We check how answers are written, including activity on the page (for example pasted text, time spent on each step and leaving the page) and live questions at the interview. We do not use an AI detector tool. Using AI to write or polish your answers means you fail.",
+      "referencesTitle": "Work References",
+      "referencesBody": "We contact your work references, including your current workplace. You choose the names of your references yourself at the interview.",
+      "keptTitle": "Past Applications and How Long We Keep Them",
+      "keptBody": "We keep application data for at most 12 months, then delete it. While it exists, your past applications and any red flags recorded are shown to our team when you apply again. Those records are deleted together with your data.",
+      "requestsTitle": "Requests About Your Data",
+      "requestsBody": "To access, correct, or ask for deletion of your application data, email {email}. We handle requests by hand.",
+      "contactFormTitle": "Contact Form",
+      "contactFormBody": "Messages from the contact form are sent as email to the company inbox and are not stored on this site."
     },
     "retention": {
       "title": "Data Retention",

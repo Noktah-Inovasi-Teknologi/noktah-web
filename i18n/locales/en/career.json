@@ -1,0 +1,88 @@
+{
+  "career": {
+    "seo": {
+      "title": "Careers — Noktah Inovasi Teknologi",
+      "description": "Open positions at Eskala, Venyu, and Noktah. See the roles and apply right from this page.",
+      "ogTitle": "Careers at Noktah",
+      "ogDescription": "Open positions at Eskala, Venyu, and Noktah.",
+      "keywords": "noktah careers, jobs, eskala, venyu, noktah, Yogyakarta"
+    },
+    "hero": {
+      "headingPre": "Join",
+      "headingAccent": "Noktah",
+      "description": "Open positions at Eskala, Venyu, and Noktah."
+    },
+    "list": {
+      "view": "View & apply",
+      "closes": "Closes {date}",
+      "empty": "No positions are open right now.",
+      "loadError": "We can't load the positions right now. Please try again shortly.",
+      "retry": "Try again",
+      "back": "All positions"
+    },
+    "employment": {
+      "tetap": "Permanent",
+      "kontrak": "Contract",
+      "magang": "Internship"
+    },
+    "detail": {
+      "unavailableTitle": "This position is closed",
+      "unavailable": "This position no longer takes applications. See the other open positions.",
+      "description": "About this position",
+      "requirements": "Requirements",
+      "closes": "Applications close {date}",
+      "seoSuffix": "Careers at Noktah"
+    },
+    "form": {
+      "title": "Apply for this position",
+      "required": "Required",
+      "optional": "optional",
+      "name": "Full name",
+      "email": "Email",
+      "whatsapp": "WhatsApp number",
+      "whatsappHint": "Example: 0812 3456 7890",
+      "domicile": "Where you live",
+      "domicileHint": "The city you live in now",
+      "availableFrom": "Available to start",
+      "expectedSalary": "Expected monthly salary (Rp)",
+      "expectedSalaryHint": "Digits only, for example 5000000",
+      "heardFrom": "How you heard about this position",
+      "cv": "CV (PDF)",
+      "cvHint": "One PDF file, at most 10 MB.",
+      "portfolio": "Portfolio link",
+      "portfolioHint": "Starting with https://",
+      "questionsTitle": "Questions from the team",
+      "answerHint": "At most 2000 characters",
+      "noticesTitle": "Read this before you apply",
+      "ackNotices": "I have read the two notices above.",
+      "consent": "I agree that my data is processed for this application as described in the {privacy}.",
+      "privacyLink": "Privacy Policy",
+      "submit": "Send application",
+      "submitting": "Sending...",
+      "robotCheck": "The security check is loading. If it does not appear, reload the page."
+    },
+    "errors": {
+      "name": "Enter your full name.",
+      "email": "Enter a valid email address.",
+      "whatsapp": "Enter a valid WhatsApp number (8 to 15 digits).",
+      "domicile": "Enter where you live.",
+      "available_from": "Pick a valid date.",
+      "expected_salary": "Enter digits only.",
+      "portfolio_url": "Enter a link starting with http:// or https://.",
+      "cv": "Choose your CV as a PDF file.",
+      "answer": "Answer this question.",
+      "ack": "Tick this after you have read the notices above.",
+      "consent": "You need to tick the consent box to send your application.",
+      "unreadable_file": "The CV must be a PDF that opens, at most 10 MB.",
+      "closed": "This position is closed or full.",
+      "spam": "We couldn't confirm you are not a robot. Complete the security check and try again.",
+      "unavailable": "We can't take your application right now. Please try again shortly; what you typed is still on this page.",
+      "generic": "Your application was not sent. Check your answers and try again."
+    },
+    "success": {
+      "title": "We have received your application",
+      "body": "Thank you for applying. If there is a next step, we will contact you by email.",
+      "back": "See other positions"
+    }
+  }
+}

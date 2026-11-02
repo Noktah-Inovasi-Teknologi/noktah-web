@@ -1,0 +1,88 @@
+{
+  "career": {
+    "seo": {
+      "title": "Karier — Noktah Inovasi Teknologi",
+      "description": "Posisi yang sedang dibuka di Eskala, Venyu, dan Noktah. Lihat posisinya dan lamar langsung dari halaman ini.",
+      "ogTitle": "Karier di Noktah",
+      "ogDescription": "Posisi yang sedang dibuka di Eskala, Venyu, dan Noktah.",
+      "keywords": "karier noktah, lowongan kerja, eskala, venyu, noktah, Yogyakarta"
+    },
+    "hero": {
+      "headingPre": "Bergabung bersama",
+      "headingAccent": "Noktah",
+      "description": "Posisi yang sedang dibuka di Eskala, Venyu, dan Noktah."
+    },
+    "list": {
+      "view": "Lihat & lamar",
+      "closes": "Ditutup {date}",
+      "empty": "Saat ini belum ada posisi yang dibuka.",
+      "loadError": "Daftar posisi belum bisa dimuat. Coba lagi sebentar lagi.",
+      "retry": "Coba lagi",
+      "back": "Semua posisi"
+    },
+    "employment": {
+      "tetap": "Karyawan tetap",
+      "kontrak": "Kontrak",
+      "magang": "Magang"
+    },
+    "detail": {
+      "unavailableTitle": "Posisi ini sudah ditutup",
+      "unavailable": "Posisi ini tidak lagi menerima lamaran. Lihat posisi lain yang sedang dibuka.",
+      "description": "Tentang posisi ini",
+      "requirements": "Persyaratan",
+      "closes": "Lamaran ditutup {date}",
+      "seoSuffix": "Karier di Noktah"
+    },
+    "form": {
+      "title": "Lamar posisi ini",
+      "required": "Wajib diisi",
+      "optional": "opsional",
+      "name": "Nama lengkap",
+      "email": "Email",
+      "whatsapp": "Nomor WhatsApp",
+      "whatsappHint": "Contoh: 0812 3456 7890",
+      "domicile": "Domisili",
+      "domicileHint": "Kota tempat Anda tinggal sekarang",
+      "availableFrom": "Bisa mulai bekerja",
+      "expectedSalary": "Ekspektasi gaji per bulan (Rp)",
+      "expectedSalaryHint": "Angka saja, misalnya 5000000",
+      "heardFrom": "Tahu lowongan ini dari mana",
+      "cv": "CV (PDF)",
+      "cvHint": "Satu file PDF, maksimal 10 MB.",
+      "portfolio": "Tautan portofolio",
+      "portfolioHint": "Diawali https://",
+      "questionsTitle": "Pertanyaan dari tim",
+      "answerHint": "Maksimal 2000 karakter",
+      "noticesTitle": "Sebelum melamar, baca ini",
+      "ackNotices": "Saya sudah membaca dua pemberitahuan di atas.",
+      "consent": "Saya menyetujui data saya diproses untuk lamaran ini sesuai {privacy}.",
+      "privacyLink": "Kebijakan Privasi",
+      "submit": "Kirim lamaran",
+      "submitting": "Mengirim...",
+      "robotCheck": "Pemeriksaan keamanan sedang dimuat. Jika tidak muncul, muat ulang halaman."
+    },
+    "errors": {
+      "name": "Isi nama lengkap Anda.",
+      "email": "Masukkan alamat email yang valid.",
+      "whatsapp": "Masukkan nomor WhatsApp yang valid (8 sampai 15 angka).",
+      "domicile": "Isi domisili Anda.",
+      "available_from": "Pilih tanggal yang valid.",
+      "expected_salary": "Isi dengan angka saja.",
+      "portfolio_url": "Masukkan tautan yang diawali http:// atau https://.",
+      "cv": "Pilih file CV dalam format PDF.",
+      "answer": "Jawab pertanyaan ini.",
+      "ack": "Centang setelah Anda membaca pemberitahuan di atas.",
+      "consent": "Persetujuan wajib dicentang untuk mengirim lamaran.",
+      "unreadable_file": "CV harus berupa file PDF yang bisa dibuka, maksimal 10 MB.",
+      "closed": "Posisi ini sudah ditutup atau sudah penuh.",
+      "spam": "Kami tidak bisa memastikan Anda bukan robot. Selesaikan pemeriksaan keamanan, lalu coba lagi.",
+      "unavailable": "Lamaran belum bisa kami terima saat ini. Coba lagi sebentar lagi; isian Anda masih ada di halaman ini.",
+      "generic": "Lamaran belum terkirim. Periksa isian Anda lalu coba lagi."
+    },
+    "success": {
+      "title": "Lamaran Anda sudah kami terima",
+      "body": "Terima kasih sudah melamar. Jika ada langkah berikutnya, kami akan menghubungi Anda lewat email.",
+      "back": "Lihat posisi lain"
+    }
+  }
+}

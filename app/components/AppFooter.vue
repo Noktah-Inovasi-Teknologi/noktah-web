@@ -172,6 +172,7 @@ const quickLinks = [
   { to: '/', key: 'nav.home' },
   { to: '/about', key: 'nav.about' },
   { to: '/brands', key: 'nav.brands' },
+  { to: '/career', key: 'nav.career' },
   { to: '/contact', key: 'nav.contact' },
 ]
 

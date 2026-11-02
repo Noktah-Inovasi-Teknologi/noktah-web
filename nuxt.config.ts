@@ -5,6 +5,15 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   css: ["~/assets/css/main.css"],
   devtools: { enabled: true },
+
+  // Set per environment as NUXT_HUB_API_BASE, NUXT_ACCESS_CLIENT_ID, NUXT_ACCESS_CLIENT_SECRET and
+  // NUXT_PUBLIC_TURNSTILE_SITE_KEY. The first three never reach the browser.
+  runtimeConfig: {
+    hubApiBase: '',
+    accessClientId: '',
+    accessClientSecret: '',
+    public: { turnstileSiteKey: '' },
+  },
   modules: ["@nuxt/ui", "@nuxtjs/i18n"],
 
   // Deployed as a Cloudflare Worker; see wrangler.toml.
@@ -48,13 +57,13 @@ export default defineNuxtConfig({
         code: "id",
         language: "id-ID",
         name: "Bahasa Indonesia",
-        files: ["id/common.json", "id/home.json", "id/about.json", "id/brands.json", "id/contact.json", "id/privacy.json", "id/terms.json", "id/dataDeletion.json"],
+        files: ["id/common.json", "id/home.json", "id/about.json", "id/brands.json", "id/career.json", "id/contact.json", "id/privacy.json", "id/terms.json", "id/dataDeletion.json"],
       },
       {
         code: "en",
         language: "en-US",
         name: "English",
-        files: ["en/common.json", "en/home.json", "en/about.json", "en/brands.json", "en/contact.json", "en/privacy.json", "en/terms.json", "en/dataDeletion.json"],
+        files: ["en/common.json", "en/home.json", "en/about.json", "en/brands.json", "en/career.json", "en/contact.json", "en/privacy.json", "en/terms.json", "en/dataDeletion.json"],
       },
     ],
     // Accept-Language rather than IP geolocation: it reflects what the

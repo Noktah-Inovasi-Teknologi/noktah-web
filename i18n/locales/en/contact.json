@@ -32,8 +32,9 @@
       "messagePlaceholder": "Tell us about your project, partnership opportunity, or how we can help...",
       "submit": "Send Message",
       "submitting": "Sending...",
-      "successAlert": "Thank you for your message! We'll get back to you soon.",
-      "errorAlert": "There was an error sending your message. Please try again."
+      "successAlert": "Thank you, your message has been sent. We will reply by email.",
+      "errorAlert": "Your message was not sent. Please try again shortly.",
+      "robotError": "We couldn't confirm you are not a robot. Complete the security check and try again."
     },
     "validation": {
       "nameRequired": "Name is required",
@@ -86,7 +87,8 @@
       "q4": "What industries do you work with?",
       "a4": "We work across multiple industries including healthcare, marketing and creative production, sports and recreation, and any sector where cross-field innovation can create value. Our diverse portfolio allows us to bring unique perspectives to various challenges.",
       "q5": "How do I join the Noktah team?",
-      "a5": "We're always looking for talented individuals who share our passion for innovation. Select \"Career Opportunities\" in the contact form above, or email us directly with your resume and a note about how you'd like to contribute to our cross-field innovation mission.",
+      "a5": "See the positions that are open on our Careers page, and apply right from there.",
+      "careerLink": "Open the Careers page",
       "q6": "What is your typical project timeline?",
       "a6": "Project timelines vary significantly based on scope and complexity. We typically provide detailed timelines during our initial consultation phase. Our cross-field approach sometimes allows us to accelerate development by applying proven solutions from other industries."
     }
