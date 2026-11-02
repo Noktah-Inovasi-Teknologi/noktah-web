@@ -14,7 +14,7 @@
     },
     "list": {
       "view": "View & apply",
-      "closes": "Closes {date}",
+      "closes": "Apply by {date}",
       "empty": "No positions are open right now.",
       "loadError": "We can't load the positions right now. Please try again shortly.",
       "retry": "Try again",
@@ -30,7 +30,7 @@
       "unavailable": "This position no longer takes applications. See the other open positions.",
       "description": "About this position",
       "requirements": "Requirements",
-      "closes": "Applications close {date}",
+      "closes": "Apply by {date}",
       "seoSuffix": "Careers at Noktah"
     },
     "form": {
@@ -45,7 +45,7 @@
       "domicileHint": "The city you live in now",
       "availableFrom": "Available to start",
       "expectedSalary": "Expected monthly salary (Rp)",
-      "expectedSalaryHint": "Digits only, for example 5000000",
+      "expectedSalaryHint": "5000000",
       "heardFrom": "How you heard about this position",
       "cv": "CV (PDF)",
       "cvHint": "One PDF file, at most 10 MB.",
@@ -53,13 +53,15 @@
       "portfolioHint": "Starting with https://",
       "questionsTitle": "Questions from the team",
       "answerHint": "At most 2000 characters",
-      "noticesTitle": "Read this before you apply",
-      "ackNotices": "I have read the two notices above.",
+      "noticesTitle": "Before you apply",
+      "ackNotices": "I have read the notice above.",
       "consent": "I agree that my data is processed for this application as described in the {privacy}.",
       "privacyLink": "Privacy Policy",
       "submit": "Send application",
       "submitting": "Sending...",
-      "robotCheck": "The security check is loading. If it does not appear, reload the page."
+      "robotCheck": "The security check is loading. If it does not appear, reload the page.",
+      "expectedSalaryToHint": "Up to (for a range)",
+      "expectedSalaryHelp": "Enter one number, or two for a range."
     },
     "errors": {
       "name": "Enter your full name.",
@@ -67,7 +69,7 @@
       "whatsapp": "Enter a valid WhatsApp number (8 to 15 digits).",
       "domicile": "Enter where you live.",
       "available_from": "Pick a valid date.",
-      "expected_salary": "Enter digits only.",
+      "expected_salary": "Please enter digits only.",
       "portfolio_url": "Enter a link starting with http:// or https://.",
       "cv": "Choose your CV as a PDF file.",
       "answer": "Answer this question.",
@@ -77,7 +79,8 @@
       "closed": "This position is closed or full.",
       "spam": "We couldn't confirm you are not a robot. Complete the security check and try again.",
       "unavailable": "We can't take your application right now. Please try again shortly; what you typed is still on this page.",
-      "generic": "Your application was not sent. Check your answers and try again."
+      "generic": "Your application was not sent. Check your answers and try again.",
+      "expected_salary_to": "The second number needs to be higher than the first."
     },
     "success": {
       "title": "We have received your application",
