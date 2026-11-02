@@ -29,6 +29,7 @@
               <div class="min-w-0">
                 <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{{ o.title }}</h2>
                 <p v-if="meta(o)" class="text-sm text-gray-600 dark:text-gray-400 mt-1">{{ meta(o) }}</p>
+                <CareerDeadline v-if="o.closes_on" class="mt-2">{{ t('career.list.closes', { date: formatCloseDate(o.closes_on, locale) }) }}</CareerDeadline>
               </div>
               <UButton :to="localePath(`/career/${o.slug}`)" class="rounded-full shrink-0 self-start sm:self-auto">
                 {{ t('career.list.view') }}
@@ -77,6 +78,5 @@ const groups = computed(() => {
 const meta = (o: CareerOpening) => [
   o.location,
   o.employment_type && (te(`career.employment.${o.employment_type}`) ? t(`career.employment.${o.employment_type}`) : o.employment_type),
-  o.closes_on && t('career.list.closes', { date: formatCloseDate(o.closes_on, locale.value) }),
 ].filter(Boolean).join(' · ')
 </script>

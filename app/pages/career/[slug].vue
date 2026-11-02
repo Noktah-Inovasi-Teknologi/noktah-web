@@ -24,15 +24,16 @@
             <CareerUnitLogo :unit="unitKey(opening)" :name="unitName(opening)" class="mb-4" />
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">{{ opening.title }}</h1>
             <p v-if="meta" class="text-gray-600 dark:text-gray-400 mt-2">{{ meta }}</p>
+            <CareerDeadline v-if="opening.closes_on" class="mt-3">{{ deadline }}</CareerDeadline>
           </header>
 
           <div v-if="opening.description" class="glass rounded-2xl p-6 sm:p-8">
             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">{{ t('career.detail.description') }}</h2>
-            <p class="text-gray-700 dark:text-gray-300 whitespace-pre-line">{{ opening.description }}</p>
+            <CareerText :text="opening.description" />
           </div>
           <div v-if="opening.requirements" class="glass rounded-2xl p-6 sm:p-8">
             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">{{ t('career.detail.requirements') }}</h2>
-            <p class="text-gray-700 dark:text-gray-300 whitespace-pre-line">{{ opening.requirements }}</p>
+            <CareerText :text="opening.requirements" />
           </div>
 
           <!-- Sent -->
@@ -51,7 +52,6 @@
             <div class="rounded-xl border border-amber-300 bg-amber-50 p-4 space-y-2 text-sm text-amber-950 dark:border-amber-500/40 dark:bg-amber-500/10 dark:text-amber-100" role="note">
               <p class="font-semibold">{{ t('career.form.noticesTitle') }}</p>
               <p>{{ opening.notices?.ai_warning }}</p>
-              <p>{{ opening.notices?.references }}</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -80,10 +80,15 @@
                 <UInput :id="id('available_from')" v-model="f.available_from" type="date" size="lg" class="w-full" :aria-invalid="!!errors.available_from" />
                 <p v-if="errors.available_from" class="mt-1 text-sm text-red-600 dark:text-red-300">{{ errors.available_from }}</p>
               </div>
-              <div>
+              <div class="sm:col-span-2">
                 <label :for="id('expected_salary')" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">{{ t('career.form.expectedSalary') }} <span class="font-normal text-gray-500 dark:text-gray-400">({{ t('career.form.optional') }})</span></label>
-                <UInput :id="id('expected_salary')" v-model="f.expected_salary" size="lg" class="w-full" inputmode="numeric" :placeholder="t('career.form.expectedSalaryHint')" :aria-invalid="!!errors.expected_salary" />
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <UInput :id="id('expected_salary')" v-model="f.expected_salary" size="lg" class="w-full" inputmode="numeric" :placeholder="t('career.form.expectedSalaryHint')" :aria-invalid="!!errors.expected_salary" />
+                  <UInput :id="id('expected_salary_to')" v-model="f.expected_salary_to" size="lg" class="w-full" inputmode="numeric" :placeholder="t('career.form.expectedSalaryToHint')" :aria-label="t('career.form.expectedSalaryToHint')" :aria-invalid="!!errors.expected_salary_to" />
+                </div>
+                <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">{{ t('career.form.expectedSalaryHelp') }}</p>
                 <p v-if="errors.expected_salary" class="mt-1 text-sm text-red-600 dark:text-red-300">{{ errors.expected_salary }}</p>
+                <p v-if="errors.expected_salary_to" class="mt-1 text-sm text-red-600 dark:text-red-300">{{ errors.expected_salary_to }}</p>
               </div>
               <div>
                 <label :for="id('heard_from')" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">{{ t('career.form.heardFrom') }} <span class="font-normal text-gray-500 dark:text-gray-400">({{ t('career.form.optional') }})</span></label>
@@ -146,6 +151,8 @@
               <p v-if="banner" class="rounded-xl border border-red-300 bg-red-50 p-4 text-sm text-red-900 dark:border-red-500/40 dark:bg-red-500/10 dark:text-red-100" role="alert">{{ banner }}</p>
             </div>
 
+            <CareerDeadline v-if="opening.closes_on">{{ deadline }}</CareerDeadline>
+
             <UButton type="submit" size="lg" class="w-full rounded-full justify-center" :loading="sending" :disabled="sending || closed">
               {{ sending ? t('career.form.submitting') : t('career.form.submit') }}
             </UButton>
@@ -161,7 +168,7 @@ type Detail = CareerOpening & {
   description?: string
   requirements?: string
   questions?: { key: string; text: string }[]
-  notices?: { ai_warning?: string; references?: string }
+  notices?: { ai_warning?: string }
 }
 
 const { t, te, locale } = useI18n()
@@ -192,14 +199,14 @@ const meta = computed(() => {
   return [
     o.location,
     o.employment_type && (te(`career.employment.${o.employment_type}`) ? t(`career.employment.${o.employment_type}`) : o.employment_type),
-    o.closes_on && t('career.detail.closes', { date: formatCloseDate(o.closes_on, locale.value) }),
   ].filter(Boolean).join(' · ')
 })
+const deadline = computed(() => opening.value?.closes_on ? t('career.detail.closes', { date: formatCloseDate(opening.value.closes_on, locale.value) }) : '')
 
 // The form. Nothing is stored on this side; what is typed stays in these refs until the Hub accepts it.
 const uid = useId()
 const id = (n: string) => `${uid}-${n}`
-const f = reactive({ name: '', email: '', whatsapp: '', domicile: '', available_from: '', expected_salary: '', heard_from: '', portfolio_url: '' })
+const f = reactive({ name: '', email: '', whatsapp: '', domicile: '', available_from: '', expected_salary: '', expected_salary_to: '', heard_from: '', portfolio_url: '' })
 const answers = reactive<Record<string, string>>({})
 const cv = ref<File | null>(null)
 const ack = ref(false)
@@ -222,7 +229,11 @@ function validate() {
   const wa = f.whatsapp.replace(/\D/g, '')
   if (wa.length < 8 || wa.length > 15) e.whatsapp = err('whatsapp')
   if (!f.domicile.trim()) e.domicile = err('domicile')
-  if (f.expected_salary.trim() && !/^\d[\d.,\s]*$/.test(f.expected_salary.trim())) e.expected_salary = err('expected_salary')
+  const money = (v: string) => /^\d[\d.,\s]*$/.test(v.trim())
+  if (f.expected_salary.trim() && !money(f.expected_salary)) e.expected_salary = err('expected_salary')
+  if (f.expected_salary_to.trim() && !money(f.expected_salary_to)) e.expected_salary_to = err('expected_salary')
+  else if (f.expected_salary.trim() && f.expected_salary_to.trim() && !e.expected_salary
+    && Number(f.expected_salary_to.replace(/\D/g, '')) < Number(f.expected_salary.replace(/\D/g, ''))) e.expected_salary_to = err('expected_salary_to')
   if (f.portfolio_url.trim() && !/^https?:\/\/\S+\.\S+/i.test(f.portfolio_url.trim())) e.portfolio_url = err('portfolio_url')
   if (!cv.value || (cv.value.type !== 'application/pdf' && !cv.value.name.toLowerCase().endsWith('.pdf')) || cv.value.size > 10 * 1024 * 1024) {
     e.cv = cv.value ? err('unreadable_file') : err('cv')
