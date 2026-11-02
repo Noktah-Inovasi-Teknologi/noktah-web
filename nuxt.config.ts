@@ -7,6 +7,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/ui", "@nuxtjs/i18n"],
 
+  // Deployed as a Cloudflare Worker; see wrangler.toml.
+  nitro: {
+    preset: "cloudflare_module",
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
+  },
+
   icon: {
     // Without a local bundle, Nuxt Icon falls back to fetching every icon
     // from the Iconify CDN at runtime — which is why icons rendered as empty

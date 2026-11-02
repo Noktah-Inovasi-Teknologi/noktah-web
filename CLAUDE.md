@@ -23,7 +23,24 @@ pnpm preview
 
 # Generate static site
 pnpm generate
+
+# Build and deploy to Cloudflare Workers (not `pnpm deploy`, a pnpm built-in)
+pnpm cf:deploy
 ```
+
+## Deployment
+
+The site runs as the `noktah-web` Cloudflare Worker, configured in `wrangler.toml`
+with the `cloudflare_module` Nitro preset.
+
+- **`wrangler deploy` needs a fresh build.** Nitro merges `wrangler.toml` into
+  `.output/server/wrangler.json`, and Wrangler follows that generated file.
+- **Keep `keep_vars = true`.** `NUXT_ACCESS_CLIENT_ID` and `NUXT_ACCESS_CLIENT_SECRET`
+  are set in the dashboard, and a deploy would otherwise delete them.
+- **`[vars]` is for non-secret values only.** This repo is public, so credentials
+  never go in `wrangler.toml`.
+- **Routes in `wrangler.toml` are live config.** A deploy applies them to `noktah.co`
+  and `www.noktah.co`.
 
 ## Architecture
 
